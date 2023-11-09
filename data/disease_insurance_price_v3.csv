@@ -1,0 +1,1339 @@
+age,sex,bmi,children,smoker,region,charges,disease,sedantry period,junk food consumption,alcohol consumption,exercise routine,substance use,stress level,charges_bins
+19.0,female,27.9,0,yes,southwest,16884.924,Chickenpox,,,,,,,A
+,male,33.77,1,no,southeast,1725.5523,Hypoglycemia,12hrs, ,no, ,no, ,A
+28.0,male,33.0,3,no,southeast,4449.462,Hypoglycemia,2hrs,daily,rarely,frequently, , ,A
+33.0,male,22.705,0,no,northwest,21984.47061,Dengue,,,,,,,A
+32.0,male,28.88,0,no,northwest,3866.8552,Hypoglycemia,2hrs,frequently,rarely,daily,yes, ,A
+31.0,female,25.74,0,no,southeast,3756.6216,Hypoglycemia,whole day,frequently, , ,no,high,A
+46.0,female,33.44,1,no,southeast,8240.5896,Urinary tract infection,4hrs,daily,rarely, ,no,medium,A
+37.0,female,27.74,3,no,northwest,7281.5056,Urinary tract infection,12hrs,rarely, , ,yes,high,A
+37.0,male,29.83,2,no,northeast,6406.4107,Urinary tract infection,6hrs, ,daily,rarely,no,low,A
+60.0,female,25.84,0,no,northwest,28923.13692,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+25.0,male,26.22,0,no,northeast,2721.3208,Hypoglycemia, ,rarely,daily, , ,high,A
+62.0,female,26.29,0,yes,southeast,27808.7251,Migraine,,,,,,,B
+23.0,male,34.4,0,no,southwest,1826.843,Hypoglycemia,12hrs,rarely,no,rarely, ,medium,A
+56.0,female,39.82,0,no,southeast,11090.7178,Gastroenteritis,,,,,,,A
+27.0,male,42.13,0,yes,southeast,39611.7577,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+19.0,male,24.6,1,no,southwest,1837.237,Hypoglycemia, ,frequently,no,no,yes,medium,A
+52.0,female,30.78,1,no,northeast,10797.3362,Gastroenteritis,12hrs,rarely,rarely,daily,yes, ,A
+23.0,male,23.845,0,no,northeast,2395.17155,Hypoglycemia,12hrs,rarely, ,frequently,no,medium,A
+56.0,male,40.3,0,no,southwest,10602.385,Gastroenteritis,8hrs,daily,no,daily, ,low,A
+30.0,male,35.3,0,yes,southwest,36837.467,Arthritis,,,,,,,B
+60.0,female,36.005,0,no,northeast,13228.84695,Gastroenteritis,,,,,,,A
+30.0,female,32.4,1,no,southwest,4149.736,Hypoglycemia,6hrs, ,no, ,yes,medium,A
+18.0,male,34.1,0,no,southeast,1137.011,Hypoglycemia,,,,,,,A
+34.0,female,31.92,1,yes,northeast,37701.8768,Cervical spondylosis,,,,,,,B
+37.0,male,28.025,2,no,northwest,6203.90175,Urinary tract infection, ,daily,frequently,frequently, ,high,A
+59.0,female,27.72,3,no,southeast,14001.1338,Chickenpox,,,,,,,A
+63.0,female,23.085,0,no,northeast,14451.83515,Chickenpox,,,,,,,A
+55.0,female,32.775,2,no,northwest,12268.63225,Gastroenteritis,,,,,,,A
+23.0,male,17.385,1,no,northwest,2775.19215,Hypoglycemia,whole day, ,frequently,frequently,no, ,A
+31.0,male,36.3,2,yes,southwest,38711.0,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+22.0,male,35.6,0,yes,southwest,35585.576,Arthritis,,,,,,,B
+18.0,female,26.315,0,no,northeast,2198.18985,Hypoglycemia,whole day,rarely,rarely,frequently,no,high,A
+19.0,female,28.6,5,no,southwest,4687.797,Hypoglycemia,6hrs,frequently,rarely, ,yes,high,A
+63.0,male,28.31,0,no,northwest,13770.0979,Chickenpox,,,,,,,A
+28.0,male,36.4,1,yes,southwest,51194.55914,Hepatitis A,,,,,,,C
+19.0,male,20.425,0,no,northwest,1625.43375,Hypoglycemia,8hrs, ,daily,daily, ,high,A
+62.0,female,32.965,3,no,northwest,15612.19335,Chickenpox,,,,,,,A
+26.0,male,20.8,0,no,southwest,2302.3,Hypoglycemia, ,frequently,frequently,rarely, ,high,A
+35.0,male,36.67,1,yes,northeast,39774.2763,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+60.0,male,39.9,0,yes,southwest,48173.361,Diabetes,,,,,,,C
+24.0,female,26.6,0,no,northeast,3046.062,Hypoglycemia,8hrs,daily,daily,frequently,yes,low,A
+31.0,female,36.63,2,no,southeast,4949.7587,Hypoglycemia,whole day,frequently,frequently,rarely,no,high,A
+41.0,male,21.78,1,no,southeast,6272.4772,Urinary tract infection,4hrs,frequently,frequently,frequently,yes,medium,A
+37.0,female,30.8,2,no,southeast,6313.759,Urinary tract infection,8hrs, ,no, ,yes,high,A
+38.0,male,37.05,1,no,northeast,6079.6715,Urinary tract infection,12hrs,rarely,rarely, ,no, ,A
+55.0,male,37.3,0,no,southwest,20630.28351,Dengue,,,,,,,A
+18.0,female,38.665,2,no,northeast,3393.35635,Hypoglycemia,2hrs,rarely,no,frequently, ,low,A
+28.0,female,34.77,0,no,northwest,3556.9223,Hypoglycemia, ,frequently,rarely,frequently,yes,low,A
+60.0,female,24.53,0,no,southeast,12629.8967,Gastroenteritis,,,,,,,A
+36.0,male,35.2,1,yes,southeast,38709.176,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+18.0,female,35.625,0,no,northeast,2211.13075,Hypoglycemia,8hrs, ,frequently,no, ,low,A
+21.0,female,33.63,2,no,northwest,3579.8287,Hypoglycemia, ,frequently,daily, , ,high,A
+48.0,male,28.0,1,yes,southwest,23568.272,Allergy,,,,,,,B
+36.0,male,34.43,0,yes,southeast,37742.5757,Cervical spondylosis,,,,,,,B
+40.0,female,28.69,3,no,northwest,8059.6791,Urinary tract infection,whole day,daily,daily,frequently,no,high,A
+58.0,male,36.955,2,yes,northwest,47496.49445,Diabetes,,,,,,,C
+58.0,female,31.825,2,no,northeast,13607.36875,Gastroenteritis,,,,,,,A
+18.0,male,31.68,2,yes,southeast,34303.1672,Osteoarthritis,,,,,,,B
+53.0,female,22.88,1,yes,southeast,23244.7902,Fungal infection,,,,,,,B
+34.0,female,37.335,2,no,northwest,5989.52365,Urinary tract infection,6hrs,daily,rarely,no, ,high,A
+43.0,male,27.36,3,no,northeast,8606.2174,Urinary tract infection, ,rarely,frequently,rarely, ,medium,A
+25.0,male,33.66,4,no,southeast,4504.6624,Hypoglycemia, , ,frequently,rarely,yes,high,A
+64.0,male,24.7,1,no,northwest,30166.61817,Hyperthyroidism,,,,,,,B
+28.0,female,25.935,1,no,northwest,4133.64165,Hypoglycemia,6hrs,frequently,daily,no,no,high,A
+20.0,female,22.42,0,yes,northwest,14711.7438,Chickenpox,,,,,,,A
+19.0,female,28.9,0,no,southwest,1743.214,Hypoglycemia,8hrs,daily, ,daily, ,low,A
+61.0,female,39.1,2,no,southwest,14235.072,Chickenpox,,,,,,,A
+40.0,male,26.315,1,no,northwest,6389.37785,Urinary tract infection,4hrs, ,rarely, ,no, ,A
+40.0,female,36.19,0,no,southeast,5920.1041,Urinary tract infection,whole day, ,daily,rarely, ,low,A
+28.0,male,23.98,3,yes,southeast,17663.1442,Chickenpox,,,,,,,A
+27.0,female,24.75,0,yes,southeast,16577.7795,Chickenpox,,,,,,,A
+31.0,male,28.5,5,no,northeast,6799.458,Urinary tract infection, , ,frequently,frequently, ,high,A
+53.0,female,28.1,3,no,southwest,11741.726,Gastroenteritis,,,,,,,A
+58.0,male,32.01,1,no,southeast,11946.6259,Gastroenteritis,,,,,,,A
+44.0,male,27.4,2,no,southwest,7726.854,Urinary tract infection,12hrs,frequently,rarely,frequently,no, ,A
+57.0,male,34.01,0,no,northwest,11356.6609,Gastroenteritis,,,,,,,A
+29.0,female,29.59,1,no,southeast,3947.4131,Hypoglycemia,6hrs, ,rarely, ,no, ,A
+21.0,male,35.53,0,no,southeast,1532.4697,Hypoglycemia,6hrs, ,no,rarely,yes, ,A
+22.0,female,39.805,0,no,northeast,2755.02095,Hypoglycemia,2hrs, ,frequently,daily, ,high,A
+41.0,female,32.965,0,no,northwest,6571.02435,Urinary tract infection,6hrs, ,rarely, , ,medium,A
+31.0,male,26.885,1,no,northeast,4441.21315,Hypoglycemia,6hrs, ,frequently,no, ,high,A
+45.0,female,38.285,0,no,northeast,7935.29115,Urinary tract infection,2hrs, ,daily,no,no,low,A
+22.0,male,37.62,1,yes,southeast,37165.1638,Cervical spondylosis,,,,,,,B
+48.0,female,41.23,4,no,northwest,11033.6617,Gastroenteritis,,,,,,,A
+37.0,female,34.8,2,yes,southwest,39836.519,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+45.0,male,22.895,2,yes,northwest,21098.55405,Dengue,,,,,,,A
+57.0,female,31.16,0,yes,northwest,43578.9394,AIDS,,,,,,,C
+56.0,female,27.2,0,no,southwest,11073.176,Gastroenteritis,,,,,,,A
+46.0,female,27.74,0,no,northwest,8026.6666,Urinary tract infection,12hrs,daily, ,daily, ,low,A
+55.0,female,26.98,0,no,northwest,11082.5772,Gastroenteritis,,,,,,,A
+21.0,female,39.49,0,no,southeast,2026.9741,Hypoglycemia,8hrs,daily,daily,frequently,no,medium,A
+53.0,female,24.795,1,no,northwest,10942.13205,Gastroenteritis,2hrs, , ,rarely,no,high,A
+59.0,male,29.83,3,yes,northeast,30184.9367,Hyperthyroidism,,,,,,,B
+35.0,male,34.77,2,no,northwest,5729.0053,Urinary tract infection,whole day, , ,daily, ,high,A
+64.0,female,31.3,2,yes,southwest,47291.055,Diabetes,,,,,,,C
+28.0,female,37.62,1,no,southeast,3766.8838,Hypoglycemia,2hrs, ,frequently,frequently,no,medium,A
+54.0,female,30.8,3,no,southwest,12105.32,Gastroenteritis,,,,,,,A
+55.0,male,38.28,0,no,southeast,10226.2842,Gastroenteritis,4hrs, ,rarely,rarely, ,high,A
+56.0,male,19.95,0,yes,northeast,22412.6485,Fungal infection,,,,,,,B
+38.0,male,19.3,0,yes,southwest,15820.699,Chickenpox,,,,,,,A
+41.0,female,31.6,0,no,southwest,6186.127,Urinary tract infection,whole day, ,no,frequently,no, ,A
+30.0,male,25.46,0,no,northeast,3645.0894,Hypoglycemia,8hrs,daily,rarely,no, ,medium,A
+18.0,female,30.115,0,no,northeast,21344.8467,Dengue,,,,,,,A
+61.0,female,29.92,3,yes,southeast,30942.1918,Hyperthyroidism,,,,,,,B
+34.0,female,27.5,1,no,southwest,5003.853,Hypoglycemia,4hrs,rarely,daily, , ,low,A
+20.0,male,28.025,1,yes,northwest,17560.37975,Chickenpox,,,,,,,A
+19.0,female,28.4,1,no,southwest,2331.519,Hypoglycemia,6hrs,rarely,daily,no,yes,high,A
+26.0,male,30.875,2,no,northwest,3877.30425,Hypoglycemia,8hrs,rarely,no,frequently,no,medium,A
+29.0,male,27.94,0,no,southeast,2867.1196,Hypoglycemia,12hrs,daily,frequently,rarely, , ,A
+63.0,male,35.09,0,yes,southeast,47055.5321,Diabetes,,,,,,,C
+54.0,male,33.63,1,no,northwest,10825.2537,Gastroenteritis,12hrs,rarely,frequently, , ,medium,A
+55.0,female,29.7,2,no,southwest,11881.358,Gastroenteritis,,,,,,,A
+37.0,male,30.8,0,no,southwest,4646.759,Hypoglycemia,whole day,frequently,frequently,daily,yes,low,A
+21.0,female,35.72,0,no,northwest,2404.7338,Hypoglycemia,2hrs,daily, ,no,no,high,A
+52.0,male,32.205,3,no,northeast,11488.31695,Gastroenteritis,,,,,,,A
+60.0,male,28.595,0,no,northeast,30259.99556,Hyperthyroidism,,,,,,,B
+58.0,male,49.06,0,no,southeast,11381.3254,Gastroenteritis,,,,,,,A
+29.0,female,27.94,1,yes,southeast,19107.7796,Dengue,,,,,,,A
+49.0,female,27.17,0,no,southeast,8601.3293,Urinary tract infection,8hrs,daily,rarely,frequently, ,low,A
+37.0,female,23.37,2,no,northwest,6686.4313,Urinary tract infection,2hrs,frequently,frequently,daily,yes,medium,A
+44.0,male,37.1,2,no,southwest,7740.337,Urinary tract infection,12hrs,daily,frequently,frequently,no,high,A
+18.0,male,23.75,0,no,northeast,1705.6245,Hypoglycemia,12hrs,rarely,daily,daily,yes,low,A
+20.0,female,28.975,0,no,northwest,2257.47525,Hypoglycemia,whole day,rarely,daily,daily,yes, ,A
+44.0,male,31.35,1,yes,northeast,39556.4945,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+47.0,female,33.915,3,no,northwest,10115.00885,Gastroenteritis,4hrs,daily, ,rarely,no, ,A
+26.0,female,28.785,0,no,northeast,3385.39915,Hypoglycemia,whole day, ,daily,no,no,high,A
+19.0,female,28.3,0,yes,southwest,17081.08,Chickenpox,,,,,,,A
+52.0,female,37.4,0,no,southwest,9634.538,Gastroenteritis,whole day,frequently,daily,rarely, , ,A
+32.0,female,17.765,2,yes,northwest,32734.1863,Tuberculosis,,,,,,,B
+38.0,male,34.7,2,no,southwest,6082.405,Urinary tract infection,6hrs,rarely,frequently, ,no,low,A
+59.0,female,26.505,0,no,northeast,12815.44495,Gastroenteritis,,,,,,,A
+61.0,female,22.04,0,no,northeast,13616.3586,Gastroenteritis,,,,,,,A
+53.0,female,35.9,2,no,southwest,11163.568,Gastroenteritis,,,,,,,A
+19.0,male,25.555,0,no,northwest,1632.56445,Hypoglycemia,8hrs,daily,daily, ,yes,medium,A
+20.0,female,28.785,0,no,northeast,2457.21115,Hypoglycemia,8hrs,frequently,frequently,frequently,yes,high,A
+22.0,female,28.05,0,no,southeast,2155.6815,Hypoglycemia,whole day, ,daily,daily,yes,medium,A
+19.0,male,34.1,0,no,southwest,1261.442,Hypoglycemia,,,,,,,A
+22.0,male,25.175,0,no,northwest,2045.68525,Hypoglycemia, ,rarely, ,frequently, ,low,A
+54.0,female,31.9,3,no,southeast,27322.73386,Migraine,,,,,,,B
+22.0,female,36.0,0,no,southwest,2166.732,Hypoglycemia,8hrs,frequently,rarely,daily,no,high,A
+34.0,male,22.42,2,no,northeast,27375.90478,Migraine,,,,,,,B
+26.0,male,32.49,1,no,northeast,3490.5491,Hypoglycemia,8hrs, ,frequently, ,yes, ,A
+34.0,male,25.3,2,yes,southeast,18972.495,Dengue,,,,,,,A
+29.0,male,29.735,2,no,northwest,18157.876,Dengue,,,,,,,A
+30.0,male,28.69,3,yes,northwest,20745.9891,Dengue,,,,,,,A
+29.0,female,38.83,3,no,southeast,5138.2567,Hypoglycemia,2hrs,rarely,daily, ,yes, ,A
+46.0,male,30.495,3,yes,northwest,40720.55105,Chronic cholestasis,,,,,,,B
+51.0,female,37.73,1,no,southeast,9877.6077,Gastroenteritis,6hrs,frequently,daily, , ,medium,A
+53.0,female,37.43,1,no,northwest,10959.6947,Gastroenteritis,6hrs,daily,no, , , ,A
+19.0,male,28.4,1,no,southwest,1842.519,Hypoglycemia,whole day,daily,frequently,frequently,no, ,A
+35.0,male,24.13,1,no,northwest,5125.2157,Hypoglycemia,12hrs,frequently, ,frequently, , ,A
+48.0,male,29.7,0,no,southeast,7789.635,Urinary tract infection,12hrs, ,daily,daily, ,high,A
+32.0,female,37.145,3,no,northeast,6334.34355,Urinary tract infection, ,rarely,daily,frequently,no,high,A
+42.0,female,23.37,0,yes,northeast,19964.7463,Dengue,,,,,,,A
+40.0,female,25.46,1,no,northeast,7077.1894,Urinary tract infection,2hrs,rarely,daily,frequently,yes,high,A
+44.0,male,39.52,0,no,northwest,6948.7008,Urinary tract infection,8hrs,daily,no,rarely,yes,low,A
+48.0,male,24.42,0,yes,southeast,21223.6758,Dengue,,,,,,,A
+18.0,male,25.175,0,yes,northeast,15518.18025,Chickenpox,,,,,,,A
+30.0,male,35.53,0,yes,southeast,36950.2567,Arthritis,,,,,,,B
+50.0,female,27.83,3,no,southeast,19749.38338,Dengue,,,,,,,A
+42.0,female,26.6,0,yes,northwest,21348.706,Dengue,,,,,,,A
+18.0,female,36.85,0,yes,southeast,36149.4835,Arthritis,,,,,,,B
+54.0,male,39.6,1,no,southwest,10450.552,Gastroenteritis,12hrs, ,rarely,frequently, ,medium,A
+32.0,female,29.8,2,no,southwest,5152.134,Hypoglycemia,2hrs, ,daily,daily, ,low,A
+37.0,male,29.64,0,no,northwest,5028.1466,Hypoglycemia,4hrs, ,daily,no, ,medium,A
+47.0,male,28.215,4,no,northeast,10407.08585,Gastroenteritis,2hrs,daily,no,rarely,yes,low,A
+20.0,female,37.0,5,no,southwest,4830.63,Hypoglycemia,8hrs,daily,no, ,no,medium,A
+32.0,female,33.155,3,no,northwest,6128.79745,Urinary tract infection,6hrs,daily,daily, ,yes, ,A
+19.0,female,31.825,1,no,northwest,2719.27975,Hypoglycemia,8hrs, ,no,no,yes,low,A
+27.0,male,18.905,3,no,northeast,4827.90495,Hypoglycemia,8hrs,rarely,rarely,frequently,yes,low,A
+63.0,male,41.47,0,no,southeast,13405.3903,Gastroenteritis,,,,,,,A
+49.0,male,30.3,0,no,southwest,8116.68,Urinary tract infection,12hrs,frequently, ,rarely, ,high,A
+18.0,male,15.96,0,no,northeast,1694.7964,Hypoglycemia, ,rarely,no,frequently,yes,medium,A
+35.0,female,34.8,1,no,southwest,5246.047,Hypoglycemia,4hrs,daily,no,frequently,no,medium,A
+24.0,female,33.345,0,no,northwest,2855.43755,Hypoglycemia,2hrs,frequently, , , ,low,A
+63.0,female,37.7,0,yes,southwest,48824.45,Drug Reaction,,,,,,,C
+38.0,male,27.835,2,no,northwest,6455.86265,Urinary tract infection,2hrs,rarely,daily,no, , ,A
+54.0,male,29.2,1,no,southwest,10436.096,Gastroenteritis,12hrs,daily,no,rarely, , ,A
+46.0,female,28.9,2,no,southwest,8823.279,Urinary tract infection,4hrs,daily,rarely,frequently,yes,medium,A
+41.0,female,33.155,3,no,northeast,8538.28845,Urinary tract infection,whole day,daily,no,daily,yes,medium,A
+58.0,male,28.595,0,no,northwest,11735.87905,Gastroenteritis,,,,,,,A
+18.0,female,38.28,0,no,southeast,1631.8212,Hypoglycemia,2hrs,rarely,daily,rarely, , ,A
+22.0,male,19.95,3,no,northeast,4005.4225,Hypoglycemia, , , ,no,no,low,A
+44.0,female,26.41,0,no,northwest,7419.4779,Urinary tract infection,8hrs,daily,daily, ,no,medium,A
+44.0,male,30.69,2,no,southeast,7731.4271,Urinary tract infection,whole day,frequently,no,frequently,no,low,A
+36.0,male,41.895,3,yes,northeast,43753.33705,AIDS,,,,,,,C
+26.0,female,29.92,2,no,southeast,3981.9768,Hypoglycemia,2hrs,daily,no,no,yes, ,A
+30.0,female,30.9,3,no,southwest,5325.651,Urinary tract infection,8hrs, ,daily,rarely,no,high,A
+41.0,female,32.2,1,no,southwest,6775.961,Urinary tract infection,6hrs,rarely,frequently,rarely,yes,low,A
+29.0,female,32.11,2,no,northwest,4922.9159,Hypoglycemia,2hrs,daily,rarely,frequently,no,high,A
+61.0,male,31.57,0,no,southeast,12557.6053,Gastroenteritis,,,,,,,A
+36.0,female,26.2,0,no,southwest,4883.866,Hypoglycemia,6hrs, ,daily,frequently, ,medium,A
+25.0,male,25.74,0,no,southeast,2137.6536,Hypoglycemia,2hrs,daily,rarely,daily,yes,medium,A
+56.0,female,26.6,1,no,northwest,12044.342,Gastroenteritis,,,,,,,A
+18.0,male,34.43,0,no,southeast,1137.4697,Hypoglycemia, ,rarely, ,daily,yes, ,A
+19.0,male,30.59,0,no,northwest,1639.5631,Hypoglycemia,8hrs,daily,daily,rarely,no,low,A
+39.0,female,32.8,0,no,southwest,5649.715,Urinary tract infection,2hrs,frequently, ,frequently,yes,high,A
+45.0,female,28.6,2,no,southeast,8516.829,Urinary tract infection,2hrs,rarely, , ,yes, ,A
+51.0,female,18.05,0,no,northwest,9644.2525,Gastroenteritis,4hrs, , ,daily, ,high,A
+64.0,female,39.33,0,no,northeast,14901.5167,Chickenpox,,,,,,,A
+19.0,female,32.11,0,no,northwest,2130.6759,Hypoglycemia,whole day, ,no, ,no, ,A
+48.0,female,32.23,1,no,southeast,8871.1517,Urinary tract infection, ,rarely,frequently,daily,no,medium,A
+60.0,female,24.035,0,no,northwest,13012.20865,Gastroenteritis,,,,,,,A
+27.0,female,36.08,0,yes,southeast,37133.8982,Cervical spondylosis,,,,,,,B
+46.0,male,22.3,0,no,southwest,7147.105,Urinary tract infection,4hrs,daily,frequently,no, , ,A
+28.0,female,28.88,1,no,northeast,4337.7352,Hypoglycemia,12hrs,rarely,frequently,daily,no,low,A
+59.0,male,26.4,0,no,southeast,11743.299,Gastroenteritis,,,,,,,A
+35.0,male,27.74,2,yes,northeast,20984.0936,Dengue,,,,,,,A
+63.0,female,31.8,0,no,southwest,13880.949,Chickenpox,,,,,,,A
+40.0,male,41.23,1,no,northeast,6610.1097,Urinary tract infection,whole day,frequently,rarely,frequently,no,medium,A
+20.0,male,33.0,1,no,southwest,1980.07,Hypoglycemia, ,frequently,no,no, , ,A
+40.0,male,30.875,4,no,northwest,8162.71625,Urinary tract infection,2hrs,daily, ,frequently,no,low,A
+24.0,male,28.5,2,no,northwest,3537.703,Hypoglycemia,12hrs, ,frequently,rarely, ,medium,A
+34.0,female,26.73,1,no,southeast,5002.7827,Hypoglycemia,8hrs,frequently,rarely, ,no, ,A
+45.0,female,30.9,2,no,southwest,8520.026,Urinary tract infection,whole day,rarely,daily, ,no,medium,A
+41.0,female,37.1,2,no,southwest,7371.772,Urinary tract infection,6hrs,rarely,frequently,rarely,no, ,A
+53.0,female,26.6,0,no,northwest,10355.641,Gastroenteritis,whole day, ,no, ,yes,low,A
+27.0,male,23.1,0,no,southeast,2483.736,Hypoglycemia,8hrs,daily, ,daily,no,high,A
+26.0,female,29.92,1,no,southeast,3392.9768,Hypoglycemia,whole day,frequently,rarely, , ,high,A
+24.0,female,23.21,0,no,southeast,25081.76784,Dimorphic hemorrhoids (piles),,,,,,,B
+34.0,female,33.7,1,no,southwest,5012.471,Hypoglycemia,2hrs,daily,no,no,yes,high,A
+53.0,female,33.25,0,no,northeast,10564.8845,Gastroenteritis, ,daily,frequently,no,yes,low,A
+32.0,male,30.8,3,no,southwest,5253.524,Hypoglycemia,8hrs,frequently, ,frequently,no,medium,A
+19.0,male,34.8,0,yes,southwest,34779.615,Osteoarthritis,,,,,,,B
+42.0,male,24.64,0,yes,southeast,19515.5416,Dengue,,,,,,,A
+55.0,male,33.88,3,no,southeast,11987.1682,Gastroenteritis,,,,,,,A
+28.0,male,38.06,0,no,southeast,2689.4954,Hypoglycemia,12hrs,frequently, ,no, ,high,A
+58.0,female,41.91,0,no,southeast,24227.33724,Allergy,,,,,,,B
+41.0,female,31.635,1,no,northeast,7358.17565,Urinary tract infection,6hrs,daily,no,no,no,medium,A
+47.0,male,25.46,2,no,northeast,9225.2564,Urinary tract infection,whole day, ,no, ,yes, ,A
+42.0,female,36.195,1,no,northwest,7443.64305,Urinary tract infection,4hrs,rarely, ,no,yes,high,A
+59.0,female,27.83,3,no,southeast,14001.2867,Chickenpox,,,,,,,A
+19.0,female,17.8,0,no,southwest,1727.785,Hypoglycemia,12hrs,frequently,frequently,daily, , ,A
+59.0,male,27.5,1,no,southwest,12333.828,Gastroenteritis,,,,,,,A
+39.0,male,24.51,2,no,northwest,6710.1919,Urinary tract infection,8hrs,daily,rarely, ,yes,low,A
+40.0,female,22.22,2,yes,southeast,19444.2658,Dengue,,,,,,,A
+18.0,female,26.73,0,no,southeast,1615.7667,Hypoglycemia,6hrs, ,no,rarely,yes,high,A
+31.0,male,38.39,2,no,southeast,4463.2051,Hypoglycemia,12hrs,frequently,frequently,frequently,yes, ,A
+19.0,male,29.07,0,yes,northwest,17352.6803,Chickenpox,,,,,,,A
+44.0,male,38.06,1,no,southeast,7152.6714,Urinary tract infection,2hrs,rarely,no,rarely,no,low,A
+23.0,female,36.67,2,yes,northeast,38511.6283,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+33.0,female,22.135,1,no,northeast,5354.07465,Urinary tract infection,4hrs,rarely,daily, , , ,A
+55.0,female,26.8,1,no,southwest,35160.13457,Osteoarthritis,,,,,,,B
+40.0,male,35.3,3,no,southwest,7196.867,Urinary tract infection,8hrs,rarely,frequently, , ,medium,A
+63.0,female,27.74,0,yes,northeast,29523.1656,Hyperthyroidism,,,,,,,B
+54.0,male,30.02,0,no,northwest,24476.47851,Allergy,,,,,,,B
+60.0,female,38.06,0,no,southeast,12648.7034,Gastroenteritis,,,,,,,A
+24.0,male,35.86,0,no,southeast,1986.9334,Hypoglycemia,6hrs,frequently,daily,frequently, , ,A
+19.0,male,20.9,1,no,southwest,1832.094,Hypoglycemia, ,frequently, ,frequently, ,high,A
+29.0,male,28.975,1,no,northeast,4040.55825,Hypoglycemia,12hrs, ,daily,no, ,medium,A
+18.0,male,17.29,2,yes,northeast,12829.4551,Gastroenteritis,,,,,,,A
+63.0,female,32.2,2,yes,southwest,47305.305,Diabetes,,,,,,,C
+54.0,male,34.21,2,yes,southeast,44260.7499,AIDS,,,,,,,C
+27.0,male,30.3,3,no,southwest,4260.744,Hypoglycemia,2hrs,frequently,frequently,daily,yes,medium,A
+50.0,male,31.825,0,yes,northeast,41097.16175,Chronic cholestasis,,,,,,,B
+55.0,female,25.365,3,no,northeast,13047.33235,Gastroenteritis,,,,,,,A
+56.0,male,33.63,0,yes,northwest,43921.1837,AIDS,,,,,,,C
+38.0,female,40.15,0,no,southeast,5400.9805,Urinary tract infection,8hrs,daily, ,no, ,high,A
+51.0,male,24.415,4,no,northwest,11520.09985,Gastroenteritis,,,,,,,A
+19.0,male,31.92,0,yes,northwest,33750.2918,Tuberculosis,,,,,,,B
+58.0,female,25.2,0,no,southwest,11837.16,Gastroenteritis,,,,,,,A
+20.0,female,26.84,1,yes,southeast,17085.2676,Chickenpox,,,,,,,A
+52.0,male,24.32,3,yes,northeast,24869.8368,Allergy,,,,,,,B
+19.0,male,36.955,0,yes,northwest,36219.40545,Arthritis,,,,,,,B
+53.0,female,38.06,3,no,southeast,20462.99766,Dengue,,,,,,,A
+46.0,male,42.35,3,yes,southeast,46151.1245,Bronchial Asthma,,,,,,,C
+40.0,male,19.8,1,yes,southeast,17179.522,Chickenpox,,,,,,,A
+59.0,female,32.395,3,no,northeast,14590.63205,Chickenpox,,,,,,,A
+45.0,male,30.2,1,no,southwest,7441.053,Urinary tract infection,whole day, ,rarely,daily, ,medium,A
+49.0,male,25.84,1,no,northeast,9282.4806,Urinary tract infection,whole day,rarely,daily,no,no,medium,A
+18.0,male,29.37,1,no,southeast,1719.4363,Hypoglycemia,6hrs,daily,daily,rarely,no,high,A
+50.0,male,34.2,2,yes,southwest,42856.838,Jaundice,,,,,,,B
+41.0,male,37.05,2,no,northwest,7265.7025,Urinary tract infection,6hrs,frequently,rarely,rarely, ,medium,A
+50.0,male,27.455,1,no,northeast,9617.66245,Gastroenteritis,6hrs,frequently,no,rarely, ,low,A
+25.0,male,27.55,0,no,northwest,2523.1695,Hypoglycemia,whole day,frequently,rarely,daily,yes, ,A
+47.0,female,26.6,2,no,northeast,9715.841,Gastroenteritis,6hrs,rarely,rarely,no,yes,low,A
+19.0,male,20.615,2,no,northwest,2803.69785,Hypoglycemia,6hrs,rarely,no,rarely,yes, ,A
+22.0,female,24.3,0,no,southwest,2150.469,Hypoglycemia,6hrs, , , , ,medium,A
+59.0,male,31.79,2,no,southeast,12928.7911,Gastroenteritis,,,,,,,A
+51.0,female,21.56,1,no,southeast,9855.1314,Gastroenteritis,4hrs,daily,frequently,no,no,low,A
+40.0,female,28.12,1,yes,northeast,22331.5668,Fungal infection,,,,,,,B
+54.0,male,40.565,3,yes,northeast,48549.17835,Drug Reaction,,,,,,,C
+30.0,male,27.645,1,no,northeast,4237.12655,Hypoglycemia,6hrs,daily,frequently,rarely,yes,low,A
+55.0,female,32.395,1,no,northeast,11879.10405,Gastroenteritis,,,,,,,A
+52.0,female,31.2,0,no,southwest,9625.92,Gastroenteritis,4hrs,daily,rarely,daily,no,high,A
+46.0,male,26.62,1,no,southeast,7742.1098,Urinary tract infection,8hrs,daily,frequently,frequently, , ,A
+46.0,female,48.07,2,no,northeast,9432.9253,Urinary tract infection,whole day, ,rarely, ,yes, ,A
+63.0,female,26.22,0,no,northwest,14256.1928,Chickenpox,,,,,,,A
+59.0,female,36.765,1,yes,northeast,47896.79135,Diabetes,,,,,,,C
+52.0,male,26.4,3,no,southeast,25992.82104,Dimorphic hemorrhoids (piles),,,,,,,B
+28.0,female,33.4,0,no,southwest,3172.018,Hypoglycemia, ,daily,frequently, ,yes,low,A
+29.0,male,29.64,1,no,northeast,20277.80751,Dengue,,,,,,,A
+25.0,male,45.54,2,yes,southeast,42112.2356,Jaundice,,,,,,,B
+22.0,female,28.82,0,no,southeast,2156.7518,Hypoglycemia,4hrs,daily,no,no, , ,A
+25.0,male,26.8,3,no,southwest,3906.127,Hypoglycemia, ,daily, ,daily, , ,A
+18.0,male,22.99,0,no,northeast,1704.5681,Hypoglycemia,4hrs,daily,frequently,rarely,no, ,A
+19.0,male,27.7,0,yes,southwest,16297.846,Chickenpox,,,,,,,A
+47.0,male,25.41,1,yes,southeast,21978.6769,Dengue,,,,,,,A
+31.0,male,34.39,3,yes,northwest,38746.3551,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+48.0,female,28.88,1,no,northwest,9249.4952,Urinary tract infection,12hrs, , , ,no,medium,A
+36.0,male,27.55,3,no,northeast,6746.7425,Urinary tract infection,6hrs, ,rarely,no, ,low,A
+53.0,female,22.61,3,yes,northeast,24873.3849,Allergy,,,,,,,B
+56.0,female,37.51,2,no,southeast,12265.5069,Gastroenteritis,,,,,,,A
+28.0,female,33.0,2,no,southeast,4349.462,Hypoglycemia,6hrs,daily,no,frequently, ,medium,A
+57.0,female,38.0,2,no,southwest,12646.207,Gastroenteritis,,,,,,,A
+29.0,male,33.345,2,no,northwest,19442.3535,Dengue,,,,,,,A
+28.0,female,27.5,2,no,southwest,20177.67113,Dengue,,,,,,,A
+30.0,female,33.33,1,no,southeast,4151.0287,Hypoglycemia,whole day,frequently,no,frequently, ,low,A
+58.0,male,34.865,0,no,northeast,11944.59435,Gastroenteritis,,,,,,,A
+41.0,female,33.06,2,no,northwest,7749.1564,Urinary tract infection,4hrs, ,daily,frequently,no,medium,A
+50.0,male,26.6,0,no,southwest,8444.474,Urinary tract infection,4hrs, ,no,no,yes, ,A
+19.0,female,24.7,0,no,southwest,1737.376,Hypoglycemia,whole day,rarely,rarely, ,yes, ,A
+43.0,male,35.97,3,yes,southeast,42124.5153,Jaundice,,,,,,,B
+49.0,male,35.86,0,no,southeast,8124.4084,Urinary tract infection,2hrs, , ,rarely, ,high,A
+27.0,female,31.4,0,yes,southwest,34838.873,Osteoarthritis,,,,,,,B
+52.0,male,33.25,0,no,northeast,9722.7695,Gastroenteritis,whole day,frequently,rarely, ,no,low,A
+50.0,male,32.205,0,no,northwest,8835.26495,Urinary tract infection,12hrs,rarely,frequently,no,no, ,A
+54.0,male,32.775,0,no,northeast,10435.06525,Gastroenteritis, , ,rarely, ,yes,high,A
+44.0,female,27.645,0,no,northwest,7421.19455,Urinary tract infection,4hrs,rarely,frequently, , ,high,A
+32.0,male,37.335,1,no,northeast,4667.60765,Hypoglycemia,8hrs,daily,rarely,frequently,no,medium,A
+34.0,male,25.27,1,no,northwest,4894.7533,Hypoglycemia,4hrs,daily,no, , ,medium,A
+26.0,female,29.64,4,no,northeast,24671.66334,Allergy,,,,,,,B
+34.0,male,30.8,0,yes,southwest,35491.64,Osteoarthritis,,,,,,,B
+57.0,male,40.945,0,no,northeast,11566.30055,Gastroenteritis,,,,,,,A
+29.0,male,27.2,0,no,southwest,2866.091,Hypoglycemia,6hrs,frequently,frequently,no, ,medium,A
+40.0,male,34.105,1,no,northeast,6600.20595,Urinary tract infection, , ,frequently,rarely, ,medium,A
+27.0,female,23.21,1,no,southeast,3561.8889,Hypoglycemia,whole day, ,frequently,rarely,no,low,A
+45.0,male,36.48,2,yes,northwest,42760.5022,Jaundice,,,,,,,B
+64.0,female,33.8,1,yes,southwest,47928.03,Diabetes,,,,,,,C
+52.0,male,36.7,0,no,southwest,9144.565,Urinary tract infection,whole day, ,rarely,daily,yes,medium,A
+61.0,female,36.385,1,yes,northeast,48517.56315,Drug Reaction,,,,,,,C
+52.0,male,27.36,0,yes,northwest,24393.6224,Allergy,,,,,,,B
+61.0,female,31.16,0,no,northwest,13429.0354,Gastroenteritis,,,,,,,A
+56.0,female,28.785,0,no,northeast,11658.37915,Gastroenteritis,,,,,,,A
+43.0,female,35.72,2,no,northeast,19144.57652,Dengue,,,,,,,A
+64.0,male,34.5,0,no,southwest,13822.803,Chickenpox,,,,,,,A
+60.0,male,25.74,0,no,southeast,12142.5786,Gastroenteritis,,,,,,,A
+62.0,male,27.55,1,no,northwest,13937.6665,Chickenpox,,,,,,,A
+50.0,male,32.3,1,yes,northeast,41919.097,Jaundice,,,,,,,B
+46.0,female,27.72,1,no,southeast,8232.6388,Urinary tract infection,8hrs,daily,daily,rarely,no,low,A
+24.0,female,27.6,0,no,southwest,18955.22017,Dengue,,,,,,,A
+62.0,male,30.02,0,no,northwest,13352.0998,Gastroenteritis,,,,,,,A
+60.0,female,27.55,0,no,northeast,13217.0945,Gastroenteritis,,,,,,,A
+63.0,male,36.765,0,no,northeast,13981.85035,Chickenpox,,,,,,,A
+49.0,female,41.47,4,no,southeast,10977.2063,Gastroenteritis,4hrs,daily,no,rarely,no,high,A
+34.0,female,29.26,3,no,southeast,6184.2994,Urinary tract infection,2hrs,frequently, , ,yes,high,A
+33.0,male,35.75,2,no,southeast,4889.9995,Hypoglycemia,12hrs,rarely,no,frequently,yes, ,A
+46.0,male,33.345,1,no,northeast,8334.45755,Urinary tract infection,2hrs,frequently, ,frequently, ,low,A
+36.0,female,29.92,1,no,southeast,5478.0368,Urinary tract infection,12hrs,daily,rarely,daily,no,low,A
+19.0,male,27.835,0,no,northwest,1635.73365,Hypoglycemia, ,daily,daily,daily,no,medium,A
+57.0,female,23.18,0,no,northwest,11830.6072,Gastroenteritis,,,,,,,A
+50.0,female,25.6,0,no,southwest,8932.084,Urinary tract infection,2hrs,frequently,daily, , ,medium,A
+30.0,female,27.7,0,no,southwest,3554.203,Hypoglycemia,8hrs,daily,frequently,daily,yes,low,A
+33.0,male,35.245,0,no,northeast,12404.8791,Gastroenteritis,,,,,,,A
+18.0,female,38.28,0,no,southeast,14133.03775,Chickenpox,,,,,,,A
+46.0,male,27.6,0,no,southwest,24603.04837,Allergy,,,,,,,B
+46.0,male,43.89,3,no,southeast,8944.1151,Urinary tract infection,12hrs, ,daily, ,yes,high,A
+47.0,male,29.83,3,no,northwest,9620.3307,Gastroenteritis,whole day,rarely, ,rarely,yes, ,A
+23.0,male,41.91,0,no,southeast,1837.2819,Hypoglycemia,4hrs,frequently,rarely,daily,no,low,A
+18.0,female,20.79,0,no,southeast,1607.5101,Hypoglycemia,12hrs, ,no,no, ,medium,A
+48.0,female,32.3,2,no,northeast,10043.249,Gastroenteritis,12hrs, , , ,yes, ,A
+35.0,male,30.5,1,no,southwest,4751.07,Hypoglycemia, ,daily, ,no,no,medium,A
+19.0,female,21.7,0,yes,southwest,13844.506,Chickenpox,,,,,,,A
+21.0,female,26.4,1,no,southwest,2597.779,Hypoglycemia,12hrs,frequently,no,daily, ,medium,A
+21.0,female,21.89,2,no,southeast,3180.5101,Hypoglycemia, ,rarely,rarely,daily, ,low,A
+49.0,female,30.78,1,no,northeast,9778.3472,Gastroenteritis,whole day,daily,no,daily, ,medium,A
+56.0,female,32.3,3,no,northeast,13430.265,Gastroenteritis,,,,,,,A
+42.0,female,24.985,2,no,northwest,8017.06115,Urinary tract infection,4hrs,frequently, ,frequently,no,low,A
+44.0,male,32.015,2,no,northwest,8116.26885,Urinary tract infection, ,rarely, ,no, ,high,A
+18.0,male,30.4,3,no,northeast,3481.868,Hypoglycemia,4hrs,frequently, , ,yes,low,A
+61.0,female,21.09,0,no,northwest,13415.0381,Gastroenteritis,,,,,,,A
+57.0,female,22.23,0,no,northeast,12029.2867,Gastroenteritis,,,,,,,A
+42.0,female,33.155,1,no,northeast,7639.41745,Urinary tract infection, , , , ,yes,low,A
+26.0,male,32.9,2,yes,southwest,36085.219,Arthritis,,,,,,,B
+20.0,male,33.33,0,no,southeast,1391.5287,Hypoglycemia,12hrs, ,no,no,yes,high,A
+23.0,female,28.31,0,yes,northwest,18033.9679,Dengue,,,,,,,A
+39.0,female,24.89,3,yes,northeast,21659.9301,Dengue,,,,,,,A
+24.0,male,40.15,0,yes,southeast,38126.2465,Cervical spondylosis,,,,,,,B
+64.0,female,30.115,3,no,northwest,16455.70785,Chickenpox,,,,,,,A
+62.0,male,31.46,1,no,southeast,27000.98473,Migraine,,,,,,,B
+27.0,female,17.955,2,yes,northeast,15006.57945,Chickenpox,,,,,,,A
+55.0,male,30.685,0,yes,northeast,42303.69215,Jaundice,,,,,,,B
+55.0,male,33.0,0,no,southeast,20781.48892,Dengue,,,,,,,A
+35.0,female,43.34,2,no,southeast,5846.9176,Urinary tract infection, ,rarely,rarely, ,no,low,A
+44.0,male,22.135,2,no,northeast,8302.53565,Urinary tract infection,12hrs,rarely,rarely, ,yes, ,A
+19.0,male,34.4,0,no,southwest,1261.859,Hypoglycemia,,,,,,,A
+58.0,female,39.05,0,no,southeast,11856.4115,Gastroenteritis,,,,,,,A
+50.0,male,25.365,2,no,northwest,30284.64294,Hyperthyroidism,,,,,,,B
+26.0,female,22.61,0,no,northwest,3176.8159,Hypoglycemia,2hrs,daily,frequently,frequently,no, ,A
+24.0,female,30.21,3,no,northwest,4618.0799,Hypoglycemia,4hrs,daily,frequently,daily, ,medium,A
+48.0,male,35.625,4,no,northeast,10736.87075,Gastroenteritis,8hrs,rarely,daily,frequently,yes, ,A
+19.0,female,37.43,0,no,northwest,2138.0707,Hypoglycemia, , ,daily,frequently, ,medium,A
+48.0,male,31.445,1,no,northeast,8964.06055,Urinary tract infection, , , ,rarely,no,low,A
+49.0,male,31.35,1,no,northeast,9290.1395,Urinary tract infection,6hrs, , ,rarely,no,high,A
+46.0,female,32.3,2,no,northeast,9411.005,Urinary tract infection,whole day,daily,daily, ,no,high,A
+46.0,male,19.855,0,no,northwest,7526.70645,Urinary tract infection,4hrs,daily,rarely,daily,yes,medium,A
+43.0,female,34.4,3,no,southwest,8522.003,Urinary tract infection,8hrs, ,daily,frequently,no, ,A
+21.0,male,31.02,0,no,southeast,16586.49771,Chickenpox,,,,,,,A
+64.0,male,25.6,2,no,southwest,14988.432,Chickenpox,,,,,,,A
+18.0,female,38.17,0,no,southeast,1631.6683,Hypoglycemia,12hrs, ,no,no, ,high,A
+51.0,female,20.6,0,no,southwest,9264.797,Urinary tract infection,4hrs,frequently,rarely,rarely, ,high,A
+47.0,male,47.52,1,no,southeast,8083.9198,Urinary tract infection, ,frequently, ,rarely,no, ,A
+64.0,female,32.965,0,no,northwest,14692.66935,Chickenpox,,,,,,,A
+49.0,male,32.3,3,no,northwest,10269.46,Gastroenteritis, ,rarely,daily,no,yes,medium,A
+31.0,male,20.4,0,no,southwest,3260.199,Hypoglycemia, ,rarely,rarely,rarely,no, ,A
+52.0,female,38.38,2,no,northeast,11396.9002,Gastroenteritis,,,,,,,A
+33.0,female,24.31,0,no,southeast,4185.0979,Hypoglycemia,4hrs,frequently,rarely,frequently,yes, ,A
+47.0,female,23.6,1,no,southwest,8539.671,Urinary tract infection,2hrs, , ,daily,no,high,A
+38.0,male,21.12,3,no,southeast,6652.5288,Urinary tract infection,whole day,daily,daily,frequently, , ,A
+32.0,male,30.03,1,no,southeast,4074.4537,Hypoglycemia,whole day, ,frequently,no,yes,low,A
+19.0,male,17.48,0,no,northwest,1621.3402,Hypoglycemia, ,frequently, ,no,yes,medium,A
+44.0,female,20.235,1,yes,northeast,19594.80965,Dengue,,,,,,,A
+26.0,female,17.195,2,yes,northeast,14455.64405,Chickenpox,,,,,,,A
+25.0,male,23.9,5,no,southwest,5080.096,Hypoglycemia,whole day,frequently,daily,daily, ,medium,A
+19.0,female,35.15,0,no,northwest,2134.9015,Hypoglycemia,whole day,daily,no,daily,no,medium,A
+43.0,female,35.64,1,no,southeast,7345.7266,Urinary tract infection,whole day,daily,rarely,rarely,yes,high,A
+52.0,male,34.1,0,no,southeast,9140.951,Urinary tract infection, ,rarely,frequently,rarely,yes,low,A
+36.0,female,22.6,2,yes,southwest,18608.262,Dengue,,,,,,,A
+64.0,male,39.16,1,no,southeast,14418.2804,Chickenpox,,,,,,,A
+63.0,female,26.98,0,yes,northwest,28950.4692,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+64.0,male,33.88,0,yes,southeast,46889.2612,Diabetes,,,,,,,C
+61.0,male,35.86,0,yes,southeast,46599.1084,Bronchial Asthma,,,,,,,C
+40.0,male,32.775,1,yes,northeast,39125.33225,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+25.0,male,30.59,0,no,northeast,2727.3951,Hypoglycemia,whole day,frequently,daily,daily,yes,medium,A
+48.0,male,30.2,2,no,southwest,8968.33,Urinary tract infection,8hrs,rarely,no,rarely,yes,medium,A
+45.0,male,24.31,5,no,southeast,9788.8659,Gastroenteritis,4hrs, ,no,rarely,no,medium,A
+38.0,female,27.265,1,no,northeast,6555.07035,Urinary tract infection, , ,daily,no,yes, ,A
+18.0,female,29.165,0,no,northeast,7323.734819,Urinary tract infection,whole day,frequently,frequently,daily,yes,low,A
+21.0,female,16.815,1,no,northeast,3167.45585,Hypoglycemia,whole day, ,frequently, , ,high,A
+27.0,female,30.4,3,no,northwest,18804.7524,Dengue,,,,,,,A
+19.0,male,33.1,0,no,southwest,23082.95533,Fungal infection,,,,,,,B
+29.0,female,20.235,2,no,northwest,4906.40965,Hypoglycemia, ,daily,frequently,no,yes, ,A
+42.0,male,26.9,0,no,southwest,5969.723,Urinary tract infection,4hrs,daily,frequently,daily,yes,low,A
+60.0,female,30.5,0,no,southwest,12638.195,Gastroenteritis,,,,,,,A
+31.0,male,28.595,1,no,northwest,4243.59005,Hypoglycemia, ,daily,daily,rarely,yes,low,A
+60.0,male,33.11,3,no,southeast,13919.8229,Chickenpox,,,,,,,A
+22.0,male,31.73,0,no,northeast,2254.7967,Hypoglycemia,12hrs,daily,frequently,no,no, ,A
+35.0,male,28.9,3,no,southwest,5926.846,Urinary tract infection,4hrs,frequently,rarely,rarely,no,high,A
+52.0,female,46.75,5,no,southeast,12592.5345,Gastroenteritis,,,,,,,A
+26.0,male,29.45,0,no,northeast,2897.3235,Hypoglycemia,whole day, ,rarely,frequently,no,medium,A
+31.0,female,32.68,1,no,northwest,4738.2682,Hypoglycemia, , ,rarely,daily,yes,high,A
+33.0,female,33.5,0,yes,southwest,37079.372,Cervical spondylosis,,,,,,,B
+18.0,male,43.01,0,no,southeast,1149.3959,Hypoglycemia,whole day,rarely,frequently,daily,no,medium,A
+59.0,female,36.52,1,no,southeast,28287.89766,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+56.0,male,26.695,1,yes,northwest,26109.32905,Dimorphic hemorrhoids (piles),,,,,,,B
+45.0,female,33.1,0,no,southwest,7345.084,Urinary tract infection,whole day,rarely,rarely, ,no, ,A
+60.0,male,29.64,0,no,northeast,12730.9996,Gastroenteritis,,,,,,,A
+56.0,female,25.65,0,no,northwest,11454.0215,Gastroenteritis,,,,,,,A
+40.0,female,29.6,0,no,southwest,5910.944,Urinary tract infection,12hrs, ,daily,daily,yes, ,A
+35.0,male,38.6,1,no,southwest,4762.329,Hypoglycemia,4hrs,rarely, ,no, , ,A
+39.0,male,29.6,4,no,southwest,7512.267,Urinary tract infection,6hrs,daily,rarely,no,yes, ,A
+30.0,male,24.13,1,no,northwest,4032.2407,Hypoglycemia,12hrs, , ,frequently, ,high,A
+24.0,male,23.4,0,no,southwest,1969.614,Hypoglycemia,whole day,rarely, ,no, ,low,A
+20.0,male,29.735,0,no,northwest,1769.53165,Hypoglycemia,12hrs,rarely,frequently,no,yes,medium,A
+32.0,male,46.53,2,no,southeast,4686.3887,Hypoglycemia,whole day,frequently,no,no,yes,high,A
+59.0,male,37.4,0,no,southwest,21797.0004,Dengue,,,,,,,A
+55.0,female,30.14,2,no,southeast,11881.9696,Gastroenteritis,,,,,,,A
+57.0,female,30.495,0,no,northwest,11840.77505,Gastroenteritis,,,,,,,A
+56.0,male,39.6,0,no,southwest,10601.412,Gastroenteritis,whole day,frequently, ,frequently,no,low,A
+40.0,female,33.0,3,no,southeast,7682.67,Urinary tract infection,4hrs,daily,rarely,frequently,no, ,A
+49.0,female,36.63,3,no,southeast,10381.4787,Gastroenteritis, , , , ,no,high,A
+42.0,male,30.0,0,yes,southwest,22144.032,Fungal infection,,,,,,,B
+62.0,female,38.095,2,no,northeast,15230.32405,Chickenpox,,,,,,,A
+56.0,male,25.935,0,no,northeast,11165.41765,Gastroenteritis,,,,,,,A
+19.0,male,25.175,0,no,northwest,1632.03625,Hypoglycemia,12hrs,rarely, ,no,no,low,A
+30.0,female,28.38,1,yes,southeast,19521.9682,Dengue,,,,,,,A
+60.0,female,28.7,1,no,southwest,13224.693,Gastroenteritis,,,,,,,A
+56.0,female,33.82,2,no,northwest,12643.3778,Gastroenteritis,,,,,,,A
+28.0,female,24.32,1,no,northeast,23288.9284,Fungal infection,,,,,,,B
+18.0,female,24.09,1,no,southeast,2201.0971,Hypoglycemia,2hrs, ,daily, , ,medium,A
+27.0,male,32.67,0,no,southeast,2497.0383,Hypoglycemia,8hrs,daily,daily, ,no,low,A
+18.0,female,30.115,0,no,northeast,2203.47185,Hypoglycemia,4hrs,frequently,no,no,yes, ,A
+19.0,female,29.8,0,no,southwest,1744.465,Hypoglycemia,2hrs, ,no,daily, , ,A
+47.0,female,33.345,0,no,northeast,20878.78443,Dengue,,,,,,,A
+54.0,male,25.1,3,yes,southwest,25382.297,Dimorphic hemorrhoids (piles),,,,,,,B
+61.0,male,28.31,1,yes,northwest,28868.6639,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+24.0,male,28.5,0,yes,northeast,35147.52848,Osteoarthritis,,,,,,,B
+25.0,male,35.625,0,no,northwest,2534.39375,Hypoglycemia,2hrs, ,frequently, , ,high,A
+21.0,male,36.85,0,no,southeast,1534.3045,Hypoglycemia, ,frequently, , ,no,medium,A
+23.0,male,32.56,0,no,southeast,1824.2854,Hypoglycemia,12hrs,daily,daily,daily,yes,medium,A
+63.0,male,41.325,3,no,northwest,15555.18875,Chickenpox,,,,,,,A
+49.0,male,37.51,2,no,southeast,9304.7019,Urinary tract infection,4hrs, , ,daily,yes,medium,A
+18.0,female,31.35,0,no,southeast,1622.1885,Hypoglycemia,8hrs,frequently, ,rarely, ,low,A
+51.0,female,39.5,1,no,southwest,9880.068,Gastroenteritis,8hrs,daily, ,frequently,no,low,A
+48.0,male,34.3,3,no,southwest,9563.029,Gastroenteritis,whole day,daily,daily,rarely,yes,medium,A
+31.0,female,31.065,0,no,northeast,4347.02335,Hypoglycemia,6hrs,frequently,frequently,no,no,low,A
+54.0,female,21.47,3,no,northwest,12475.3513,Gastroenteritis,,,,,,,A
+19.0,male,28.7,0,no,southwest,1253.936,Hypoglycemia,8hrs,daily,daily,no,yes,low,A
+44.0,female,38.06,0,yes,southeast,48885.13561,Drug Reaction,,,,,,,C
+53.0,male,31.16,1,no,northwest,10461.9794,Gastroenteritis,2hrs,rarely, , ,yes,medium,A
+19.0,female,32.9,0,no,southwest,1748.774,Hypoglycemia,2hrs,frequently,frequently,rarely,no,low,A
+61.0,female,25.08,0,no,southeast,24513.09126,Allergy,,,,,,,B
+18.0,female,25.08,0,no,northeast,2196.4732,Hypoglycemia,12hrs,rarely, ,daily,yes,medium,A
+61.0,male,43.4,0,no,southwest,12574.049,Gastroenteritis,,,,,,,A
+21.0,male,25.7,4,yes,southwest,17942.106,Dengue,,,,,,,A
+20.0,male,27.93,0,no,northeast,1967.0227,Hypoglycemia, ,rarely,rarely,daily,yes, ,A
+31.0,female,23.6,2,no,southwest,4931.647,Hypoglycemia,whole day, ,frequently,frequently,yes,high,A
+45.0,male,28.7,2,no,southwest,8027.968,Urinary tract infection,4hrs,daily,frequently, ,no,medium,A
+44.0,female,23.98,2,no,southeast,8211.1002,Urinary tract infection,8hrs, ,frequently,rarely,no, ,A
+62.0,female,39.2,0,no,southwest,13470.86,Gastroenteritis,,,,,,,A
+29.0,male,34.4,0,yes,southwest,36197.699,Arthritis,,,,,,,B
+43.0,male,26.03,0,no,northeast,6837.3687,Urinary tract infection,12hrs,daily,frequently, ,no,low,A
+51.0,male,23.21,1,yes,southeast,22218.1149,Fungal infection,,,,,,,B
+19.0,male,30.25,0,yes,southeast,32548.3405,Tuberculosis,,,,,,,B
+38.0,female,28.93,1,no,southeast,5974.3847,Urinary tract infection,8hrs,rarely,no,no, ,medium,A
+37.0,male,30.875,3,no,northwest,6796.86325,Urinary tract infection,2hrs,daily,daily,frequently, ,low,A
+22.0,male,31.35,1,no,northwest,2643.2685,Hypoglycemia,whole day, ,no,no,yes,high,A
+21.0,male,23.75,2,no,northwest,3077.0955,Hypoglycemia, ,frequently, ,rarely,no,medium,A
+24.0,female,25.27,0,no,northeast,3044.2133,Hypoglycemia,12hrs,frequently,no,daily,yes,low,A
+57.0,female,28.7,0,no,southwest,11455.28,Gastroenteritis,,,,,,,A
+56.0,male,32.11,1,no,northeast,11763.0009,Gastroenteritis,,,,,,,A
+27.0,male,33.66,0,no,southeast,2498.4144,Hypoglycemia,12hrs, ,no,daily,yes,high,A
+51.0,male,22.42,0,no,northeast,9361.3268,Urinary tract infection,8hrs,frequently,no, ,yes,high,A
+19.0,male,30.4,0,no,southwest,1256.299,Hypoglycemia,2hrs, ,no,rarely, , ,A
+39.0,male,28.3,1,yes,southwest,21082.16,Dengue,,,,,,,A
+58.0,male,35.7,0,no,southwest,11362.755,Gastroenteritis,,,,,,,A
+20.0,male,35.31,1,no,southeast,27724.28875,Migraine,,,,,,,B
+45.0,male,30.495,2,no,northwest,8413.46305,Urinary tract infection,12hrs,daily,daily,rarely, ,high,A
+35.0,female,31.0,1,no,southwest,5240.765,Hypoglycemia,2hrs,daily, , , ,medium,A
+31.0,male,30.875,0,no,northeast,3857.75925,Hypoglycemia,whole day,rarely,no,no,no,high,A
+50.0,female,27.36,0,no,northeast,25656.57526,Dimorphic hemorrhoids (piles),,,,,,,B
+32.0,female,44.22,0,no,southeast,3994.1778,Hypoglycemia, , ,daily,rarely,no,low,A
+51.0,female,33.915,0,no,northeast,9866.30485,Gastroenteritis,whole day, , ,frequently, , ,A
+38.0,female,37.73,0,no,southeast,5397.6167,Urinary tract infection,2hrs,daily,frequently,daily,yes, ,A
+42.0,male,26.07,1,yes,southeast,38245.59327,Cervical spondylosis,,,,,,,B
+18.0,female,33.88,0,no,southeast,11482.63485,Gastroenteritis,,,,,,,A
+19.0,female,30.59,2,no,northwest,24059.68019,Allergy,,,,,,,B
+51.0,female,25.8,1,no,southwest,9861.025,Gastroenteritis,4hrs,daily, ,rarely,no, ,A
+46.0,male,39.425,1,no,northeast,8342.90875,Urinary tract infection,2hrs,frequently,rarely, ,yes, ,A
+18.0,male,25.46,0,no,northeast,1708.0014,Hypoglycemia, ,rarely,daily,rarely, , ,A
+57.0,male,42.13,1,yes,southeast,48675.5177,Drug Reaction,,,,,,,C
+62.0,female,31.73,0,no,northeast,14043.4767,Chickenpox,,,,,,,A
+59.0,male,29.7,2,no,southeast,12925.886,Gastroenteritis,,,,,,,A
+37.0,male,36.19,0,no,southeast,19214.70553,Dengue,,,,,,,A
+64.0,male,40.48,0,no,southeast,13831.1152,Chickenpox,,,,,,,A
+38.0,male,28.025,1,no,northeast,6067.12675,Urinary tract infection,2hrs, , ,frequently, ,low,A
+33.0,female,38.9,3,no,southwest,5972.378,Urinary tract infection, ,daily,daily,daily, ,high,A
+46.0,female,30.2,2,no,southwest,8825.086,Urinary tract infection,4hrs, ,no,no,no,low,A
+46.0,female,28.05,1,no,southeast,8233.0975,Urinary tract infection,12hrs,rarely,daily, , ,high,A
+53.0,male,31.35,0,no,southeast,27346.04207,Migraine,,,,,,,B
+34.0,female,38.0,3,no,southwest,6196.448,Urinary tract infection,2hrs, , , ,no, ,A
+20.0,female,31.79,2,no,southeast,3056.3881,Hypoglycemia,12hrs,frequently,rarely, ,yes, ,A
+63.0,female,36.3,0,no,southeast,13887.204,Chickenpox,,,,,,,A
+54.0,female,47.41,0,yes,southeast,63770.42801,Varicose veins,,,,,,,
+54.0,male,30.21,0,no,northwest,10231.4999,Gastroenteritis,2hrs, ,daily, , ,low,A
+49.0,male,25.84,2,yes,northwest,23807.2406,Allergy,,,,,,,B
+28.0,male,35.435,0,no,northeast,3268.84665,Hypoglycemia,4hrs, ,rarely,no,yes,medium,A
+54.0,female,46.7,2,no,southwest,11538.421,Gastroenteritis,,,,,,,A
+25.0,female,28.595,0,no,northeast,3213.62205,Hypoglycemia,2hrs,rarely,daily,daily,no,medium,A
+43.0,female,46.2,0,yes,southeast,45863.205,Bronchial Asthma,,,,,,,C
+63.0,male,30.8,0,no,southwest,13390.559,Gastroenteritis,,,,,,,A
+32.0,female,28.93,0,no,southeast,3972.9247,Hypoglycemia,8hrs, ,daily,daily,no, ,A
+62.0,male,21.4,0,no,southwest,12957.118,Gastroenteritis,,,,,,,A
+52.0,female,31.73,2,no,northwest,11187.6567,Gastroenteritis,,,,,,,A
+25.0,female,41.325,0,no,northeast,17878.90068,Dengue,,,,,,,A
+28.0,male,23.8,2,no,southwest,3847.674,Hypoglycemia,8hrs,daily,frequently,daily,yes,low,A
+46.0,male,33.44,1,no,northeast,8334.5896,Urinary tract infection,2hrs,rarely, ,daily,no,high,A
+34.0,male,34.21,0,no,southeast,3935.1799,Hypoglycemia,4hrs, ,frequently, , ,medium,A
+35.0,female,34.105,3,yes,northwest,39983.42595,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+19.0,male,35.53,0,no,northwest,1646.4297,Hypoglycemia,whole day,daily,no,no,yes, ,A
+46.0,female,19.95,2,no,northwest,9193.8385,Urinary tract infection, , , , ,yes,low,A
+54.0,female,32.68,0,no,northeast,10923.9332,Gastroenteritis, ,daily,no,rarely,no,low,A
+27.0,male,30.5,0,no,southwest,2494.022,Hypoglycemia,8hrs,daily,no,rarely,yes,low,A
+50.0,male,44.77,1,no,southeast,9058.7303,Urinary tract infection, , ,rarely,frequently,no,medium,A
+18.0,female,32.12,2,no,southeast,2801.2588,Hypoglycemia,4hrs,rarely,no, , ,medium,A
+19.0,female,30.495,0,no,northwest,2128.43105,Hypoglycemia, , ,no,no, , ,A
+38.0,female,40.565,1,no,northwest,6373.55735,Urinary tract infection,whole day,frequently,daily,rarely,yes, ,A
+41.0,male,30.59,2,no,northwest,7256.7231,Urinary tract infection,8hrs,rarely,daily,no,yes, ,A
+49.0,female,31.9,5,no,southwest,11552.904,Gastroenteritis,,,,,,,A
+48.0,male,40.565,2,yes,northwest,45702.02235,Bronchial Asthma,,,,,,,C
+31.0,female,29.1,0,no,southwest,3761.292,Hypoglycemia,12hrs,rarely,rarely,daily,no,medium,A
+18.0,female,37.29,1,no,southeast,2219.4451,Hypoglycemia,8hrs, ,daily,frequently,no,high,A
+30.0,female,43.12,2,no,southeast,4753.6368,Hypoglycemia,12hrs,frequently,no,no, ,medium,A
+62.0,female,36.86,1,no,northeast,31620.00106,Hypothyroidism,,,,,,,B
+57.0,female,34.295,2,no,northeast,13224.05705,Gastroenteritis,,,,,,,A
+58.0,female,27.17,0,no,northwest,12222.8983,Gastroenteritis,,,,,,,A
+22.0,male,26.84,0,no,southeast,1664.9996,Hypoglycemia,8hrs,daily,no,no,yes, ,A
+31.0,female,38.095,1,yes,northeast,58571.07448,Malaria,,,,,,,C
+52.0,male,30.2,1,no,southwest,9724.53,Gastroenteritis,2hrs,rarely,daily,rarely,yes, ,A
+25.0,female,23.465,0,no,northeast,3206.49135,Hypoglycemia,6hrs,daily, ,daily,no,low,A
+59.0,male,25.46,1,no,northeast,12913.9924,Gastroenteritis,,,,,,,A
+19.0,male,30.59,0,no,northwest,1639.5631,Hypoglycemia,8hrs,daily,frequently,no,no, ,A
+39.0,male,45.43,2,no,southeast,6356.2707,Urinary tract infection,8hrs, , ,no,yes,high,A
+32.0,female,23.65,1,no,southeast,17626.23951,Chickenpox,,,,,,,A
+19.0,male,20.7,0,no,southwest,1242.816,Hypoglycemia,12hrs, ,no,rarely,yes,high,A
+33.0,female,28.27,1,no,southeast,4779.6023,Hypoglycemia,whole day, ,rarely,daily,yes,medium,A
+21.0,male,20.235,3,no,northeast,3861.20965,Hypoglycemia,whole day,daily,no,no,yes,high,A
+34.0,female,30.21,1,yes,northwest,43943.8761,AIDS,,,,,,,C
+61.0,female,35.91,0,no,northeast,13635.6379,Gastroenteritis,,,,,,,A
+38.0,female,30.69,1,no,southeast,5976.8311,Urinary tract infection,8hrs,frequently,no, ,no,medium,A
+58.0,female,29.0,0,no,southwest,11842.442,Gastroenteritis,,,,,,,A
+47.0,male,19.57,1,no,northwest,8428.0693,Urinary tract infection,4hrs, ,rarely,rarely, ,high,A
+20.0,male,31.13,2,no,southeast,2566.4707,Hypoglycemia,2hrs,frequently, ,no,yes,medium,A
+21.0,female,21.85,1,yes,northeast,15359.1045,Chickenpox,,,,,,,A
+41.0,male,40.26,0,no,southeast,5709.1644,Urinary tract infection,6hrs, ,no,no, , ,A
+46.0,female,33.725,1,no,northeast,8823.98575,Urinary tract infection,2hrs,rarely,frequently, ,yes, ,A
+42.0,female,29.48,2,no,southeast,7640.3092,Urinary tract infection,12hrs, ,rarely,daily,yes,high,A
+34.0,female,33.25,1,no,northeast,5594.8455,Urinary tract infection,whole day,daily,rarely,no,no,medium,A
+43.0,male,32.6,2,no,southwest,7441.501,Urinary tract infection,4hrs,daily,frequently, ,no, ,A
+52.0,female,37.525,2,no,northwest,33471.97189,Tuberculosis,,,,,,,B
+18.0,female,39.16,0,no,southeast,1633.0444,Hypoglycemia, ,rarely, ,frequently,no,low,A
+51.0,male,31.635,0,no,northwest,9174.13565,Urinary tract infection,2hrs,frequently, ,daily,no, ,A
+56.0,female,25.3,0,no,southwest,11070.535,Gastroenteritis,,,,,,,A
+64.0,female,39.05,3,no,southeast,16085.1275,Chickenpox,,,,,,,A
+19.0,female,28.31,0,yes,northwest,17468.9839,Chickenpox,,,,,,,A
+51.0,female,34.1,0,no,southeast,9283.562,Urinary tract infection,whole day, ,rarely,no,no,high,A
+27.0,female,25.175,0,no,northeast,3558.62025,Hypoglycemia,8hrs, ,daily,no, ,low,A
+59.0,female,23.655,0,yes,northwest,25678.77845,Dimorphic hemorrhoids (piles),,,,,,,B
+28.0,male,26.98,2,no,northeast,4435.0942,Hypoglycemia,6hrs,frequently, ,no,no, ,A
+30.0,male,37.8,2,yes,southwest,39241.442,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+47.0,female,29.37,1,no,southeast,8547.6913,Urinary tract infection,8hrs,rarely,daily,rarely,yes,high,A
+38.0,female,34.8,2,no,southwest,6571.544,Urinary tract infection,6hrs,rarely,rarely,rarely, ,low,A
+18.0,female,33.155,0,no,northeast,2207.69745,Hypoglycemia,4hrs,rarely, ,no,no,high,A
+34.0,female,19.0,3,no,northeast,6753.038,Urinary tract infection,2hrs, ,rarely,no,no, ,A
+20.0,female,33.0,0,no,southeast,1880.07,Hypoglycemia,whole day,frequently,frequently,frequently,yes, ,A
+47.0,female,36.63,1,yes,southeast,42969.8527,Jaundice,,,,,,,C
+56.0,female,28.595,0,no,northeast,11658.11505,Gastroenteritis,,,,,,,A
+49.0,male,25.6,2,yes,southwest,23306.547,Fungal infection,,,,,,,B
+19.0,female,33.11,0,yes,southeast,34439.8559,Osteoarthritis,,,,,,,B
+55.0,female,37.1,0,no,southwest,10713.644,Gastroenteritis,12hrs,rarely,frequently,no,yes,low,A
+30.0,male,31.4,1,no,southwest,3659.346,Hypoglycemia,12hrs,rarely,no,daily,no,medium,A
+37.0,male,34.1,4,yes,southwest,40182.246,Chronic cholestasis,,,,,,,B
+49.0,female,21.3,1,no,southwest,9182.17,Urinary tract infection, ,frequently, , , ,low,A
+18.0,male,33.535,0,yes,northeast,34617.84065,Osteoarthritis,,,,,,,B
+59.0,male,28.785,0,no,northwest,12129.61415,Gastroenteritis,,,,,,,A
+29.0,female,26.03,0,no,northwest,3736.4647,Hypoglycemia,2hrs,rarely,frequently,no,no,medium,A
+36.0,male,28.88,3,no,northeast,6748.5912,Urinary tract infection,6hrs,frequently,rarely,rarely, ,medium,A
+33.0,male,42.46,1,no,southeast,11326.71487,Gastroenteritis,,,,,,,A
+58.0,male,38.0,0,no,southwest,11365.952,Gastroenteritis,,,,,,,A
+44.0,female,38.95,0,yes,northwest,42983.4585,Jaundice,,,,,,,C
+53.0,male,36.1,1,no,southwest,10085.846,Gastroenteritis, ,rarely,frequently,daily,no,high,A
+24.0,male,29.3,0,no,southwest,1977.815,Hypoglycemia,2hrs,rarely,no,rarely,no,high,A
+29.0,female,35.53,0,no,southeast,3366.6697,Hypoglycemia,6hrs,frequently,rarely, ,yes,medium,A
+40.0,male,22.705,2,no,northeast,7173.35995,Urinary tract infection,12hrs,daily,rarely,daily, ,low,A
+51.0,male,39.7,1,no,southwest,9391.346,Urinary tract infection, ,rarely,frequently,no,yes,high,A
+64.0,male,38.19,0,no,northeast,14410.9321,Chickenpox,,,,,,,A
+19.0,female,24.51,1,no,northwest,2709.1119,Hypoglycemia,6hrs, ,frequently, ,no, ,A
+35.0,female,38.095,2,no,northeast,24915.04626,Allergy,,,,,,,B
+39.0,male,26.41,0,yes,northeast,20149.3229,Dengue,,,,,,,A
+56.0,male,33.66,4,no,southeast,12949.1554,Gastroenteritis,,,,,,,A
+33.0,male,42.4,5,no,southwest,6666.243,Urinary tract infection,4hrs,frequently,frequently,frequently, ,medium,A
+42.0,male,28.31,3,yes,northwest,32787.45859,Tuberculosis,,,,,,,B
+61.0,male,33.915,0,no,northeast,13143.86485,Gastroenteritis,,,,,,,A
+23.0,female,34.96,3,no,northwest,4466.6214,Hypoglycemia,whole day,rarely,daily,rarely,no, ,A
+43.0,male,35.31,2,no,southeast,18806.14547,Dengue,,,,,,,A
+48.0,male,30.78,3,no,northeast,10141.1362,Gastroenteritis,2hrs, ,daily,frequently,no,high,A
+39.0,male,26.22,1,no,northwest,6123.5688,Urinary tract infection,8hrs,rarely,rarely,rarely,no, ,A
+40.0,female,23.37,3,no,northeast,8252.2843,Urinary tract infection,12hrs,daily,no,no,yes,medium,A
+18.0,male,28.5,0,no,northeast,1712.227,Hypoglycemia,12hrs, ,frequently,frequently,no, ,A
+58.0,female,32.965,0,no,northeast,12430.95335,Gastroenteritis,,,,,,,A
+49.0,female,42.68,2,no,southeast,9800.8882,Gastroenteritis,8hrs,frequently,daily,no, ,low,A
+53.0,female,39.6,1,no,southeast,10579.711,Gastroenteritis, ,daily, ,no, ,low,A
+48.0,female,31.13,0,no,southeast,8280.6227,Urinary tract infection,2hrs,frequently, , ,no,medium,A
+45.0,female,36.3,2,no,southeast,8527.532,Urinary tract infection,8hrs,frequently,no,rarely,no,medium,A
+59.0,female,35.2,0,no,southeast,12244.531,Gastroenteritis,,,,,,,A
+52.0,female,25.3,2,yes,southeast,24667.419,Allergy,,,,,,,B
+26.0,female,42.4,1,no,southwest,3410.324,Hypoglycemia, , ,no,daily, ,medium,A
+27.0,male,33.155,2,no,northwest,4058.71245,Hypoglycemia,6hrs, ,daily,frequently,yes,low,A
+48.0,female,35.91,1,no,northeast,26392.26029,Dimorphic hemorrhoids (piles),,,,,,,B
+57.0,female,28.785,4,no,northeast,14394.39815,Chickenpox,,,,,,,A
+37.0,male,46.53,3,no,southeast,6435.6237,Urinary tract infection,8hrs,frequently,frequently,no, ,low,A
+57.0,female,23.98,1,no,southeast,22192.43711,Fungal infection,,,,,,,B
+32.0,female,31.54,1,no,northeast,5148.5526,Hypoglycemia,whole day, , ,no, ,high,A
+18.0,male,33.66,0,no,southeast,1136.3994,Hypoglycemia,,,,,,,A
+64.0,female,22.99,0,yes,southeast,27037.9141,Migraine,,,,,,,B
+43.0,male,38.06,2,yes,southeast,42560.4304,Jaundice,,,,,,,B
+49.0,male,28.7,1,no,southwest,8703.456,Urinary tract infection,8hrs, ,frequently,no, ,high,A
+40.0,female,32.775,2,yes,northwest,40003.33225,Chronic cholestasis,,,,,,,B
+62.0,male,32.015,0,yes,northeast,45710.20785,Bronchial Asthma,,,,,,,C
+40.0,female,29.81,1,no,southeast,6500.2359,Urinary tract infection, ,daily,rarely,frequently, ,high,A
+30.0,male,31.57,3,no,southeast,4837.5823,Hypoglycemia,6hrs,daily,daily,daily, ,high,A
+29.0,female,31.16,0,no,northeast,3943.5954,Hypoglycemia,6hrs,frequently, ,rarely, ,low,A
+36.0,male,29.7,0,no,southeast,4399.731,Hypoglycemia,whole day,rarely,no, ,yes,high,A
+41.0,female,31.02,0,no,southeast,6185.3208,Urinary tract infection,6hrs,frequently,frequently,frequently,yes,high,A
+44.0,female,43.89,2,yes,southeast,46200.9851,Bronchial Asthma,,,,,,,C
+45.0,male,21.375,0,no,northwest,7222.78625,Urinary tract infection,whole day,daily,frequently,frequently,yes,medium,A
+55.0,female,40.81,3,no,southeast,12485.8009,Gastroenteritis,,,,,,,A
+60.0,male,31.35,3,yes,northwest,46130.5265,Bronchial Asthma,,,,,,,C
+56.0,male,36.1,3,no,southwest,12363.547,Gastroenteritis,,,,,,,A
+49.0,female,23.18,2,no,northwest,10156.7832,Gastroenteritis,12hrs,frequently,no, ,yes, ,A
+21.0,female,17.4,1,no,southwest,2585.269,Hypoglycemia,12hrs,frequently,rarely,rarely,no, ,A
+19.0,male,20.3,0,no,southwest,1242.26,Hypoglycemia,6hrs,rarely,frequently, , ,high,A
+39.0,male,35.3,2,yes,southwest,40103.89,Chronic cholestasis,,,,,,,B
+53.0,male,24.32,0,no,northwest,9863.4718,Gastroenteritis,2hrs, ,no, ,no,low,A
+33.0,female,18.5,1,no,southwest,4766.022,Hypoglycemia,6hrs,frequently,no,no,no,medium,A
+53.0,male,26.41,2,no,northeast,11244.3769,Gastroenteritis,,,,,,,A
+42.0,male,26.125,2,no,northeast,7729.64575,Urinary tract infection,whole day,frequently,rarely,frequently,yes,medium,A
+40.0,male,41.69,0,no,southeast,5438.7491,Urinary tract infection,2hrs,rarely,no,rarely, ,high,A
+47.0,female,24.1,1,no,southwest,26236.57997,Dimorphic hemorrhoids (piles),,,,,,,B
+27.0,male,31.13,1,yes,southeast,34806.4677,Osteoarthritis,,,,,,,B
+21.0,male,27.36,0,no,northeast,2104.1134,Hypoglycemia,12hrs, ,frequently,rarely,yes,medium,A
+47.0,male,36.2,1,no,southwest,8068.185,Urinary tract infection,whole day,rarely,no,frequently,no,low,A
+20.0,male,32.395,1,no,northwest,2362.22905,Hypoglycemia,2hrs,daily,no,daily,yes,low,A
+24.0,male,23.655,0,no,northwest,2352.96845,Hypoglycemia,2hrs,rarely,frequently,no,no,medium,A
+27.0,female,34.8,1,no,southwest,3577.999,Hypoglycemia,whole day,rarely,daily, ,yes,low,A
+26.0,female,40.185,0,no,northwest,3201.24515,Hypoglycemia,8hrs,frequently,frequently, ,no,medium,A
+53.0,female,32.3,2,no,northeast,29186.48236,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+41.0,male,35.75,1,yes,southeast,40273.6455,Chronic cholestasis,,,,,,,B
+56.0,male,33.725,0,no,northwest,10976.24575,Gastroenteritis,6hrs,daily,daily,daily,yes,medium,A
+23.0,female,39.27,2,no,southeast,3500.6123,Hypoglycemia,4hrs, ,daily, ,yes,medium,A
+21.0,female,34.87,0,no,southeast,2020.5523,Hypoglycemia, ,rarely, ,daily,no,low,A
+50.0,female,44.745,0,no,northeast,9541.69555,Gastroenteritis, ,daily,rarely,frequently, ,low,A
+53.0,male,41.47,0,no,southeast,9504.3103,Gastroenteritis,2hrs,rarely, ,frequently,no,low,A
+34.0,female,26.41,1,no,northwest,5385.3379,Urinary tract infection,2hrs, , ,rarely, ,medium,A
+47.0,female,29.545,1,no,northwest,8930.93455,Urinary tract infection,12hrs,daily,frequently, ,yes,high,A
+33.0,female,32.9,2,no,southwest,5375.038,Urinary tract infection, ,frequently,no,daily, ,high,A
+51.0,female,38.06,0,yes,southeast,44400.4064,Alcoholic hepatitis,,,,,,,C
+49.0,male,28.69,3,no,northwest,10264.4421,Gastroenteritis,6hrs, ,no,no,yes,high,A
+31.0,female,30.495,3,no,northeast,6113.23105,Urinary tract infection, , ,no,no,yes,high,A
+36.0,female,27.74,0,no,northeast,5469.0066,Urinary tract infection,8hrs,frequently,frequently,rarely,no,high,A
+18.0,male,35.2,1,no,southeast,1727.54,Hypoglycemia,whole day,frequently,daily,daily,no, ,A
+50.0,female,23.54,2,no,southeast,10107.2206,Gastroenteritis, , ,no,no,no, ,A
+43.0,female,30.685,2,no,northwest,8310.83915,Urinary tract infection,4hrs,rarely,daily,daily, , ,A
+20.0,male,40.47,0,no,northeast,1984.4533,Hypoglycemia,12hrs, ,rarely,frequently,yes,low,A
+24.0,female,22.6,0,no,southwest,2457.502,Hypoglycemia,whole day,rarely,no,rarely, ,low,A
+60.0,male,28.9,0,no,southwest,12146.971,Gastroenteritis,,,,,,,A
+49.0,female,22.61,1,no,northwest,9566.9909,Gastroenteritis,2hrs,daily,frequently,frequently,yes,medium,A
+60.0,male,24.32,1,no,northwest,13112.6048,Gastroenteritis,,,,,,,A
+51.0,female,36.67,2,no,northwest,10848.1343,Gastroenteritis,6hrs,frequently,rarely,rarely,no,low,A
+58.0,female,33.44,0,no,northwest,12231.6136,Gastroenteritis,,,,,,,A
+51.0,female,40.66,0,no,northeast,9875.6804,Gastroenteritis,6hrs,frequently,no,frequently,yes, ,A
+53.0,male,36.6,3,no,southwest,11264.541,Gastroenteritis,,,,,,,A
+62.0,male,37.4,0,no,southwest,12979.358,Gastroenteritis,,,,,,,A
+19.0,male,35.4,0,no,southwest,1263.249,Hypoglycemia,6hrs, ,no,daily,yes,low,A
+50.0,female,27.075,1,no,northeast,10106.13425,Gastroenteritis,12hrs,daily,rarely,rarely, ,medium,A
+30.0,female,39.05,3,yes,southeast,40932.4295,Chronic cholestasis,,,,,,,B
+41.0,male,28.405,1,no,northwest,6664.68595,Urinary tract infection,2hrs,daily, ,frequently, ,high,A
+29.0,female,21.755,1,yes,northeast,16657.71745,Chickenpox,,,,,,,A
+18.0,female,40.28,0,no,northeast,2217.6012,Hypoglycemia,6hrs, ,daily, ,no,high,A
+41.0,female,36.08,1,no,southeast,6781.3542,Urinary tract infection,2hrs,daily,no,daily, , ,A
+35.0,male,24.42,3,yes,southeast,19361.9988,Dengue,,,,,,,A
+53.0,male,21.4,1,no,southwest,10065.413,Gastroenteritis, ,daily,frequently,frequently,no,medium,A
+24.0,female,30.1,3,no,southwest,4234.927,Hypoglycemia,2hrs,frequently,rarely,frequently,no, ,A
+48.0,female,27.265,1,no,northeast,9447.25035,Urinary tract infection,12hrs, ,daily,daily, ,medium,A
+59.0,female,32.1,3,no,southwest,14007.222,Chickenpox,,,,,,,A
+49.0,female,34.77,1,no,northwest,9583.8933,Gastroenteritis,whole day, , ,no,yes,medium,A
+37.0,female,38.39,0,yes,southeast,40419.0191,Chronic cholestasis,,,,,,,B
+26.0,male,23.7,2,no,southwest,3484.331,Hypoglycemia,8hrs,daily,no,no,no,low,A
+23.0,male,31.73,3,yes,northeast,36189.1017,Arthritis,,,,,,,B
+29.0,male,35.5,2,yes,southwest,44585.45587,Alcoholic hepatitis,,,,,,,C
+45.0,male,24.035,2,no,northeast,8604.48365,Urinary tract infection,8hrs, ,rarely,frequently,yes,low,A
+27.0,male,29.15,0,yes,southeast,18246.4955,Dengue,,,,,,,A
+53.0,male,34.105,0,yes,northeast,43254.41795,AIDS,,,,,,,C
+31.0,female,26.62,0,no,southeast,3757.8448,Hypoglycemia,6hrs,rarely,rarely,daily,no,medium,A
+50.0,male,26.41,0,no,northwest,8827.2099,Urinary tract infection,6hrs,rarely,no,frequently, , ,A
+50.0,female,30.115,1,no,northwest,9910.35985,Gastroenteritis,6hrs, ,daily,no, ,high,A
+34.0,male,27.0,2,no,southwest,11737.84884,Gastroenteritis,,,,,,,A
+19.0,male,21.755,0,no,northwest,1627.28245,Hypoglycemia,4hrs,rarely,no, , , ,A
+47.0,female,36.0,1,no,southwest,8556.907,Urinary tract infection,8hrs,rarely,frequently,frequently,no,low,A
+28.0,male,30.875,0,no,northwest,3062.50825,Hypoglycemia,12hrs,frequently,rarely,rarely, ,medium,A
+37.0,female,26.4,0,yes,southeast,19539.243,Dengue,,,,,,,A
+21.0,male,28.975,0,no,northwest,1906.35825,Hypoglycemia,2hrs,rarely,daily, ,no,medium,A
+64.0,male,37.905,0,no,northwest,14210.53595,Chickenpox,,,,,,,A
+58.0,female,22.77,0,no,southeast,11833.7823,Gastroenteritis,,,,,,,A
+24.0,male,33.63,4,no,northeast,17128.42608,Chickenpox,,,,,,,A
+31.0,male,27.645,2,no,northeast,5031.26955,Hypoglycemia,12hrs, ,frequently,daily,yes,high,A
+39.0,female,22.8,3,no,northeast,7985.815,Urinary tract infection, ,frequently, ,frequently, ,medium,A
+47.0,female,27.83,0,yes,southeast,23065.4207,Fungal infection,,,,,,,B
+30.0,male,37.43,3,no,northeast,5428.7277,Urinary tract infection,6hrs,frequently,no,frequently,no,low,A
+18.0,male,38.17,0,yes,southeast,36307.7983,Arthritis,,,,,,,B
+22.0,female,34.58,2,no,northeast,3925.7582,Hypoglycemia,2hrs,daily, ,daily,yes, ,A
+23.0,male,35.2,1,no,southwest,2416.955,Hypoglycemia,8hrs,rarely,rarely,no, ,high,A
+33.0,male,27.1,1,yes,southwest,19040.876,Dengue,,,,,,,A
+27.0,male,26.03,0,no,northeast,3070.8087,Hypoglycemia, ,frequently,rarely, ,yes, ,A
+45.0,female,25.175,2,no,northeast,9095.06825,Urinary tract infection,8hrs,rarely,frequently,frequently,yes,high,A
+57.0,female,31.825,0,no,northwest,11842.62375,Gastroenteritis,,,,,,,A
+47.0,male,32.3,1,no,southwest,8062.764,Urinary tract infection,whole day,frequently, ,rarely,yes,high,A
+42.0,female,29.0,1,no,southwest,7050.642,Urinary tract infection,12hrs,frequently,frequently,frequently,yes,low,A
+64.0,female,39.7,0,no,southwest,14319.031,Chickenpox,,,,,,,A
+38.0,female,19.475,2,no,northwest,6933.24225,Urinary tract infection,2hrs, ,no,daily,yes, ,A
+61.0,male,36.1,3,no,southwest,27941.28758,Migraine,,,,,,,B
+53.0,female,26.7,2,no,southwest,11150.78,Gastroenteritis,,,,,,,A
+44.0,female,36.48,0,no,northeast,12797.20962,Gastroenteritis,,,,,,,A
+19.0,female,28.88,0,yes,northwest,17748.5062,Chickenpox,,,,,,,A
+41.0,male,34.2,2,no,northwest,7261.741,Urinary tract infection,8hrs,frequently,rarely,rarely,no,high,A
+51.0,male,33.33,3,no,southeast,10560.4917,Gastroenteritis,12hrs,frequently,frequently,frequently,yes, ,A
+40.0,male,32.3,2,no,northwest,6986.697,Urinary tract infection,12hrs, ,daily,rarely, ,high,A
+45.0,male,39.805,0,no,northeast,7448.40395,Urinary tract infection,6hrs,daily,daily,daily,no,high,A
+35.0,male,34.32,3,no,southeast,5934.3798,Urinary tract infection,2hrs,daily,daily,daily,yes, ,A
+53.0,male,28.88,0,no,northwest,9869.8102,Gastroenteritis,4hrs,daily,no,no,no, ,A
+30.0,male,24.4,3,yes,southwest,18259.216,Dengue,,,,,,,A
+18.0,male,41.14,0,no,southeast,1146.7966,Hypoglycemia,4hrs, ,no,no,yes,low,A
+51.0,male,35.97,1,no,southeast,9386.1613,Urinary tract infection,4hrs,rarely,rarely, , , ,A
+50.0,female,27.6,1,yes,southwest,24520.264,Allergy,,,,,,,B
+31.0,female,29.26,1,no,southeast,4350.5144,Hypoglycemia,12hrs,daily,frequently, , ,high,A
+35.0,female,27.7,3,no,southwest,6414.178,Urinary tract infection,8hrs,daily,daily,daily,yes,high,A
+60.0,male,36.955,0,no,northeast,12741.16745,Gastroenteritis,,,,,,,A
+21.0,male,36.86,0,no,northwest,1917.3184,Hypoglycemia, ,rarely, ,frequently,yes,high,A
+29.0,male,22.515,3,no,northeast,5209.57885,Hypoglycemia,whole day, ,daily,no,no, ,A
+62.0,female,29.92,0,no,southeast,13457.9608,Gastroenteritis,,,,,,,A
+39.0,female,41.8,0,no,southeast,5662.225,Urinary tract infection, , ,no,no,yes,low,A
+19.0,male,27.6,0,no,southwest,1252.407,Hypoglycemia,4hrs,frequently,frequently, ,yes, ,A
+22.0,female,23.18,0,no,northeast,2731.9122,Hypoglycemia,6hrs,rarely,frequently,no,no,low,A
+53.0,male,20.9,0,yes,southeast,21195.818,Dengue,,,,,,,A
+39.0,female,31.92,2,no,northwest,7209.4918,Urinary tract infection, ,frequently,no,no,yes,high,A
+27.0,male,28.5,0,yes,northwest,18310.742,Dengue,,,,,,,A
+30.0,male,44.22,2,no,southeast,4266.1658,Hypoglycemia,12hrs, ,no,frequently, ,medium,A
+30.0,female,22.895,1,no,northeast,4719.52405,Hypoglycemia,whole day,rarely,rarely,rarely,yes,low,A
+58.0,female,33.1,0,no,southwest,11848.141,Gastroenteritis,,,,,,,A
+33.0,male,24.795,0,yes,northeast,17904.52705,Dengue,,,,,,,A
+42.0,female,26.18,1,no,southeast,7046.7222,Urinary tract infection,4hrs, ,frequently,no,no,medium,A
+64.0,female,35.97,0,no,southeast,14313.8463,Chickenpox,,,,,,,A
+21.0,male,22.3,1,no,southwest,2103.08,Hypoglycemia,12hrs,rarely, ,rarely,yes,medium,A
+18.0,female,42.24,0,yes,southeast,38792.6856,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+23.0,male,26.51,0,no,southeast,1815.8759,Hypoglycemia,8hrs,rarely,rarely,frequently,no,medium,A
+45.0,female,35.815,0,no,northwest,7731.85785,Urinary tract infection,6hrs,daily,rarely,frequently,no,medium,A
+40.0,female,41.42,1,no,northwest,28476.73499,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+19.0,female,36.575,0,no,northwest,2136.88225,Hypoglycemia,2hrs,frequently,frequently,no,yes,medium,A
+18.0,male,30.14,0,no,southeast,1131.5066,Hypoglycemia,2hrs,daily, ,frequently, ,low,A
+25.0,male,25.84,1,no,northeast,3309.7926,Hypoglycemia,2hrs,rarely, ,rarely,no,low,A
+46.0,female,30.8,3,no,southwest,9414.92,Urinary tract infection,4hrs,rarely,no,daily, , ,A
+33.0,female,42.94,3,no,northwest,6360.9936,Urinary tract infection,whole day,rarely,daily,rarely, , ,A
+54.0,male,21.01,2,no,southeast,11013.7119,Gastroenteritis,,,,,,,A
+28.0,male,22.515,2,no,northeast,4428.88785,Hypoglycemia,2hrs,daily,daily, ,no,high,A
+36.0,male,34.43,2,no,southeast,5584.3057,Urinary tract infection, ,rarely,daily,frequently, ,low,A
+20.0,female,31.46,0,no,southeast,1877.9294,Hypoglycemia,4hrs,rarely,no,no,yes,low,A
+24.0,female,24.225,0,no,northwest,2842.76075,Hypoglycemia,12hrs,frequently,frequently,rarely,no,low,A
+23.0,male,37.1,3,no,southwest,3597.596,Hypoglycemia,8hrs, ,no, ,no, ,A
+47.0,female,26.125,1,yes,northeast,23401.30575,Fungal infection,,,,,,,B
+33.0,female,35.53,0,yes,northwest,55135.40209,Hepatitis D,,,,,,,C
+45.0,male,33.7,1,no,southwest,7445.918,Urinary tract infection,4hrs,rarely,no,daily, ,high,A
+26.0,male,17.67,0,no,northwest,2680.9493,Hypoglycemia,12hrs,frequently,rarely,daily,yes,high,A
+18.0,female,31.13,0,no,southeast,1621.8827,Hypoglycemia,8hrs,rarely, , , ,medium,A
+44.0,female,29.81,2,no,southeast,8219.2039,Urinary tract infection,2hrs,rarely,no, ,no,high,A
+60.0,male,24.32,0,no,northwest,12523.6048,Gastroenteritis,,,,,,,A
+64.0,female,31.825,2,no,northeast,16069.08475,Chickenpox,,,,,,,A
+56.0,male,31.79,2,yes,southeast,43813.8661,AIDS,,,,,,,C
+36.0,male,28.025,1,yes,northeast,20773.62775,Dengue,,,,,,,A
+41.0,male,30.78,3,yes,northeast,39597.4072,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+39.0,male,21.85,1,no,northwest,6117.4945,Urinary tract infection,4hrs,frequently, ,daily,yes,medium,A
+63.0,male,33.1,0,no,southwest,13393.756,Gastroenteritis,,,,,,,A
+36.0,female,25.84,0,no,northwest,5266.3656,Hypoglycemia,whole day,frequently,no,frequently,no,low,A
+28.0,female,23.845,2,no,northwest,4719.73655,Hypoglycemia,2hrs,daily,rarely,daily, ,high,A
+58.0,male,34.39,0,no,northwest,11743.9341,Gastroenteritis,,,,,,,A
+36.0,male,33.82,1,no,northwest,5377.4578,Urinary tract infection, ,rarely,no,rarely,no,medium,A
+42.0,male,35.97,2,no,southeast,7160.3303,Urinary tract infection,8hrs,frequently, ,frequently,yes, ,A
+36.0,male,31.5,0,no,southwest,4402.233,Hypoglycemia,4hrs,frequently,daily,no,no,high,A
+56.0,female,28.31,0,no,northeast,11657.7189,Gastroenteritis,,,,,,,A
+35.0,female,23.465,2,no,northeast,6402.29135,Urinary tract infection,6hrs,rarely,rarely,rarely,yes,medium,A
+59.0,female,31.35,0,no,northwest,12622.1795,Gastroenteritis,,,,,,,A
+21.0,male,31.1,0,no,southwest,1526.312,Hypoglycemia,12hrs, ,no,rarely, , ,A
+59.0,male,24.7,0,no,northeast,12323.936,Gastroenteritis,,,,,,,A
+23.0,female,32.78,2,yes,southeast,36021.0112,Arthritis,,,,,,,B
+57.0,female,29.81,0,yes,southeast,27533.9129,Migraine,,,,,,,B
+53.0,male,30.495,0,no,northeast,10072.05505,Gastroenteritis,6hrs,frequently,daily,daily,yes,low,A
+60.0,female,32.45,0,yes,southeast,45008.9555,Alcoholic hepatitis,,,,,,,C
+51.0,female,34.2,1,no,southwest,9872.701,Gastroenteritis,2hrs,rarely,rarely,no, ,high,A
+23.0,male,50.38,1,no,southeast,2438.0552,Hypoglycemia,6hrs,frequently,frequently,daily,yes,high,A
+27.0,female,24.1,0,no,southwest,2974.126,Hypoglycemia,6hrs,daily,no, ,no, ,A
+55.0,male,32.775,0,no,northwest,10601.63225,Gastroenteritis, , , , , ,high,A
+37.0,female,30.78,0,yes,northeast,37270.1512,Cervical spondylosis,,,,,,,B
+61.0,male,32.3,2,no,northwest,14119.62,Chickenpox,,,,,,,A
+46.0,female,35.53,0,yes,northeast,42111.6647,Jaundice,,,,,,,B
+53.0,female,23.75,2,no,northeast,11729.6795,Gastroenteritis,,,,,,,A
+49.0,female,23.845,3,yes,northeast,24106.91255,Allergy,,,,,,,B
+20.0,female,29.6,0,no,southwest,1875.344,Hypoglycemia,4hrs,rarely, ,daily, ,medium,A
+48.0,female,33.11,0,yes,southeast,40974.1649,Chronic cholestasis,,,,,,,B
+25.0,male,24.13,0,yes,northwest,15817.9857,Chickenpox,,,,,,,A
+25.0,female,32.23,1,no,southeast,18218.16139,Dengue,,,,,,,A
+57.0,male,28.1,0,no,southwest,10965.446,Gastroenteritis,whole day, ,no,rarely, ,low,A
+37.0,female,47.6,2,yes,southwest,46113.511,Bronchial Asthma,,,,,,,C
+38.0,female,28.0,3,no,southwest,7151.092,Urinary tract infection,2hrs,rarely,frequently,frequently,yes,medium,A
+55.0,female,33.535,2,no,northwest,12269.68865,Gastroenteritis,,,,,,,A
+36.0,female,19.855,0,no,northeast,5458.04645,Urinary tract infection,whole day,frequently,frequently,no,yes,high,A
+51.0,male,25.4,0,no,southwest,8782.469,Urinary tract infection,2hrs,frequently, ,daily,no,high,A
+40.0,male,29.9,2,no,southwest,6600.361,Urinary tract infection,6hrs,rarely,no, ,no,medium,A
+18.0,male,37.29,0,no,southeast,1141.4451,Hypoglycemia,8hrs,rarely,frequently,no,yes, ,A
+57.0,male,43.7,1,no,southwest,11576.13,Gastroenteritis,,,,,,,A
+61.0,male,23.655,0,no,northeast,13129.60345,Gastroenteritis,,,,,,,A
+25.0,female,24.3,3,no,southwest,4391.652,Hypoglycemia,4hrs,daily,daily,daily,no,medium,A
+50.0,male,36.2,0,no,southwest,8457.818,Urinary tract infection,2hrs, ,rarely, ,yes,low,A
+26.0,female,29.48,1,no,southeast,3392.3652,Hypoglycemia,4hrs,frequently,rarely,rarely,yes,medium,A
+42.0,male,24.86,0,no,southeast,5966.8874,Urinary tract infection,whole day, ,frequently,daily,no,high,A
+43.0,male,30.1,1,no,southwest,6849.026,Urinary tract infection,4hrs,daily,rarely,daily,no,high,A
+44.0,male,21.85,3,no,northeast,8891.1395,Urinary tract infection,12hrs, ,no,daily, ,low,A
+23.0,female,28.12,0,no,northwest,2690.1138,Hypoglycemia,6hrs,rarely, , ,yes,high,A
+49.0,female,27.1,1,no,southwest,26140.3603,Dimorphic hemorrhoids (piles),,,,,,,B
+33.0,male,33.44,5,no,southeast,6653.7886,Urinary tract infection,whole day,rarely, ,daily,no,low,A
+41.0,male,28.8,1,no,southwest,6282.235,Urinary tract infection,4hrs,daily,rarely,frequently, ,low,A
+37.0,female,29.5,2,no,southwest,6311.952,Urinary tract infection,12hrs,daily,no,frequently,no,high,A
+22.0,male,34.8,3,no,southwest,3443.064,Hypoglycemia,4hrs, ,rarely,rarely, , ,A
+23.0,male,27.36,1,no,northwest,2789.0574,Hypoglycemia,4hrs, ,frequently,no,no,low,A
+21.0,female,22.135,0,no,northeast,2585.85065,Hypoglycemia,8hrs,frequently,daily,no,no, ,A
+51.0,female,37.05,3,yes,northeast,46255.1125,Bronchial Asthma,,,,,,,C
+25.0,male,26.695,4,no,northwest,4877.98105,Hypoglycemia,8hrs, ,no,daily,yes,medium,A
+32.0,male,28.93,1,yes,southeast,19719.6947,Dengue,,,,,,,A
+57.0,male,28.975,0,yes,northeast,27218.43725,Migraine,,,,,,,B
+36.0,female,30.02,0,no,northwest,5272.1758,Hypoglycemia,8hrs,frequently, ,rarely, ,low,A
+22.0,male,39.5,0,no,southwest,1682.597,Hypoglycemia,8hrs,daily,frequently,rarely,no, ,A
+57.0,male,33.63,1,no,northwest,11945.1327,Gastroenteritis,,,,,,,A
+64.0,female,26.885,0,yes,northwest,29330.98315,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+36.0,female,29.04,4,no,southeast,7243.8136,Urinary tract infection,6hrs, ,rarely,no, ,low,A
+54.0,male,24.035,0,no,northeast,10422.91665,Gastroenteritis, , , ,rarely,no, ,A
+47.0,male,38.94,2,yes,southeast,44202.6536,AIDS,,,,,,,C
+62.0,male,32.11,0,no,northeast,13555.0049,Gastroenteritis,,,,,,,A
+61.0,female,44.0,0,no,southwest,13063.883,Gastroenteritis,,,,,,,A
+43.0,female,20.045,2,yes,northeast,19798.05455,Dengue,,,,,,,A
+19.0,male,25.555,1,no,northwest,2221.56445,Hypoglycemia, ,frequently,daily,rarely,yes,medium,A
+18.0,female,40.26,0,no,southeast,1634.5734,Hypoglycemia,whole day,rarely, ,frequently,no,low,A
+19.0,female,22.515,0,no,northwest,2117.33885,Hypoglycemia,8hrs,rarely,daily,daily,no,medium,A
+49.0,male,22.515,0,no,northeast,8688.85885,Urinary tract infection,12hrs, ,frequently,no, , ,A
+60.0,male,40.92,0,yes,southeast,48673.5588,Drug Reaction,,,,,,,C
+26.0,male,27.265,3,no,northeast,4661.28635,Hypoglycemia,4hrs, ,frequently,rarely, ,low,A
+49.0,male,36.85,0,no,southeast,8125.7845,Urinary tract infection,6hrs,frequently,frequently,frequently,no, ,A
+60.0,female,35.1,0,no,southwest,12644.589,Gastroenteritis,,,,,,,A
+26.0,female,29.355,2,no,northeast,4564.19145,Hypoglycemia,whole day,rarely,daily,no,no,high,A
+27.0,male,32.585,3,no,northeast,4846.92015,Hypoglycemia,2hrs,daily,rarely, ,yes,high,A
+44.0,female,32.34,1,no,southeast,7633.7206,Urinary tract infection,2hrs, ,no,frequently,no,high,A
+63.0,male,39.8,3,no,southwest,15170.069,Chickenpox,,,,,,,A
+32.0,female,24.6,0,yes,southwest,17496.306,Chickenpox,,,,,,,A
+22.0,male,28.31,1,no,northwest,2639.0429,Hypoglycemia,4hrs,daily,rarely,daily,yes,high,A
+18.0,male,31.73,0,yes,northeast,33732.6867,Tuberculosis,,,,,,,B
+59.0,female,26.695,3,no,northwest,14382.70905,Chickenpox,,,,,,,A
+44.0,female,27.5,1,no,southwest,7626.993,Urinary tract infection,8hrs,daily, ,no,no,high,A
+33.0,male,24.605,2,no,northwest,5257.50795,Hypoglycemia,4hrs, , , , , ,A
+24.0,female,33.99,0,no,southeast,2473.3341,Hypoglycemia,12hrs,rarely,frequently,rarely,yes, ,A
+43.0,female,26.885,0,yes,northwest,21774.32215,Dengue,,,,,,,A
+45.0,male,22.895,0,yes,northeast,35069.37452,Osteoarthritis,,,,,,,B
+61.0,female,28.2,0,no,southwest,13041.921,Gastroenteritis,,,,,,,A
+35.0,female,34.21,1,no,southeast,5245.2269,Hypoglycemia,whole day,frequently,daily,daily,no, ,A
+62.0,female,25.0,0,no,southwest,13451.122,Gastroenteritis,,,,,,,A
+62.0,female,33.2,0,no,southwest,13462.52,Gastroenteritis,,,,,,,A
+38.0,male,31.0,1,no,southwest,5488.262,Urinary tract infection,6hrs, , , ,no,high,A
+34.0,male,35.815,0,no,northwest,4320.41085,Hypoglycemia,12hrs,rarely,no,no,no,low,A
+43.0,male,23.2,0,no,southwest,6250.435,Urinary tract infection,4hrs,daily,rarely,daily,no, ,A
+50.0,male,32.11,2,no,northeast,25333.33284,Dimorphic hemorrhoids (piles),,,,,,,B
+19.0,female,23.4,2,no,southwest,2913.569,Hypoglycemia,whole day,rarely, ,no, ,high,A
+57.0,female,20.1,1,no,southwest,12032.326,Gastroenteritis,,,,,,,A
+62.0,female,39.16,0,no,southeast,13470.8044,Gastroenteritis,,,,,,,A
+41.0,male,34.21,1,no,southeast,6289.7549,Urinary tract infection,2hrs,frequently, ,rarely,yes, ,A
+26.0,male,46.53,1,no,southeast,2927.0647,Hypoglycemia,6hrs,frequently,no,no,yes,high,A
+39.0,female,32.5,1,no,southwest,6238.298,Urinary tract infection,4hrs, ,no,daily,no,medium,A
+46.0,male,25.8,5,no,southwest,10096.97,Gastroenteritis, ,frequently,frequently,daily,no, ,A
+45.0,female,35.3,0,no,southwest,7348.142,Urinary tract infection,12hrs, ,frequently,rarely,yes,high,A
+32.0,male,37.18,2,no,southeast,4673.3922,Hypoglycemia,4hrs,frequently,daily,no,yes,high,A
+59.0,female,27.5,0,no,southwest,12233.828,Gastroenteritis,,,,,,,A
+44.0,male,29.735,2,no,northeast,32108.66282,Hypothyroidism,,,,,,,B
+39.0,female,24.225,5,no,northwest,8965.79575,Urinary tract infection,whole day,frequently,daily,frequently,yes, ,A
+18.0,male,26.18,2,no,southeast,2304.0022,Hypoglycemia,8hrs,rarely, ,rarely,yes, ,A
+53.0,male,29.48,0,no,southeast,9487.6442,Gastroenteritis,4hrs,frequently,no,daily,yes,low,A
+18.0,male,23.21,0,no,southeast,1121.8739,Hypoglycemia,6hrs, , ,frequently,yes,low,A
+50.0,female,46.09,1,no,southeast,9549.5651,Gastroenteritis,6hrs,frequently,no,daily,yes,high,A
+18.0,female,40.185,0,no,northeast,2217.46915,Hypoglycemia,whole day,daily,frequently,frequently,no, ,A
+19.0,male,22.61,0,no,northwest,1628.4709,Hypoglycemia,2hrs,rarely,no,daily, , ,A
+62.0,male,39.93,0,no,southeast,12982.8747,Gastroenteritis,,,,,,,A
+56.0,female,35.8,1,no,southwest,11674.13,Gastroenteritis,,,,,,,A
+42.0,male,35.8,2,no,southwest,7160.094,Urinary tract infection,12hrs,rarely,rarely, ,yes,high,A
+37.0,male,34.2,1,yes,northeast,39047.285,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+42.0,male,31.255,0,no,northwest,6358.77645,Urinary tract infection,2hrs, ,no,frequently, ,medium,A
+25.0,male,29.7,3,yes,southwest,19933.458,Dengue,,,,,,,A
+57.0,male,18.335,0,no,northeast,11534.87265,Gastroenteritis,,,,,,,A
+51.0,male,42.9,2,yes,southeast,47462.894,Diabetes,,,,,,,C
+30.0,female,28.405,1,no,northwest,4527.18295,Hypoglycemia,2hrs,rarely,no,no,no,medium,A
+44.0,male,30.2,2,yes,southwest,38998.546,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+34.0,male,27.835,1,yes,northwest,20009.63365,Dengue,,,,,,,A
+31.0,male,39.49,1,no,southeast,3875.7341,Hypoglycemia,8hrs, ,no,frequently,no,high,A
+54.0,male,30.8,1,yes,southeast,41999.52,Jaundice,,,,,,,B
+24.0,male,26.79,1,no,northwest,12609.88702,Gastroenteritis,,,,,,,A
+43.0,male,34.96,1,yes,northeast,41034.2214,Chronic cholestasis,,,,,,,B
+48.0,male,36.67,1,no,northwest,28468.91901,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+19.0,female,39.615,1,no,northwest,2730.10785,Hypoglycemia,4hrs, , ,rarely,no,low,A
+29.0,female,25.9,0,no,southwest,3353.284,Hypoglycemia,2hrs,rarely, , ,yes,high,A
+63.0,female,35.2,1,no,southeast,14474.675,Chickenpox,,,,,,,A
+46.0,male,24.795,3,no,northeast,9500.57305,Gastroenteritis,8hrs, ,daily,rarely,no, ,A
+52.0,male,36.765,2,no,northwest,26467.09737,Dimorphic hemorrhoids (piles),,,,,,,B
+35.0,male,27.1,1,no,southwest,4746.344,Hypoglycemia,8hrs, ,rarely,frequently,yes,low,A
+51.0,male,24.795,2,yes,northwest,23967.38305,Allergy,,,,,,,B
+44.0,male,25.365,1,no,northwest,7518.02535,Urinary tract infection, , ,no, ,yes,low,A
+21.0,male,25.745,2,no,northeast,3279.86855,Hypoglycemia,12hrs,daily,frequently,rarely, , ,A
+39.0,female,34.32,5,no,southeast,8596.8278,Urinary tract infection,8hrs,daily,rarely,frequently,no,high,A
+50.0,female,28.16,3,no,southeast,10702.6424,Gastroenteritis,12hrs,rarely,rarely,no,no, ,A
+34.0,female,23.56,0,no,northeast,4992.3764,Hypoglycemia, ,daily,no, ,yes, ,A
+22.0,female,20.235,0,no,northwest,2527.81865,Hypoglycemia, , ,frequently,rarely,yes, ,A
+19.0,female,40.5,0,no,southwest,1759.338,Hypoglycemia,2hrs,rarely,no,rarely,yes, ,A
+26.0,male,35.42,0,no,southeast,2322.6218,Hypoglycemia, ,frequently,daily, ,no,medium,A
+29.0,male,22.895,0,yes,northeast,16138.76205,Chickenpox,,,,,,,A
+48.0,male,40.15,0,no,southeast,7804.1605,Urinary tract infection,12hrs, ,daily,daily,yes,medium,A
+26.0,male,29.15,1,no,southeast,2902.9065,Hypoglycemia,8hrs,rarely,no,no,no,high,A
+45.0,female,39.995,3,no,northeast,9704.66805,Gastroenteritis,12hrs,daily,frequently,daily,yes, ,A
+36.0,female,29.92,0,no,southeast,4889.0368,Hypoglycemia,8hrs,rarely,no,frequently,no,low,A
+54.0,male,25.46,1,no,northeast,25517.11363,Dimorphic hemorrhoids (piles),,,,,,,B
+34.0,male,21.375,0,no,northeast,4500.33925,Hypoglycemia,4hrs,daily,frequently,no,no,low,A
+31.0,male,25.9,3,yes,southwest,19199.944,Dengue,,,,,,,A
+27.0,female,30.59,1,no,northeast,16796.41194,Chickenpox,,,,,,,A
+20.0,male,30.115,5,no,northeast,4915.05985,Hypoglycemia,whole day,daily,frequently,frequently, ,low,A
+44.0,female,25.8,1,no,southwest,7624.63,Urinary tract infection,whole day,rarely,daily,daily, ,medium,A
+43.0,male,30.115,3,no,northwest,8410.04685,Urinary tract infection,whole day,rarely, ,daily,no,low,A
+45.0,female,27.645,1,no,northwest,28340.18885,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+34.0,male,34.675,0,no,northeast,4518.82625,Hypoglycemia,8hrs, ,frequently,frequently,no,medium,A
+24.0,female,20.52,0,yes,northeast,14571.8908,Chickenpox,,,,,,,A
+26.0,female,19.8,1,no,southwest,3378.91,Hypoglycemia,8hrs,frequently, ,daily, ,medium,A
+38.0,female,27.835,2,no,northeast,7144.86265,Urinary tract infection, , ,frequently,rarely, , ,A
+50.0,female,31.6,2,no,southwest,10118.424,Gastroenteritis,8hrs,rarely,rarely,frequently,yes,high,A
+38.0,male,28.27,1,no,southeast,5484.4673,Urinary tract infection,8hrs,daily, ,no,no, ,A
+27.0,female,20.045,3,yes,northwest,16420.49455,Chickenpox,,,,,,,A
+39.0,female,23.275,3,no,northeast,7986.47525,Urinary tract infection,4hrs,daily,daily,daily,yes,medium,A
+39.0,female,34.1,3,no,southwest,7418.522,Urinary tract infection, ,rarely,daily,no,yes, ,A
+63.0,female,36.85,0,no,southeast,13887.9685,Chickenpox,,,,,,,A
+33.0,female,36.29,3,no,northeast,6551.7501,Urinary tract infection,8hrs, , , , ,low,A
+36.0,female,26.885,0,no,northwest,5267.81815,Hypoglycemia,8hrs, , ,rarely,yes, ,A
+30.0,male,22.99,2,yes,northwest,17361.7661,Chickenpox,,,,,,,A
+24.0,male,32.7,0,yes,southwest,34472.841,Osteoarthritis,,,,,,,B
+24.0,male,25.8,0,no,southwest,1972.95,Hypoglycemia,2hrs,rarely,frequently,rarely, ,medium,A
+48.0,male,29.6,0,no,southwest,21232.18226,Dengue,,,,,,,A
+47.0,male,19.19,1,no,northeast,8627.5411,Urinary tract infection,8hrs, ,no,daily,yes,low,A
+29.0,male,31.73,2,no,northwest,4433.3877,Hypoglycemia,6hrs,daily, ,daily, ,low,A
+28.0,male,29.26,2,no,northeast,4438.2634,Hypoglycemia,12hrs,frequently,rarely,daily,no,medium,A
+47.0,male,28.215,3,yes,northwest,24915.22085,Allergy,,,,,,,B
+25.0,male,24.985,2,no,northeast,23241.47453,Fungal infection,,,,,,,B
+51.0,male,27.74,1,no,northeast,9957.7216,Gastroenteritis,8hrs, ,frequently,daily,yes,high,A
+48.0,female,22.8,0,no,southwest,8269.044,Urinary tract infection,4hrs, , ,rarely, ,low,A
+43.0,male,20.13,2,yes,southeast,18767.7377,Dengue,,,,,,,A
+61.0,female,33.33,4,no,southeast,36580.28216,Arthritis,,,,,,,B
+48.0,male,32.3,1,no,northwest,8765.249,Urinary tract infection,2hrs,daily, ,frequently, ,low,A
+38.0,female,27.6,0,no,southwest,5383.536,Urinary tract infection,2hrs,frequently, , , , ,A
+59.0,male,25.46,0,no,northwest,12124.9924,Gastroenteritis,,,,,,,A
+19.0,female,24.605,1,no,northwest,2709.24395,Hypoglycemia,12hrs,daily,daily, , ,low,A
+26.0,female,34.2,2,no,southwest,3987.926,Hypoglycemia,whole day,frequently, ,daily, ,low,A
+54.0,female,35.815,3,no,northwest,12495.29085,Gastroenteritis,,,,,,,A
+21.0,female,32.68,2,no,northwest,26018.95052,Dimorphic hemorrhoids (piles),,,,,,,B
+51.0,male,37.0,0,no,southwest,8798.593,Urinary tract infection,12hrs, , ,daily,no,high,A
+22.0,female,31.02,3,yes,southeast,35595.5898,Arthritis,,,,,,,B
+47.0,male,36.08,1,yes,southeast,42211.1382,Jaundice,,,,,,,B
+18.0,male,23.32,1,no,southeast,1711.0268,Hypoglycemia,2hrs,frequently,rarely,frequently, ,medium,A
+47.0,female,45.32,1,no,southeast,8569.8618,Urinary tract infection,8hrs,frequently,daily,no,yes,medium,A
+21.0,female,34.6,0,no,southwest,2020.177,Hypoglycemia,12hrs, ,frequently,daily,no,medium,A
+19.0,male,26.03,1,yes,northwest,16450.8947,Chickenpox,,,,,,,A
+23.0,male,18.715,0,no,northwest,21595.38229,Dengue,,,,,,,A
+54.0,male,31.6,0,no,southwest,9850.432,Gastroenteritis,whole day,frequently,rarely,rarely,no, ,A
+37.0,female,17.29,2,no,northeast,6877.9801,Urinary tract infection,4hrs, ,rarely,no,no, ,A
+46.0,female,23.655,1,yes,northwest,21677.28345,Dengue,,,,,,,A
+55.0,female,35.2,0,yes,southeast,44423.803,Alcoholic hepatitis,,,,,,,C
+30.0,female,27.93,0,no,northeast,4137.5227,Hypoglycemia,8hrs,daily,daily,rarely,no,medium,A
+18.0,male,21.565,0,yes,northeast,13747.87235,Chickenpox,,,,,,,A
+61.0,male,38.38,0,no,northwest,12950.0712,Gastroenteritis,,,,,,,A
+54.0,female,23.0,3,no,southwest,12094.478,Gastroenteritis,,,,,,,A
+22.0,male,37.07,2,yes,southeast,37484.4493,Cervical spondylosis,,,,,,,B
+45.0,female,30.495,1,yes,northwest,39725.51805,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+22.0,male,28.88,0,no,northeast,2250.8352,Hypoglycemia,8hrs,rarely,daily,frequently, ,medium,A
+19.0,male,27.265,2,no,northwest,22493.65964,Fungal infection,,,,,,,B
+35.0,female,28.025,0,yes,northwest,20234.85475,Dengue,,,,,,,A
+18.0,male,23.085,0,no,northeast,1704.70015,Hypoglycemia, , , , ,no,medium,A
+20.0,male,30.685,0,yes,northeast,33475.81715,Tuberculosis,,,,,,,B
+28.0,female,25.8,0,no,southwest,3161.454,Hypoglycemia, ,rarely,rarely,rarely,no,high,A
+55.0,male,35.245,1,no,northeast,11394.06555,Gastroenteritis,,,,,,,A
+43.0,female,24.7,2,yes,northwest,21880.82,Dengue,,,,,,,A
+43.0,female,25.08,0,no,northeast,7325.0482,Urinary tract infection,8hrs,frequently, ,daily, ,low,A
+22.0,male,52.58,1,yes,southeast,44501.3982,Alcoholic hepatitis,,,,,,,C
+25.0,female,22.515,1,no,northwest,3594.17085,Hypoglycemia,4hrs, ,frequently,frequently, , ,A
+49.0,male,30.9,0,yes,southwest,39727.614,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+44.0,female,36.955,1,no,northwest,8023.13545,Urinary tract infection,2hrs, ,rarely,frequently, , ,A
+64.0,male,26.41,0,no,northeast,14394.5579,Chickenpox,,,,,,,A
+49.0,male,29.83,1,no,northeast,9288.0267,Urinary tract infection,2hrs, ,no, ,no, ,A
+47.0,male,29.8,3,yes,southwest,25309.489,Dimorphic hemorrhoids (piles),,,,,,,B
+27.0,female,21.47,0,no,northwest,3353.4703,Hypoglycemia,6hrs, , ,daily, ,low,A
+55.0,male,27.645,0,no,northwest,10594.50155,Gastroenteritis,8hrs, , , , ,medium,A
+48.0,female,28.9,0,no,southwest,8277.523,Urinary tract infection,8hrs,frequently,rarely,daily,yes, ,A
+45.0,female,31.79,0,no,southeast,17929.30337,Dengue,,,,,,,A
+24.0,female,39.49,0,no,southeast,2480.9791,Hypoglycemia,2hrs,frequently, , ,yes,high,A
+32.0,male,33.82,1,no,northwest,4462.7218,Hypoglycemia,whole day,daily,frequently,no, , ,A
+24.0,male,32.01,0,no,southeast,1981.5819,Hypoglycemia,8hrs,frequently,daily,frequently,yes,low,A
+57.0,male,27.94,1,no,southeast,11554.2236,Gastroenteritis,,,,,,,A
+59.0,male,41.14,1,yes,southeast,48970.2476,Drug Reaction,,,,,,,C
+36.0,male,28.595,3,no,northwest,6548.19505,Urinary tract infection,6hrs,rarely,frequently, ,yes,low,A
+29.0,female,25.6,4,no,southwest,5708.867,Urinary tract infection,4hrs, ,rarely,daily,no,medium,A
+42.0,female,25.3,1,no,southwest,7045.499,Urinary tract infection,whole day,frequently, ,rarely, ,medium,A
+48.0,male,37.29,2,no,southeast,8978.1851,Urinary tract infection,12hrs, ,frequently, ,no,low,A
+39.0,male,42.655,0,no,northeast,5757.41345,Urinary tract infection,whole day,daily,rarely,frequently, ,high,A
+63.0,male,21.66,1,no,northwest,14349.8544,Chickenpox,,,,,,,A
+54.0,female,31.9,1,no,southeast,10928.849,Gastroenteritis,whole day, ,no,rarely, ,medium,A
+37.0,male,37.07,1,yes,southeast,39871.7043,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+63.0,male,31.445,0,no,northeast,13974.45555,Chickenpox,,,,,,,A
+21.0,male,31.255,0,no,northwest,1909.52745,Hypoglycemia,12hrs, ,frequently, , ,medium,A
+54.0,female,28.88,2,no,northeast,12096.6512,Gastroenteritis,,,,,,,A
+60.0,female,18.335,0,no,northeast,13204.28565,Gastroenteritis,,,,,,,A
+32.0,female,29.59,1,no,southeast,4562.8421,Hypoglycemia,whole day,frequently,no,rarely,no,medium,A
+47.0,female,32.0,1,no,southwest,8551.347,Urinary tract infection,8hrs,frequently,frequently, ,yes,low,A
+21.0,male,26.03,0,no,northeast,2102.2647,Hypoglycemia,2hrs, ,daily,frequently,no,high,A
+28.0,male,31.68,0,yes,southeast,34672.1472,Osteoarthritis,,,,,,,B
+63.0,male,33.66,3,no,southeast,15161.5344,Chickenpox,,,,,,,A
+18.0,male,21.78,2,no,southeast,11884.04858,Gastroenteritis,,,,,,,A
+32.0,male,27.835,1,no,northwest,4454.40265,Hypoglycemia,whole day,daily,daily, , , ,A
+38.0,male,19.95,1,no,northwest,5855.9025,Urinary tract infection,8hrs,rarely,frequently,no, ,high,A
+32.0,male,31.5,1,no,southwest,4076.497,Hypoglycemia,8hrs,frequently,rarely, , ,low,A
+62.0,female,30.495,2,no,northwest,15019.76005,Chickenpox,,,,,,,A
+39.0,female,18.3,5,yes,southwest,19023.26,Dengue,,,,,,,A
+55.0,male,28.975,0,no,northeast,10796.35025,Gastroenteritis,8hrs,frequently, ,no,no,high,A
+57.0,male,31.54,0,no,northwest,11353.2276,Gastroenteritis,,,,,,,A
+52.0,male,47.74,1,no,southeast,9748.9106,Gastroenteritis,12hrs, , ,no,no,high,A
+56.0,male,22.1,0,no,southwest,10577.087,Gastroenteritis,8hrs, ,no,rarely,yes, ,A
+47.0,male,36.19,0,yes,southeast,41676.0811,Jaundice,,,,,,,B
+55.0,female,29.83,0,no,northeast,11286.5387,Gastroenteritis,,,,,,,A
+23.0,male,32.7,3,no,southwest,3591.48,Hypoglycemia, ,daily,frequently,rarely,no, ,A
+22.0,female,30.4,0,yes,northwest,33907.548,Tuberculosis,,,,,,,B
+50.0,female,33.7,4,no,southwest,11299.343,Gastroenteritis,,,,,,,A
+18.0,female,31.35,4,no,northeast,4561.1885,Hypoglycemia, ,daily,rarely,frequently,yes,medium,A
+51.0,female,34.96,2,yes,northeast,44641.1974,Alcoholic hepatitis,,,,,,,C
+22.0,male,33.77,0,no,southeast,1674.6323,Hypoglycemia,whole day, ,no, ,no,high,A
+52.0,female,30.875,0,no,northeast,23045.56616,Fungal infection,,,,,,,B
+25.0,female,33.99,1,no,southeast,3227.1211,Hypoglycemia,6hrs,frequently, ,no, , ,A
+33.0,female,19.095,2,yes,northeast,16776.30405,Chickenpox,,,,,,,A
+53.0,male,28.6,3,no,southwest,11253.421,Gastroenteritis,,,,,,,A
+29.0,male,38.94,1,no,southeast,3471.4096,Hypoglycemia,4hrs,frequently,no,no,no,low,A
+58.0,male,36.08,0,no,southeast,11363.2832,Gastroenteritis,,,,,,,A
+37.0,male,29.8,0,no,southwest,20420.60465,Dengue,,,,,,,A
+54.0,female,31.24,0,no,southeast,10338.9316,Gastroenteritis, ,frequently,frequently,no,yes,low,A
+49.0,female,29.925,0,no,northwest,8988.15875,Urinary tract infection,8hrs,daily,no,daily,no,high,A
+50.0,female,26.22,2,no,northwest,10493.9458,Gastroenteritis,4hrs,rarely,no, ,yes, ,A
+26.0,male,30.0,1,no,southwest,2904.088,Hypoglycemia,6hrs,rarely, ,rarely,yes,medium,A
+45.0,male,20.35,3,no,southeast,8605.3615,Urinary tract infection,12hrs,frequently,rarely,frequently,no,high,A
+54.0,female,32.3,1,no,northeast,11512.405,Gastroenteritis,,,,,,,A
+38.0,male,38.39,3,yes,southeast,41949.2441,Jaundice,,,,,,,B
+48.0,female,25.85,3,yes,southeast,24180.9335,Allergy,,,,,,,B
+28.0,female,26.315,3,no,northwest,5312.16985,Urinary tract infection,2hrs,daily,rarely,daily,no,medium,A
+23.0,male,24.51,0,no,northeast,2396.0959,Hypoglycemia,4hrs, ,rarely,no,no,medium,A
+55.0,male,32.67,1,no,southeast,10807.4863,Gastroenteritis, ,frequently,frequently,no, ,high,A
+41.0,male,29.64,5,no,northeast,9222.4026,Urinary tract infection, ,daily,daily,daily,no,low,A
+25.0,male,33.33,2,yes,southeast,36124.5737,Arthritis,,,,,,,B
+33.0,male,35.75,1,yes,southeast,38282.7495,Cervical spondylosis,,,,,,,B
+30.0,female,19.95,3,no,northwest,5693.4305,Urinary tract infection,8hrs,frequently,frequently,daily,yes, ,A
+23.0,female,31.4,0,yes,southwest,34166.273,Osteoarthritis,,,,,,,B
+46.0,male,38.17,2,no,southeast,8347.1643,Urinary tract infection,12hrs,rarely, ,frequently, ,low,A
+53.0,female,36.86,3,yes,northwest,46661.4424,Bronchial Asthma,,,,,,,C
+27.0,female,32.395,1,no,northeast,18903.49141,Dengue,,,,,,,A
+23.0,female,42.75,1,yes,northeast,40904.1995,Chronic cholestasis,,,,,,,B
+63.0,female,25.08,0,no,northwest,14254.6082,Chickenpox,,,,,,,A
+55.0,male,29.9,0,no,southwest,10214.636,Gastroenteritis,whole day, , ,frequently, ,high,A
+35.0,female,35.86,2,no,southeast,5836.5204,Urinary tract infection,8hrs,daily,no,frequently, ,low,A
+34.0,male,32.8,1,no,southwest,14358.36437,Chickenpox,,,,,,,A
+19.0,female,18.6,0,no,southwest,1728.897,Hypoglycemia,whole day,frequently, ,rarely,no,low,A
+39.0,female,23.87,5,no,southeast,8582.3023,Urinary tract infection,6hrs,rarely, ,daily, , ,A
+27.0,male,45.9,2,no,southwest,3693.428,Hypoglycemia,12hrs,daily,rarely,daily,no, ,A
+57.0,male,40.28,0,no,northeast,20709.02034,Dengue,,,,,,,A
+52.0,female,18.335,0,no,northwest,9991.03765,Gastroenteritis,12hrs, ,daily, ,yes,medium,A
+28.0,male,33.82,0,no,northwest,19673.33573,Dengue,,,,,,,A
+50.0,female,28.12,3,no,northwest,11085.5868,Gastroenteritis,,,,,,,A
+44.0,female,25.0,1,no,southwest,7623.518,Urinary tract infection,4hrs,daily, ,frequently,yes,medium,A
+26.0,female,22.23,0,no,northwest,3176.2877,Hypoglycemia,6hrs,frequently,rarely,frequently,yes,low,A
+33.0,male,30.25,0,no,southeast,3704.3545,Hypoglycemia,4hrs,daily,frequently,daily,yes, ,A
+19.0,female,32.49,0,yes,northwest,36898.73308,Arthritis,,,,,,,B
+50.0,male,37.07,1,no,southeast,9048.0273,Urinary tract infection,8hrs,rarely,no, ,yes,medium,A
+41.0,female,32.6,3,no,southwest,7954.517,Urinary tract infection,4hrs, , ,no,no,medium,A
+52.0,female,24.86,0,no,southeast,27117.99378,Migraine,,,,,,,B
+39.0,male,32.34,2,no,southeast,6338.0756,Urinary tract infection,whole day,frequently,no,no, ,medium,A
+50.0,male,32.3,2,no,southwest,9630.397,Gastroenteritis,4hrs,frequently,daily,rarely, ,high,A
+52.0,male,32.775,3,no,northwest,11289.10925,Gastroenteritis,,,,,,,A
+60.0,male,32.8,0,yes,southwest,52590.82939,Hepatitis B,,,,,,,C
+20.0,female,31.92,0,no,northwest,2261.5688,Hypoglycemia,8hrs,rarely,rarely,frequently,yes,low,A
+55.0,male,21.5,1,no,southwest,10791.96,Gastroenteritis,whole day,daily,frequently,frequently,no, ,A
+42.0,male,34.1,0,no,southwest,5979.731,Urinary tract infection,4hrs,frequently,no,no,no,low,A
+18.0,female,30.305,0,no,northeast,2203.73595,Hypoglycemia,4hrs, ,daily, ,yes,low,A
+58.0,female,36.48,0,no,northwest,12235.8392,Gastroenteritis,,,,,,,A
+43.0,female,32.56,3,yes,southeast,40941.2854,Chronic cholestasis,,,,,,,B
+35.0,female,35.815,1,no,northwest,5630.45785,Urinary tract infection,6hrs,daily,no,daily,no,high,A
+48.0,female,27.93,4,no,northwest,11015.1747,Gastroenteritis,,,,,,,A
+36.0,female,22.135,3,no,northeast,7228.21565,Urinary tract infection,4hrs, ,frequently,daily, ,medium,A
+19.0,male,44.88,0,yes,southeast,39722.7462,Paroxysmal Positional Vertigo (Vertigo),,,,,,,B
+23.0,female,23.18,2,no,northwest,14426.07385,Chickenpox,,,,,,,A
+20.0,female,30.59,0,no,northeast,2459.7201,Hypoglycemia,whole day, ,frequently, ,no, ,A
+32.0,female,41.1,0,no,southwest,3989.841,Hypoglycemia,whole day,daily,no,rarely, ,medium,A
+43.0,female,34.58,1,no,northwest,7727.2532,Urinary tract infection,whole day,rarely,no,daily,yes,medium,A
+34.0,male,42.13,2,no,southeast,5124.1887,Hypoglycemia,8hrs,daily,frequently,daily,yes, ,A
+30.0,male,38.83,1,no,southeast,18963.17192,Dengue,,,,,,,A
+18.0,female,28.215,0,no,northeast,2200.83085,Hypoglycemia,8hrs, , ,no, ,high,A
+41.0,female,28.31,1,no,northwest,7153.5539,Urinary tract infection, ,rarely, ,rarely,no,high,A
+35.0,female,26.125,0,no,northeast,5227.98875,Hypoglycemia,4hrs,rarely,frequently,rarely,no,low,A
+57.0,male,40.37,0,no,southeast,10982.5013,Gastroenteritis,,,,,,,A
+29.0,female,24.6,2,no,southwest,4529.477,Hypoglycemia,8hrs, ,no, ,yes, ,A
+32.0,male,35.2,2,no,southwest,4670.64,Hypoglycemia,12hrs,frequently,daily,rarely,yes, ,A
+37.0,female,34.105,1,no,northwest,6112.35295,Urinary tract infection,12hrs, ,daily,frequently,no,low,A
+18.0,male,27.36,1,yes,northeast,17178.6824,Chickenpox,,,,,,,A
+43.0,female,26.7,2,yes,southwest,22478.6,Fungal infection,,,,,,,B
+56.0,female,41.91,0,no,southeast,11093.6229,Gastroenteritis,,,,,,,A
+38.0,male,29.26,2,no,northwest,6457.8434,Urinary tract infection,12hrs,daily,rarely, ,no, ,A
+29.0,male,32.11,2,no,northwest,4433.9159,Hypoglycemia,2hrs, ,rarely,daily,yes,medium,A
+22.0,female,27.1,0,no,southwest,2154.361,Hypoglycemia, , ,rarely, , ,medium,A
+52.0,female,24.13,1,yes,northwest,23887.6627,Allergy,,,,,,,B
+40.0,female,27.4,1,no,southwest,6496.886,Urinary tract infection,whole day, , ,no,no,low,A
+23.0,female,34.865,0,no,northeast,2899.48935,Hypoglycemia, ,rarely,rarely,daily,yes,low,A
+31.0,male,29.81,0,yes,southeast,19350.3689,Dengue,,,,,,,A
+42.0,female,41.325,1,no,northeast,7650.77375,Urinary tract infection,12hrs,rarely,rarely,rarely,yes,medium,A
+24.0,female,29.925,0,no,northwest,2850.68375,Hypoglycemia,4hrs,daily,frequently,rarely,no, ,A
+25.0,female,30.3,0,no,southwest,2632.992,Hypoglycemia,12hrs,daily,daily, , ,medium,A
+48.0,female,27.36,1,no,northeast,9447.3824,Urinary tract infection,6hrs,frequently,daily, , ,high,A
+23.0,female,28.49,1,yes,southeast,18328.2381,Dengue,,,,,,,A
+45.0,male,23.56,2,no,northeast,8603.8234,Urinary tract infection,8hrs,daily,no,frequently, , ,A
+20.0,male,35.625,3,yes,northwest,37465.34375,Cervical spondylosis,,,,,,,B
+62.0,female,32.68,0,no,northwest,13844.7972,Chickenpox,,,,,,,A
+43.0,female,25.27,1,yes,northeast,21771.3423,Dengue,,,,,,,A
+23.0,female,28.0,0,no,southwest,13126.67745,Gastroenteritis,,,,,,,A
+31.0,female,32.775,2,no,northwest,5327.40025,Urinary tract infection,2hrs,rarely,daily,no,yes,high,A
+41.0,female,21.755,1,no,northeast,13725.47184,Chickenpox,,,,,,,A
+58.0,female,32.395,1,no,northeast,13019.16105,Gastroenteritis,,,,,,,A
+48.0,female,36.575,0,no,northwest,8671.19125,Urinary tract infection,whole day,frequently, ,rarely,yes,high,A
+31.0,female,21.755,0,no,northwest,4134.08245,Hypoglycemia,6hrs,frequently,daily, , ,high,A
+19.0,female,27.93,3,no,northwest,18838.70366,Dengue,,,,,,,A
+19.0,female,30.02,0,yes,northwest,33307.5508,Tuberculosis,,,,,,,B
+41.0,male,33.55,0,no,southeast,5699.8375,Urinary tract infection,12hrs,frequently,frequently,rarely,yes,medium,A
+40.0,male,29.355,1,no,northwest,6393.60345,Urinary tract infection, ,frequently,no,frequently,yes,high,A
+31.0,female,25.8,2,no,southwest,4934.705,Hypoglycemia,12hrs,daily,no,frequently, ,medium,A
+37.0,male,24.32,2,no,northwest,6198.7518,Urinary tract infection,6hrs,frequently, ,no,no,low,A
+46.0,male,40.375,2,no,northwest,8733.22925,Urinary tract infection,2hrs,daily,frequently,no, ,medium,A
+22.0,male,32.11,0,no,northwest,2055.3249,Hypoglycemia, ,frequently,no, ,no,low,A
+51.0,male,32.3,1,no,northeast,9964.06,Gastroenteritis,4hrs,frequently, ,no,no,medium,A
+18.0,female,27.28,3,yes,southeast,18223.4512,Dengue,,,,,,,A
+35.0,male,17.86,1,no,northwest,5116.5004,Hypoglycemia,12hrs, , ,daily,no, ,A
+59.0,female,34.8,2,no,southwest,36910.60803,Arthritis,,,,,,,B
+36.0,male,33.4,2,yes,southwest,38415.474,Cervical spondylosis,,,,,,,B
+37.0,female,25.555,1,yes,northeast,20296.86345,Dengue,,,,,,,A
+59.0,male,37.1,1,no,southwest,12347.172,Gastroenteritis,,,,,,,A
+36.0,male,30.875,1,no,northwest,5373.36425,Urinary tract infection,6hrs,rarely,frequently,frequently, ,low,A
+39.0,male,34.1,2,no,southeast,23563.01618,Allergy,,,,,,,B
+18.0,male,21.47,0,no,northeast,1702.4553,Hypoglycemia,whole day,rarely,daily,daily, ,low,A
+52.0,female,33.3,2,no,southwest,10806.839,Gastroenteritis,4hrs,rarely,daily,rarely,yes,medium,A
+27.0,female,31.255,1,no,northwest,3956.07145,Hypoglycemia, , ,no, , ,medium,A
+18.0,male,39.14,0,no,northeast,12890.05765,Gastroenteritis,,,,,,,A
+40.0,male,25.08,0,no,southeast,5415.6612,Urinary tract infection, ,frequently, ,frequently,no, ,A
+29.0,male,37.29,2,no,southeast,4058.1161,Hypoglycemia,whole day,frequently,no, ,yes,medium,A
+46.0,female,34.6,1,yes,southwest,41661.602,Jaundice,,,,,,,B
+38.0,female,30.21,3,no,northwest,7537.1639,Urinary tract infection,2hrs, ,daily, ,no,high,A
+30.0,female,21.945,1,no,northeast,4718.20355,Hypoglycemia,2hrs,rarely,no,no, ,low,A
+40.0,male,24.97,2,no,southeast,6593.5083,Urinary tract infection, ,rarely,no,rarely,yes,high,A
+50.0,male,25.3,0,no,southeast,8442.667,Urinary tract infection,8hrs, ,daily,rarely, , ,A
+20.0,female,24.42,0,yes,southeast,26125.67477,Dimorphic hemorrhoids (piles),,,,,,,B
+41.0,male,23.94,1,no,northeast,6858.4796,Urinary tract infection, ,daily,frequently,daily,no,medium,A
+33.0,female,39.82,1,no,southeast,4795.6568,Hypoglycemia,whole day,frequently,no,no,no, ,A
+38.0,male,16.815,2,no,northeast,6640.54485,Urinary tract infection, ,frequently,daily,daily,no,high,A
+42.0,male,37.18,2,no,southeast,7162.0122,Urinary tract infection,4hrs,frequently, ,rarely, ,high,A
+56.0,male,34.43,0,no,southeast,10594.2257,Gastroenteritis,2hrs,frequently,no, ,yes,high,A
+58.0,male,30.305,0,no,northeast,11938.25595,Gastroenteritis,,,,,,,A
+52.0,male,34.485,3,yes,northwest,60021.39897,Paralysis (brain hemorrhage),,,,,,,C
+20.0,female,21.8,0,yes,southwest,20167.33603,Dengue,,,,,,,A
+54.0,female,24.605,3,no,northwest,12479.70895,Gastroenteritis,,,,,,,A
+58.0,male,23.3,0,no,southwest,11345.519,Gastroenteritis,,,,,,,A
+45.0,female,27.83,2,no,southeast,8515.7587,Urinary tract infection,6hrs,frequently, ,daily,yes,medium,A
+26.0,male,31.065,0,no,northwest,2699.56835,Hypoglycemia,8hrs,frequently,frequently,daily,yes,high,A
+63.0,female,21.66,0,no,northeast,14449.8544,Chickenpox,,,,,,,A
+58.0,female,28.215,0,no,northwest,12224.35085,Gastroenteritis,,,,,,,A
+37.0,male,22.705,3,no,northeast,6985.50695,Urinary tract infection,4hrs,daily,daily, , ,medium,A
+25.0,female,42.13,1,no,southeast,3238.4357,Hypoglycemia,4hrs,rarely,frequently,daily,no,medium,A
+52.0,male,41.8,2,yes,southeast,47269.854,Diabetes,,,,,,,C
+64.0,male,36.96,2,yes,southeast,49577.6624,Heart attack,,,,,,,C
+22.0,female,21.28,3,no,northwest,4296.2712,Hypoglycemia,4hrs,rarely,frequently,frequently, ,low,A
+28.0,female,33.11,0,no,southeast,3171.6149,Hypoglycemia, , ,no,daily,yes,medium,A
+18.0,male,33.33,0,no,southeast,1135.9407,Hypoglycemia,6hrs,daily,frequently,no,no, ,A
+28.0,male,24.3,5,no,southwest,5615.369,Urinary tract infection,6hrs,rarely,no,rarely,yes,low,A
+45.0,female,25.7,3,no,southwest,9101.798,Urinary tract infection,4hrs,rarely,frequently,daily,no,medium,A
+33.0,male,29.4,4,no,southwest,6059.173,Urinary tract infection,whole day,rarely,rarely,no,no,high,A
+18.0,female,39.82,0,no,southeast,1633.9618,Hypoglycemia, ,rarely,rarely,rarely,no,medium,A
+32.0,male,33.63,1,yes,northeast,37607.5277,Cervical spondylosis,,,,,,,B
+24.0,male,29.83,0,yes,northeast,18648.4217,Dengue,,,,,,,A
+19.0,male,19.8,0,no,southwest,1241.565,Hypoglycemia,8hrs, , , , ,high,A
+20.0,male,27.3,0,yes,southwest,16232.847,Chickenpox,,,,,,,A
+40.0,female,29.3,4,no,southwest,15828.82173,Chickenpox,,,,,,,A
+34.0,female,27.72,0,no,southeast,4415.1588,Hypoglycemia,whole day,rarely,no, ,no,high,A
+42.0,female,37.9,0,no,southwest,6474.013,Urinary tract infection,whole day, , ,rarely,yes, ,A
+51.0,female,36.385,3,no,northwest,11436.73815,Gastroenteritis,,,,,,,A
+54.0,female,27.645,1,no,northwest,11305.93455,Gastroenteritis,,,,,,,A
+55.0,male,37.715,3,no,northwest,30063.58055,Hyperthyroidism,,,,,,,B
+52.0,female,23.18,0,no,northeast,10197.7722,Gastroenteritis, ,daily,rarely,rarely,no,medium,A
+32.0,female,20.52,0,no,northeast,4544.2348,Hypoglycemia,6hrs,frequently,no,rarely,no, ,A
+28.0,male,37.1,1,no,southwest,3277.161,Hypoglycemia,8hrs,rarely,frequently,daily,yes,medium,A
+41.0,female,28.05,1,no,southeast,6770.1925,Urinary tract infection, ,daily, ,frequently,no, ,A
+43.0,female,29.9,1,no,southwest,7337.748,Urinary tract infection, ,frequently, ,frequently,no,low,A
+49.0,female,33.345,2,no,northeast,10370.91255,Gastroenteritis,6hrs,rarely,daily, ,no, ,A
+64.0,male,23.76,0,yes,southeast,26926.5144,Migraine,,,,,,,B
+55.0,female,30.5,0,no,southwest,10704.47,Gastroenteritis,6hrs,frequently,no,daily,yes,low,A
+24.0,male,31.065,0,yes,northeast,34254.05335,Osteoarthritis,,,,,,,B
+20.0,female,33.3,0,no,southwest,1880.487,Hypoglycemia,whole day,rarely,frequently,daily,no,medium,A
+45.0,male,27.5,3,no,southwest,8615.3,Urinary tract infection,8hrs,daily,frequently,frequently,yes,low,A
+26.0,male,33.915,1,no,northwest,3292.52985,Hypoglycemia,2hrs,rarely, ,rarely,no, ,A
+25.0,female,34.485,0,no,northwest,3021.80915,Hypoglycemia,8hrs, ,no,no, , ,A
+43.0,male,25.52,5,no,southeast,14478.33015,Chickenpox,,,,,,,A
+35.0,male,27.61,1,no,southeast,4747.0529,Hypoglycemia,12hrs, , ,rarely,no, ,A
+26.0,male,27.06,0,yes,southeast,17043.3414,Chickenpox,,,,,,,A
+57.0,male,23.7,0,no,southwest,10959.33,Gastroenteritis,8hrs,rarely,frequently,rarely,yes,medium,A
+22.0,female,30.4,0,no,northeast,2741.948,Hypoglycemia,4hrs, , , ,no,high,A
+32.0,female,29.735,0,no,northwest,4357.04365,Hypoglycemia,12hrs, ,no, ,no,high,A
+39.0,male,29.925,1,yes,northeast,22462.04375,Fungal infection,,,,,,,B
+25.0,female,26.79,2,no,northwest,4189.1131,Hypoglycemia,whole day,daily,rarely,daily,yes,high,A
+48.0,female,33.33,0,no,southeast,8283.6807,Urinary tract infection,12hrs, ,daily,daily,yes, ,A
+47.0,female,27.645,2,yes,northwest,24535.69855,Allergy,,,,,,,B
+18.0,female,21.66,0,yes,northeast,14283.4594,Chickenpox,,,,,,,A
+18.0,male,30.03,1,no,southeast,1720.3537,Hypoglycemia,8hrs,frequently,rarely, , ,low,A
+61.0,male,36.3,1,yes,southwest,47403.88,Diabetes,,,,,,,C
+47.0,female,24.32,0,no,northeast,8534.6718,Urinary tract infection,2hrs,rarely, ,daily, ,low,A
+28.0,female,17.29,0,no,northeast,3732.6251,Hypoglycemia,4hrs,rarely,frequently,daily,yes, ,A
+36.0,female,25.9,1,no,southwest,5472.449,Urinary tract infection,whole day,frequently,daily,rarely, ,medium,A
+20.0,male,39.4,2,yes,southwest,38344.566,Cervical spondylosis,,,,,,,B
+44.0,male,34.32,1,no,southeast,7147.4728,Urinary tract infection,6hrs,frequently,no,rarely,no, ,A
+38.0,female,19.95,2,no,northeast,7133.9025,Urinary tract infection,4hrs,rarely, ,no, ,low,A
+19.0,male,34.9,0,yes,southwest,34828.654,Osteoarthritis,,,,,,,B
+21.0,male,23.21,0,no,southeast,1515.3449,Hypoglycemia,12hrs,daily,frequently, ,yes,medium,A
+46.0,male,25.745,3,no,northwest,9301.89355,Urinary tract infection,2hrs, ,rarely, ,yes,low,A
+58.0,male,25.175,0,no,northeast,11931.12525,Gastroenteritis,,,,,,,A
+20.0,male,22.0,1,no,southwest,1964.78,Hypoglycemia,6hrs,rarely,no,no,yes,medium,A
+18.0,male,26.125,0,no,northeast,1708.92575,Hypoglycemia,4hrs, ,daily,daily,yes,high,A
+28.0,female,26.51,2,no,southeast,4340.4409,Hypoglycemia, ,rarely,no,frequently, ,medium,A
+33.0,male,27.455,2,no,northwest,5261.46945,Hypoglycemia, , ,daily,rarely,yes,high,A
+19.0,female,25.745,1,no,northwest,2710.82855,Hypoglycemia, ,frequently, ,no,yes, ,A
+45.0,male,30.36,0,yes,southeast,62592.87309,Typhoid,,,,,,,C
+62.0,male,30.875,3,yes,northwest,46718.16325,Bronchial Asthma,,,,,,,C
+25.0,female,20.8,1,no,southwest,3208.787,Hypoglycemia, , ,rarely, ,yes,medium,A
+43.0,male,27.8,0,yes,southwest,37829.7242,Cervical spondylosis,,,,,,,B
+42.0,male,24.605,2,yes,northeast,21259.37795,Dengue,,,,,,,A
+24.0,female,27.72,0,no,southeast,2464.6188,Hypoglycemia, , ,daily,rarely, ,high,A
+29.0,female,21.85,0,yes,northeast,16115.3045,Chickenpox,,,,,,,A
+32.0,male,28.12,4,yes,northwest,21472.4788,Dengue,,,,,,,A
+25.0,female,30.2,0,yes,southwest,33900.653,Tuberculosis,,,,,,,B
+41.0,male,32.2,2,no,southwest,6875.961,Urinary tract infection,whole day,rarely, ,no,yes, ,A
+42.0,male,26.315,1,no,northwest,6940.90985,Urinary tract infection,6hrs,daily,daily,rarely, , ,A
+33.0,female,26.695,0,no,northwest,4571.41305,Hypoglycemia,4hrs,frequently, ,frequently,no,medium,A
+34.0,male,42.9,1,no,southwest,4536.259,Hypoglycemia,12hrs,rarely,rarely,frequently,yes,high,A
+19.0,female,34.7,2,yes,southwest,36397.576,Arthritis,,,,,,,B
+30.0,female,23.655,3,yes,northwest,18765.87545,Dengue,,,,,,,A
+18.0,male,28.31,1,no,northeast,11272.33139,Gastroenteritis,,,,,,,A
+19.0,female,20.6,0,no,southwest,1731.677,Hypoglycemia,8hrs,rarely,rarely, ,yes,medium,A
+18.0,male,53.13,0,no,southeast,1163.4627,Hypoglycemia,8hrs,frequently,frequently,no, , ,A
+35.0,male,39.71,4,no,northeast,19496.71917,Dengue,,,,,,,A
+39.0,female,26.315,2,no,northwest,7201.70085,Urinary tract infection,4hrs, , ,daily,no,low,A
+31.0,male,31.065,3,no,northwest,5425.02335,Urinary tract infection,6hrs,frequently,no,frequently,yes,low,A
+62.0,male,26.695,0,yes,northeast,28101.33305,GERD (Gastroesophageal Reflux Disease),,,,,,,B
+62.0,male,38.83,0,no,southeast,12981.3457,Gastroenteritis,,,,,,,A
+42.0,female,40.37,2,yes,southeast,43896.3763,AIDS,,,,,,,C
+31.0,male,25.935,1,no,northwest,4239.89265,Hypoglycemia,12hrs, ,daily, ,no, ,A
+61.0,male,33.535,0,no,northeast,13143.33665,Gastroenteritis,,,,,,,A
+42.0,female,32.87,0,no,northeast,7050.0213,Urinary tract infection,whole day,daily,rarely,no, ,low,A
+51.0,male,30.03,1,no,southeast,9377.9047,Urinary tract infection,6hrs,frequently,frequently,daily,yes, ,A
+23.0,female,24.225,2,no,northeast,22395.74424,Fungal infection,,,,,,,B
+52.0,male,38.6,2,no,southwest,10325.206,Gastroenteritis,12hrs,daily,daily,daily,yes,high,A
+57.0,female,25.74,2,no,southeast,12629.1656,Gastroenteritis,,,,,,,A
+23.0,female,33.4,0,no,southwest,10795.93733,Gastroenteritis,whole day, ,rarely,no,yes,medium,A
+52.0,female,44.7,3,no,southwest,11411.685,Gastroenteritis,,,,,,,A
+50.0,male,30.97,3,no,northwest,10600.5483,Gastroenteritis,4hrs,rarely,no,no, ,low,A
+18.0,female,31.92,0,no,northeast,2205.9808,Hypoglycemia,6hrs, ,rarely, ,yes,low,A
+18.0,female,36.85,0,no,southeast,1629.8335,Hypoglycemia,6hrs,rarely,no,daily,yes,low,A
+21.0,female,25.8,0,no,southwest,2007.945,Hypoglycemia, ,daily, ,rarely, ,medium,A
+61.0,female,29.07,0,yes,northwest,29141.3603,GERD (Gastroesophageal Reflux Disease),,,,,,,B
