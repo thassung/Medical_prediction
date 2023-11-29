@@ -40,6 +40,17 @@ def read_child_from_csv(file_path):
 
     return re2
 
+def get_common_symptoms(file_path):
+    df = pd.read_csv(file_path)
+    common_symptoms = {}
+
+    for disease in df['disease'].unique():
+        disease_df = df[df['disease'] == disease]
+        symptom_counts = disease_df.sum(axis=0)
+        common_symptoms[disease] = set(symptom_counts[symptom_counts > len(disease_df) * 0.5].index)
+
+    return common_symptoms
+
 @app.route("/", methods = ['GET'])
 def home():
     file_path = './data/disease_insurance_price_final.csv'
@@ -67,7 +78,7 @@ def predict_disease():
             'Arthritis', 'GERD (Gastroesophageal Reflux Disease)', 'Typhoid', 'Hepatitis A']
     label = prediction[0]
     if label in predicted_not_in_insurance:
-        idx = predicted_not_in_insurance.index(d)
+        idx = predicted_not_in_insurance.index(label)
         label = mapped[idx]
 
     encoder = joblib.load('./model/disease_encoder.pkl')
@@ -161,7 +172,24 @@ def predict_insurance():
         return jsonify({'error': 'Invalid request method'})
     
 def update_box():
-    return 'updating'
+    data = request.get_json()
+    predicted_disease = data.get('prognosis')
+    symptoms = set(data.get('symptoms'))
+
+    common_symptoms = get_common_symptoms('./data/training.csv')
+    disease_common_symptoms = common_symptoms.get(predicted_disease, set())
+
+    matched_symptoms = symptoms & disease_common_symptoms
+    patient_extra_symptoms = symptoms - disease_common_symptoms
+    disease_extra_symptoms = disease_common_symptoms - symptoms
+
+    result = {
+        'matched symptoms': list(matched_symptoms),
+        'patient extra symptoms': list(patient_extra_symptoms),
+        'disease extra symptoms': list(disease_extra_symptoms),
+    }
+
+    return jsonify(result)
         
 if __name__ == "__main__":
     app.run(host='127.0.0.1',port='8000',debug=True)
