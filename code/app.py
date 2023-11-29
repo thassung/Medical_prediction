@@ -4,88 +4,164 @@ import numpy as np
 import joblib
 import pickle
 import pathlib
+import csv
 
-
-app = Flask(__name__, template_folder = './template/public')
+app = Flask(__name__, template_folder = './template/public',static_folder='./template/public')
 
 model_disease = joblib.load('./model/model.pkl')
 model_insurance = joblib.load('./model/insurance_model.pkl')
 
+def read_region_from_csv(file_path):
+    unique_regions = set()
+
+    with open(file_path, 'r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+
+        # Assuming the first row contains column headers
+        if 'region' in csv_reader.fieldnames:
+            for row in csv_reader:
+                unique_regions.add(row['region'])
+
+    return sorted(list(unique_regions))  # Convert set to list and sort
+
+def read_child_from_csv(file_path):
+    unique_chilren = set()
+
+    with open(file_path, 'r') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+
+        # Assuming the first row contains column headers
+        if 'children' in csv_reader.fieldnames:
+            for row in csv_reader:
+                unique_chilren.add(row['children'])
+    re = sorted(list(unique_chilren))
+    re2 = re[:-1]
+    re2.append(str(re[-1])+'+')
+
+    return re2
+
 @app.route("/", methods = ['GET'])
 def home():
-    return render_template('index.html')
+    file_path = './data/disease_insurance_price_final.csv'
+    regions = read_region_from_csv(file_path)
+    children = read_child_from_csv(file_path)
+    return render_template('index.html', regions=regions, children=children)
+
+@app.route("/disease", methods=['POST'])
+def predict_disease():
+    data = request.get_json()
+    disease_model = joblib.load('./model/disease_model.pkl')
+    column_names = ['itching', 'skin_rash', 'continuous_sneezing', 'stomach_pain', 
+                    'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'bloody_stool', 'neck_pain', 'cramps', 'bruising', 'obesity', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'movement_stiffness', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic_patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'shivering_or_chills', 'unprotected_blood/sex_transfusion', 'pain/irritation_in_anal_region', 'swollen_painful_joints']
+    data = pd.DataFrame([data], columns=column_names)
+    prediction = disease_model.predict(data)
+
+    # Get label
+    predicted_not_in_insurance = ['(vertigo) Paroymsal  Positional Vertigo', 'Chicken pox', 
+            'Common Cold', 'Diabetes ', 'Dimorphic hemmorhoids(piles)', 
+            'GERD', 'Hepatitis C', 'Hepatitis E', 'Hypertension ', 
+            'Osteoarthristis', 'Peptic ulcer diseae', 'Pneumonia', 'hepatitis A']
+    mapped = ['Paroxysmal Positional Vertigo (Vertigo)', 'Chickenpox',
+            'Allergy', 'Diabetes', 'Dimorphic hemorrhoids (piles)',
+            'GERD (Gastroesophageal Reflux Disease)', 'Hepatitis A', 'Hepatitis A', 'Heart attack',
+            'Arthritis', 'GERD (Gastroesophageal Reflux Disease)', 'Typhoid', 'Hepatitis A']
+    label = prediction[0]
+    if label in predicted_not_in_insurance:
+        idx = predicted_not_in_insurance.index(d)
+        label = mapped[idx]
+
+    encoder = joblib.load('./model/disease_encoder.pkl')
+    label = encoder.transform(pd.Series(label))
+    label = label[0]
+
+    result = {'message': f'Disease is {prediction[0]}',
+                'disease': prediction[0],
+                'disease_label': int(label)}
+    return jsonify(result)
 
 @app.route("/predict", methods=['POST'])
 def predict_insurance():
-    data = request.get_json()
-    # symptom = data.get('symptom')
-    exercise = data.get('exerciseFrequency')
-    print('='*50)
-    print(exercise)
-
-
-    # symptoms_list = ['itching', 'skin_rash', 'continuous_sneezing', 'joint_pain', 'stomach_pain', 'acidity', 'ulcers_on_tongue', 
-    #              'muscle_wasting', 'burning_micturition', 'spotting_ urination', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 
-    #              'mood_swings', 'weight_loss', 'restlessness', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 
-    #              'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 
-    #              'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 
-    #              'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'swelling_of_stomach', 'swelled_lymph_nodes', 
-    #              'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'congestion', 
-    #              'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'bloody_stool', 'neck_pain', 
-    #              'dizziness', 'cramps', 'bruising', 'obesity', 'swollen_legs', 'swollen_blood_vessels', 'puffy_face_and_eyes', 
-    #              'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'drying_and_tingling_lips', 
-    #              'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'swelling_joints', 
-    #              'movement_stiffness', 'spinning_movements', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 
-    #              'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 
-    #              'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 
-    #              'belly_pain', 'abnormal_menstruation', 'dischromic_patches', 'watering_from_eyes', 'increased_appetite', 
-    #              'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 
-    #              'coma', 'stomach_bleeding', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 
-    #              'shivering_or_chills', 'unprotected_blood/sex_transfusion', 'pain/irritation_in_anal_region']
-    # input = pd.DataFrame(data={
-    #     'Diabetes' : [diabetes],
-    #     'Cholesterol' : [cholesterol],
-    #     'Systolic BP' : [bp],
-    #     'Continent' : [continent],
-    #     'Sleep Hours Per Day' : [sleep],
-    #     'Exercise Hours Per Week' : [exercise],
-    #     'Triglycerides' : [triglycerides],
-    #     'Previous Heart Problems' : [heartprob],
-    #     'Obesity' : [obesity],
-    #     'Age' : [age],
-    #     'Death Rate' : [deathrate],
-    #     'Alcohol Consumption' : [alcohol]
-    # })
+    if request.method == 'POST':
+        data = request.get_json()
+        for key, value in data.items():
+            try:
+                data[key] = float(value)
+            except (ValueError, TypeError):
+                pass
     
-    # input = input.replace('', None)
-
-    # imputer = pickle.load(open('./preprocessor/imputer.pkl', 'rb'))
-    # transformer = pickle.load(open('./preprocessor/transformer.pkl', 'rb'))
-
-    # fmed = ['Cholesterol', 'Systolic BP', 'Sleep Hours Per Day', 'Exercise Hours Per Week', 
-    #         'Triglycerides', 'Age', 'Death Rate']
-    # fmode = ['Diabetes', 'Continent', 'Previous Heart Problems', 'Obesity', 
-    #          'Alcohol Consumption']
-
-    # input = imputer.transform(input)
-    # input = pd.DataFrame(input, columns=fmed+fmode)
-    # input = transformer.transform(input)
-
-    # prediction = model.predict(input)[0]
-    # message = ''
-    # if prediction == 0:
-    #     message = 'You are not at risk of Heart Attack'
+        exercise = data.get('exercise')
+        junk_food = data.get('junkFood')
+        smoking = data.get('smoking')
+        alcohol = data.get('alcohol')
+        sedentary = data.get('sedentary')
+        stress = data.get('stress')
+        drug = data.get('drug')
+        age = data.get('age')
+        sex = data.get('sex')
+        weight = data.get('weight')
+        height = data.get('height')
+        children = data.get('children')
+        region = data.get('region')
+        disease = data.get('disease')
+        print(disease)
         
-    # if prediction == 1:
-    #     message = 'You are at risk of Heart Attack'
-    # ###result
-    # result = {
-    #     'message': message
-    # }
-    # print(message)
-    # return jsonify(result), 200
+        print(exercise)
+        print(drug)
+        print(height)
+        print(data)
+        bmi = weight/((height/100)**2)
 
-    return print('exercise')
+        children = int(str(children)[0])
+        
+        northwest, southeast, southwest = 0, 0, 0
+        if region == 'northwest':
+            northwest = 1
+        elif region == 'southeast':
+            southeast = 1
+        elif region == 'southwest':
+            southwest = 1
+        
+        age_bin = [((float('-inf'),25), 3), ((25,40), 0), ((40,60), 1), ((60,float('inf')), 2)]
+        for b, l in age_bin:
+            if age > b[0] and age <= b[1]:
+                age_group = l
+                break
+
+        
+        input_df = pd.DataFrame({'age': [age],
+                                 'sex': [sex],
+                                 'bmi': [bmi],
+                                 'children': [children],
+                                 'smoker': [smoking],
+                                 'disease': [disease],  ###############
+                                 'sed_pd': [sedentary],
+                                 'junk_food_consumption': [junk_food],
+                                 'alcohol_consumption': [alcohol],
+                                 'exercise_routine': [exercise],
+                                 'substance_use': [drug],
+                                 'stress_level': [stress],
+                                 'northwest': [northwest],
+                                 'southeast': [southeast],
+                                 'southwest': [southwest],
+                                 'age_group': [age_group]
+                                 })
+
+        scaler = joblib.load('./model/scaler.pkl')
+        insurance_model = joblib.load('./model/insurance_model.pkl')
+
+        input_df = scaler.transform(input_df)
+        prediction = insurance_model.predict(input_df)
+        
+        print(prediction)
+
+        result = {'message': f'Insurance type is {int(prediction[0])}',
+                  'type': int(prediction[0])}
+        return jsonify(result)
+    else:
+        return jsonify({'error': 'Invalid request method'})
+    
+def update_box():
+    return 'updating'
         
 if __name__ == "__main__":
     app.run(host='127.0.0.1',port='8000',debug=True)

@@ -1,0 +1,13 @@
+test
+assets
+src
+**/gulp
+**/node_modules
+static
+.ipynb_checkpoints
+test.ipynb
+test.py
+dump.txt
+.rar
+code.rar
+med pred 26_11.rar
