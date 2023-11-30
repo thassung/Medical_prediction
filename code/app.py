@@ -135,7 +135,7 @@ def predict_disease():
     country = userLocation.get('country')
 
     # Append the district to the CSV file
-    prediction_result = "Positive"
+    prediction_result = prediction[0]
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     data_to_be_saved = {
