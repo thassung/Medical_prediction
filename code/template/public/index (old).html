@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Policy Wise: Premium Precision</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='/assets/img/favicons/apple-touch-icon.png')}}">
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='/assets/img/favicons/favicon-32x32.png')}}">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32x32.png"> -->
+  <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='/assets/img/favicons/favicon-16x16.png')}}">
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16x16.png"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='/assets/img/favicons/favicon.ico')}}">
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicons/favicon.ico"> -->
+  <!-- <link rel="manifest" href="assets/img/favicons/manifest.json"> -->
+  <link rel="manifest" href="{{url_for('static', filename='/assets/img/favicons/manifest.json')}}">
+  <!-- <link rel="manifest" href="{{url_for('static', filename='/assets/img/favicons/manifest.json')}}"> -->
+  <meta name="msapplication-TileImage" content="{{url_for('static', filename='/assets/img/favicons/mstile-150x150.png')}}">
+  <!-- <meta name="msapplication-TileImage" content="/assets/img/favicons/mstile-150x150.png"> -->
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- <link href="/vendors/prism/prism.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename='/vendors/prism/prism.css')}}" rel="stylesheet">
+  <!-- <link href="/assets/css/theme.css" rel="stylesheet" /> -->
+  <link href="{{url_for('static', filename='/assets/css/theme.css')}}" rel="stylesheet" />
+  <link href="{{url_for('static', filename='/assets/css/user.css')}}" rel="stylesheet" />
+
+  <style>
+    #bg {
+      background-image: url("{{ url_for('static', filename='assets/img/illustrations/bg.png')}}");
+      background-position: 0 200px;
+      background-size: 100% 45%;
+    }
+    #car{
+      background-image: url("{{ url_for('static', filename='assets/img/illustrations/bg-car-insurance.png')}}");
+      background-position: 0 200px;
+      background-size: 100% 45%;
+    }
+    #bg_left{
+      background-image: url("{{ url_for('static', filename='assets/img/illustrations/bg-left.png')}}");
+      background-position: left;
+      background-size: 15% 100%;
+
+    }
+    #circle-_1{
+      background-image:url("{{ url_for('static', filename='assets/img/illustrations/circle.png')}}");
+      background-position:18% 49%;
+      background-size:auto;
+    }
+
+    .dropdownStyle {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white; /* Optional: Add a border for better visibility */
+        }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="text-primary fs-3 ms-2 fw-bolder">PREMIUM</span>
+          <span class="fw-thin text-300 fs-3">PRECISION</span>
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pt-4 pt-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0">
+            <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="#">Patient Details</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="#map">Hospital</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="#news">Disease Count</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="#contact">Contact Us</a></li>
+          </ul>
+          <div class="d-flex mt-2 align-items-center mt-lg-0">
+            <div class="dropdown">
+              <button class="btn btn-sm d-flex mx-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="fas fa-search text-primary"></i></button>
+              <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1"
+                style="top:55px">
+                <form>
+                  <input class="form-control form-search-control border-100" type="search" placeholder="Search"
+                    aria-label="Search" />
+                </form>
+              </div>
+            </div><a href="#!"> <i class="fas fa-user text-primary"> </i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="py-0">
+      <div class="bg-holder" id='bg'>
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-md-7 col-xl-6 pt-7 text-md-start text-center">
+            <h1 class="display-3 text-light fw-thin">POLICY WISE:
+              <br>
+              <strong class="fw-bolder">PREMIUM: PRECISION </strong>
+            </h1>
+            <p class="fs-2 text-400">Taking care of your Physical and Financial Well-Being 
+              <br class="d-none d-xxl-block" />at the tip of your finger. 
+            </p>
+            <a class="btn btn-primary btn-ensurance mt-5" href="#products">
+              <span class="fas fa-chevron-right fa-xs btn-icon" ></span>
+              <span class="btn-text">Find My Plan</span>
+            </a>
+          </div>
+          <div class="row-cols-xxl-12 col-md-6">
+            <div class="col-lg-12">
+              <h5 class="display-6 text-light fw-thin" style="margin-top: 70px;" id="editName" contentEditable="true" oninput="validName()"> Hello, Please enter your name! </h5>
+              <br>
+              <br>
+              <br>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <!-- <img class="shadow-icon" src="assets/img/icons/age-group.png" height="60" alt="..." /> -->
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/age-group.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Age</h4>
+                  <input class="text-400 mb-md-0 form-control" type="number" placeholder="Please enter your age" id="editAge">
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/gender.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Sex</h4>
+                  <!-- <p class="text-400 mb-md-0" id="editSex" contentEditable="true">Please enter your gender</p> -->
+                  <select class="text-400 mb-md-0 dropdownStyle" id="gender">
+                    <option value=1>Male</option>
+                    <option value=0>Female</option>
+                </select>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/weight-scale.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Weight</h4>
+                  <input class="text-400 mb-md-0 form-control" type="number" placeholder="Please Enter your weight (in kg)" id="editWeight">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/height.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Height</h4>
+                  <input class="text-400 mb-md-0 form-control" type="number" placeholder="Please Enter your height (in cm)" id="editHeight">
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/baby.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">No. of children</h4>
+                  <select class="text-400 mb-md-0 dropdownStyle" id="childDropdown">
+                    {% for child in children %}
+                    <option value="{{ child }}">{{ child }}</option>
+                {% endfor %}
+                </select>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/location.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Region</h4>                    
+                  <select class="text-400 mb-md-0 dropdownStyle" id="regionDropdown">
+                    {% for region in regions %}
+                    <option value="{{ region }}">{{ region }}</option>
+                {% endfor %}
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/phone-call.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Phone Number</h4>
+                  <p class="text-400 mb-md-0" contentEditable="true" id="editPhone" oninput="validPhone()">Please enter your phone number</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <img class="shadow-icon" src="{{url_for('static', filename='assets/img/icons/mail.png')}}" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Email</h4>
+                  <p class="text-400 mb-md-0" contentEditable="true" id="editEmail">Please enter your email</p>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mb-6 text-center text-sm-start">
+                  <a class="btn btn-primary btn-ensurance mt-5" onclick="findMyPlan()">
+                    <span class="fas fa-chevron-right fa-xs btn-icon" ></span>
+                    <span class="btn-text">Find My Plan</span>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+  
+    <section id="symptom" style="margin-bottom: 10px;">
+
+
+      <div class="container-lg">        
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form id="health1" class="card card-bg shadow p-4">
+              <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+              <div class="row">
+                
+                <div class="col-md-6">                                  
+                    
+                    <h4 class="text-100 text-center">Can you concentrate?</h4>
+                    <div class="symptom-form-check" style="margin-bottom">
+                      <input class="form-check-input" type="radio" name="concentrate" value=1 id="concentrate_yes">
+                      <label class="form-check-label" for="concentrate_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="concentrate" value=0 id="concentrate_no" checked>
+                      <label class="form-check-label" for="concentrate_no"style="margin-bottom: 20px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have skin rash?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="skin_rash" value=1 id="skin_rash_yes">
+                      <label class="form-check-label" for="skin_rash_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="skin_rash" value=0 id="skin_rash_no"checked>
+                      <label class="form-check-label" for="skin_rash_no"style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have acute liver failure?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="liver_failure" value=1 id="liver_failure_yes">
+                      <label class="form-check-label" for="liver_failure_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="liver_failure" value=0 id="liver_failure_no"checked>
+                      <label class="form-check-label" for="liver_failure_no"style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have swollen lymph nodes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="lymph_nodes" value=1 id="lymph_nodes_yes">
+                      <label class="form-check-label" for="lymph_nodes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="lymph_nodes" value=0 id="lymph_nodes_no"checked>
+                      <label class="form-check-label" for="lymph_nodes_no"style="margin-bottom: 40px;">No</label>
+                    </div>                                      
+
+                    <h4 class="text-100 text-center">Do you have prominent veins in your calves?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="veins_in_calves" value=1 id="veins_in_calves_yes">
+                      <label class="form-check-label" for="veins_in_calves_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="veins_in_calves" value=0 id="veins_in_calves_no"checked>
+                      <label class="form-check-label" for="veins_in_calves_no" style="margin-bottom: 40px;">No</label>
+                    </div>                                                                    
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Is your thyroid gland enlarged?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="thyroid" value=1 id="thyroid_yes">
+                      <label class="form-check-label" for="thyroid_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="thyroid" value=0 id="thyroid_no"checked>
+                      <label class="form-check-label" for="thyroid_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have mouth ulcers?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="mouth_ulcer" value=1 id="mouth_ulcer_yes">
+                      <label class="form-check-label" for="mouth_ulcer_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="mouth_ulcer" value=0 id="mouth_ulcer_no"checked>
+                      <label class="form-check-label" for="mouth_ulcer_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have family history?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="family_history" value=1 id="family_history_yes">
+                      <label class="form-check-label" for="family_history_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="family_history" value=0 id="family_history_no"checked>
+                      <label class="form-check-label" for="family_history_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have abnormal menstruation?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="abnormal_menstruation" value=1 id="abnormal_menstruation_yes">
+                      <label class="form-check-label" for="abnormal_menstruation_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="abnormal_menstruation" value=0 id="abnormal_menstruation_no"checked>
+                      <label class="form-check-label" for="abnormal_menstruation_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have irritability?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="irritability" value=1 id="irritability_yes">
+                      <label class="form-check-label" for="irritability_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="irritability" value=0 id="irritability_no"checked>
+                      <label class="form-check-label" for="irritability_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>                                                                              
+                </div>
+              </div>
+              </div>
+      
+              
+              <div class="col-12 d-grid" style="margin-top: 30px;">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(2)">Next Questions</button>
+                <!-- <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(1)">Previous Questions</button> -->
+              </div>
+            </form>
+
+            <form id="health2" class="card card-bg shadow p-4" style="display: none;">
+              
+              <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="row">
+                  
+                  <div class="col-md-6">
+                    
+                    <div>
+                      
+                      <h4 class="text-100 text-center">Do you have loss of appetite?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="loss_of_appetite" value=1 id="loss_of_appetite_yes">
+                        <label class="form-check-label" for="loss_of_appetite_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="loss_of_appetite" value=0 id="loss_of_appetite_no"checked>
+                        <label class="form-check-label" for="loss_of_appetite_no"style="margin-bottom: 40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Do you have excessive hunger?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="excessive_hunger" value=1 id="excessive_hunger_yes">
+                        <label class="form-check-label" for="excessive_hunger_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="excessive_hunger" value=0 id="excessive_hunger_no"checked>
+                        <label class="form-check-label" for="excessive_hunger_no"style="margin-bottom: 40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Are you having a passing of gases?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="passage_of_gases" value=1 id="passage_of_gases_yes">
+                        <label class="form-check-label" for="passage_of_gases_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="passage_of_gases" value=0 id="passage_of_gases_no"checked>
+                        <label class="form-check-label" for="passage_of_gases_yes"style="margin-bottom: 40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Do you have increased appetite?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="increased_appetite" value=1 id="increased_appetite_yes">
+                        <label class="form-check-label" for="increased_appetite_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="increased_appetite" value=0 id="increased_appetite_no"checked>
+                        <label class="form-check-label" for="increased_appetite_no"style="margin-bottom: 40px;">No</label>
+                      </div>                                      
+  
+                      <h4 class="text-100 text-center">Do you have weight gain?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="weight_gain" value=1 id="weight_gain_yes">
+                        <label class="form-check-label" for="weight_gain_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="weight_gain" value=0 id="weight_gain_no"checked>
+                        <label class="form-check-label" for="weight_gain_no" style="margin-bottom: 40px;">No</label>
+                      </div>                    
+                      
+                    </div>      
+                  </div>
+                      
+                  <div class="col-md-6">
+                    
+                    <div>
+                     
+                      <h4 class="text-100 text-center">Do you have weight loss?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="weight_loss" value=1 id="weight_loss_yes">
+                        <label class="form-check-label" for="weight_loss_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="weight_loss" value=0 id="weight_loss_no"checked>
+                        <label class="form-check-label" for="weight_loss_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Do you have irregular sugar level?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="sugar_level_irregular" value=1 id="sugar_level_irregular_yes">
+                        <label class="form-check-label" for="sugar_level_irregular_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="sugar_level_irregular" value=0 id="sugar_level_irregular_no"checked>
+                        <label class="form-check-label" for="sugar_level_irregular_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Do you have swollen legs?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="swollen_legs" value=1 id="swollen_legs_yes">
+                        <label class="form-check-label" for="swollen_legs_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="swollen_legs" value=0 id="swollen_legs_no"checked>
+                        <label class="form-check-label" for="swollen_legs_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Do you have depression?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="depression" value=1 id="depression_yes">
+                        <label class="form-check-label" for="depression_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="depression" value=0 id="depression_no"checked>
+                        <label class="form-check-label" for="depression_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                      </div>
+  
+                      <h4 class="text-100 text-center">Do you have internal itching?</h4>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="internal_itching" value=1 id="internal_itching_yes">
+                        <label class="form-check-label" for="internal_itching_yes">Yes</label>
+                      </div>
+                      <div class="symptom-form-check">
+                        <input class="form-check-input" type="radio" name="internal_itching" value=0 id="internal_itching_no"checked>
+                        <label class="form-check-label" for="internal_itching_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                      </div>                                                                              
+                  </div>
+                </div>      
+                </div>     
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(3)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(1)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health3" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2> 
+                
+                <div class="col-md-6">                                  
+                    
+                  <h4 class="text-100 text-center">Were you in coma?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="coma" value=1 id="coma_yes">
+                    <label class="form-check-label" for="coma_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="coma" value=0 id="coma_no"checked>
+                    <label class="form-check-label" for="coma_no"style="margin-bottom: 40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have headache?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="headache" value=1 id="headache_yes"checked>
+                    <label class="form-check-label" for="headache_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="headache" value=0 id="headache_no">
+                    <label class="form-check-label" for="headache_no"style="margin-bottom: 40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have spinning movements?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="spinning_movements" value=1 id="spinning_movements_yes">
+                    <label class="form-check-label" for="spinning_movements_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="spinning_movements" value=0 id="spinning_movements_no"checked>
+                    <label class="form-check-label" for="spinning_movements_yes"style="margin-bottom: 40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have weakness in one side of the body?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="weakness_in_one_side" value=1 id="weakness_in_one_side_yes">
+                    <label class="form-check-label" for="weakness_in_one_side_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="weakness_in_one_side" value=0 id="weakness_in_one_side_no"checked>
+                    <label class="form-check-label" for="weakness_in_one_side_no"style="margin-bottom: 40px;">No</label>
+                  </div>                                      
+
+                  <h4 class="text-100 text-center">Do you have altered sensorium?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="altered_sensorium" value=1 id="altered_sensorium_yes">
+                    <label class="form-check-label" for="altered_sensorium_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="altered_sensorium" value=0 id="altered_sensorium_no"checked>
+                    <label class="form-check-label" for="altered_sensorium_no" style="margin-bottom: 40px;">No</label>
+                  </div>                                   
+                  <h4 class="text-100 text-center">Do you feel pain while walking?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="painful_walking" value=1 id="painful_walking_yes">
+                    <label class="form-check-label" for="painful_walking_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="painful_walking" value=0 id="painful_walking_no"checked>
+                    <label class="form-check-label" for="painful_walking_no" style="margin-bottom: 40px;">No</label>
+                  </div>   
+
+              </div>
+    
+    
+              <div class="col-md-6">
+                
+                <div>
+                 
+                  <h4 class="text-100 text-center">Do you have palpitations?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="palpitations" value=1 id="palpitations_yes">
+                    <label class="form-check-label" for="palpitations_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="palpitations" value=0 id="palpitations_no"checked>
+                    <label class="form-check-label" for="palpitations_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have chest pain?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="chest_pain" value=1 id="chest_pain_yes">
+                    <label class="form-check-label" for="chest_pain_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="chest_pain" value=0 id="chest_pain_no"checked>
+                    <label class="form-check-label" for="chest_pain_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have swollen blood vessels?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="swollen_blood_vessels" value=1 id="swollen_blood_vessels_yes">
+                    <label class="form-check-label" for="swollen_blood_vessels_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="swollen_blood_vessels" value=0 id="swollen_blood_vessels_no"checked>
+                    <label class="form-check-label" for="swollen_blood_vessels_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have swollen extremeties?</h4>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="swollen_extremeties" value=1 id="swollen_extremeties_yes">
+                    <label class="form-check-label" for="swollen_extremeties_yes">Yes</label>
+                  </div>
+                  <div class="symptom-form-check">
+                    <input class="form-check-input" type="radio" name="swollen_extremeties" value=0 id="swollen_extremeties_no"checked>
+                    <label class="form-check-label" for="swollen_extremeties_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                  </div>
+
+                  <h4 class="text-100 text-center">Do you have slurred speech?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="slurred_speech" value=1 id="slurred_speech_yes">
+                      <label class="form-check-label" for="slurred_speech_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="slurred_speech" value=0 id="slurred_speech_no"checked>
+                      <label class="form-check-label" for="slurred_speech_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>      
+                    
+                    <h4 class="text-100 text-center">Do you have dizziness?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="dizziness" value=1 id="dizziness_yes">
+                      <label class="form-check-label" for="dizziness_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="dizziness" value=0 id="dizziness_no"checked>
+                      <label class="form-check-label" for="dizziness_no" style="margin-bottom: 20px;" style="margin-bottom:40px;">No</label>
+                    </div>
+              </div>
+            </div>
+            </div>         
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(4)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(2)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health4" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="col-md-6">
+                  
+                  <div>
+                    
+                    <h4 class="text-100 text-center">Do you have bruising</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bruising" value=1 id="bruising_yes">
+                      <label class="form-check-label" for="bruising_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bruising" value=0 id="bruising_no"checked>
+                      <label class="form-check-label" for="bruising_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have brittle nails?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="brittle_nails" value=1 id="brittle_nails_yes">
+                      <label class="form-check-label" for="brittle_nails_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="brittle_nails" value=0 id="brittle_nails_no"checked>
+                      <label class="form-check-label" for="brittle_nails_no" style="margin-bottom: 40px;">no</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have dry and tingling lips?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="dry_tingling_lips" value=1 id="dry_tingling_lips_yes">
+                      <label class="form-check-label" for="dry_tingling_lips_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="dry_tingling_lips" value=0 id="dry_tingling_lips_no"checked>
+                      <label class="form-check-label" for="dry_tingling_lips_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Are you having itching?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="itching" value=1 id="itching_yes">
+                      <label class="form-check-label" for="itching_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="itching" value=0 id="itching_no"checked>
+                      <label class="form-check-label" for="itching_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have yellowish skin?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="yellowish_skin" value=1 id="yellowish_skin_yes">
+                      <label class="form-check-label" for="yellowish_skin_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="yellowish_skin" value=0 id="yellowish_skin_no"checked>
+                      <label class="form-check-label" for="yellowish_skin_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+                    
+                    <h4 class="text-100 text-center">Do you have shivering or chills?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="shivering" value=1 id="shivering_yes">
+                      <label class="form-check-label" for="shivering_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="shivering" value=0 id="shivering_no"checked>
+                      <label class="form-check-label" for="shivering_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+                  </div>
+
+                  
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Do you have high fever?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="high_fever" value=1 id="high_fever_yes">
+                      <label class="form-check-label" for="high_fever_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="high_fever" value=0 id="high_fever_no"checked>
+                      <label class="form-check-label" for="high_fever_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have sweating?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="sweating" value=1 id="sweating_yes">
+                      <label class="form-check-label" for="sweating_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="sweating" value=0 id="sweating_no"checked>
+                      <label class="form-check-label" for="sweating_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have watering_from_eyes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="watering_from_eyes" value=1 id="watering_from_eyes_yes">
+                      <label class="form-check-label" for="watering_from_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="watering_from_eyes" value=0 id="watering_from_eyes_no"checked>
+                      <label class="form-check-label" for="watering_from_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have mild fever?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="mild_fever" value=1 id="mild_fever_yes">
+                      <label class="form-check-label" for="mild_fever_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="mild_fever" value=0 id="mild_fever_no"checked>
+                      <label class="form-check-label" for="mild_fever_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have toxic look typhos?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="toxic_look" value=1 id="toxic_look_yes">
+                      <label class="form-check-label" for="toxic_look_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="toxic_look" value=0 id="toxic_look_no"checked>
+                      <label class="form-check-label" for="toxic_look_no" style="margin-bottom: 40px;">No</label>
+                    </div>                    
+                    <h4 class="text-100 text-center">Did you have unprotected sex or blood transfusion?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="blood_transfusion" value=1 id="blood_transfusion_yes">
+                      <label class="form-check-label" for="blood_transfusion_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="blood_transfusion" value=0 id="blood_transfusion_no"checked>
+                      <label class="form-check-label" for="blood_transfusion_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                </div>
+              </div>           
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(5)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(3)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health5" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="col-md-6">
+                  
+                  <div>
+                    
+                    <h4 class="text-100 text-center">Do you have sunken eyes</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="sunken_eyes" value=1 id="sunken_eyes_yes">
+                      <label class="form-check-label" for="sunken_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="sunken_eyes" value=0 id="sunken_eyes_no"checked>
+                      <label class="form-check-label" for="sunken_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have pain behind the eyes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_behind_the_eyes" value=1 id="pain_behind_the_eyes_yes">
+                      <label class="form-check-label" for="pain_behind_the_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_behind_the_eyes" value=0 id="pain_behind_the_eyes_no"checked>
+                      <label class="form-check-label" for="pain_behind_the_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have yellow eyes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="yellow_eyes" value=1 id="yellow_eyes_yes">
+                      <label class="form-check-label" for="yellow_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="yellow_eyes" value=0 id="yellow_eyes_no"checked>
+                      <label class="form-check-label" for="yellow_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have blurred and distorted vision?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="blurred_and_distorted_vision" value=1 id="blurred_and_distorted_vision_yes">
+                      <label class="form-check-label" for="blurred_and_distorted_vision_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="blurred_and_distorted_vision" value=0 id="blurred_and_distorted_vision_no"checked>
+                      <label class="form-check-label" for="blurred_and_distorted_vision_no" style="margin-bottom: 40px;">No</label>
+                    </div>                   
+                  </div>
+
+                  
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Do you have redness of eyes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="redness_of_eyes" value=1 id="redness_of_eyes_yes">
+                      <label class="form-check-label" for="redness_of_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="redness_of_eyes" value=0 id="redness_of_eyes_no"checked>
+                      <label class="form-check-label" for="redness_of_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have loss of smell?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="loss_of_smell" value=1 id="loss_of_smell_yes">
+                      <label class="form-check-label" for="loss_of_smell_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="loss_of_smell" value=0 id="loss_of_smell_no"checked>
+                      <label class="form-check-label" for="loss_of_smell_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have watering eyes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="watering_from_eyes" value=1 id="watering_from_eyes_yes">
+                      <label class="form-check-label" for="watering_from_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="watering_from_eyes" value=0 id="watering_from_eyes_no"checked>
+                      <label class="form-check-label" for="watering_from_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have visual disturbances?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="visual_disturbances" value=1 id="visual_disturbances_yes">
+                      <label class="form-check-label" for="visual_disturbances_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="visual_disturbances" value=0 id="visual_disturbances_no"checked>
+                      <label class="form-check-label" for="visual_disturbances_no" style="margin-bottom: 40px;">No</label>
+                    </div>                    
+                  </div>                                             
+                </div>
+              </div>          
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(6)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(4)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health6" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="col-md-6">
+                  
+                  <div>
+                    
+                    <h4 class="text-100 text-center">Do you have burning micturition?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="burning_micturition" value=1 id="burning_micturition_yes">
+                      <label class="form-check-label" for="burning_micturition_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="burning_micturition" value=0 id="burning_micturition_no"checked>
+                      <label class="form-check-label" for="burning_micturition_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+
+                    <h4 class="text-100 text-center">Do you have spotting urination?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="spotting_urination" value=1 id="spotting_urination_yes">
+                      <label class="form-check-label" for="spotting_urination_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="spotting_urination" value=0 id="spotting_urination_no"checked>
+                      <label class="form-check-label" for="spotting_urination_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have dark urine?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="dark_urine" value=1 id="dark_urine_yes">
+                      <label class="form-check-label" for="dark_urine_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="dark_urine" value=0 id="dark_urine_no"checked>
+                      <label class="form-check-label" for="dark_urine_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have continuous feel of urine?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="continuous_feel_of_urine" value=1 id="continuous_feel_of_urine_yes">
+                      <label class="form-check-label" for="continuous_feel_of_urine_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="continuous_feel_of_urine" value=0 id="continuous_feel_of_urine_no"checked>
+                      <label class="form-check-label" for="continuous_feel_of_urine_no" style="margin-bottom: 40px;">No</label>
+                    </div>    
+                    
+                    <h4 class="text-100 text-center">Do you vomit?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="vomiting" value=1 id="vomiting_yes">
+                      <label class="form-check-label" for="vomiting_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="vomiting" value=0 id="vomiting_no"checked>
+                      <label class="form-check-label" for="vomiting_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+                  </div>
+
+                  
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Do you have yellow_urine?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="yellow_urine" value=1 id="yellow_urine_yes">
+                      <label class="form-check-label" for="yellow_urine_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="yellow_urine" value=0 id="yellow_urine_no"checked>
+                      <label class="form-check-label" for="yellow_urine_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have bladder discomfort?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bladder_discomfort" value=1 id="bladder_discomfort_yes">
+                      <label class="form-check-label" for="bladder_discomfort_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bladder_discomfort" value=0 id="bladder_discomfort_no"checked>
+                      <label class="form-check-label" for="bladder_discomfort_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have foul smell of urine?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="foul_smell_of_urine" value=1 id="foul_smell_of_urine_yes">
+                      <label class="form-check-label" for="foul_smell_of_urine_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="foul_smell_of_urine" value=0 id="foul_smell_of_urine_no"checked>
+                      <label class="form-check-label" for="foul_smell_of_urine_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have acid reflux?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="acidity" value=1 id="acidity_yes">
+                      <label class="form-check-label" for="acidity_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="acidity" value=0 id="acidity_no"checked>
+                      <label class="form-check-label" for="acidity_no" style="margin-bottom: 40px;">No</label>
+                    </div>                                     
+                                       
+                  </div>                                             
+                </div>
+              </div>         
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(7)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(5)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health7" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="col-md-6">
+                  
+                  <div>
+                    
+                    <h4 class="text-100 text-center">Do you have stomach pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="stomach_pain" value=1 id="stomach_pain_yes">
+                      <label class="form-check-label" for="stomach_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="stomach_pain" value=0 id="stomach_pain_no"checked>
+                      <label class="form-check-label" for="stomach_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+
+                    <h4 class="text-100 text-center">Do you have diarrhea?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="diarrhea" value=1 id="diarrhea_yes">
+                      <label class="form-check-label" for="diarrhea_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="diarrhea" value=0 id="diarrhea_no"checked>
+                      <label class="form-check-label" for="diarrhea_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have swelling of stomach?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="swelling_of_stomach" value=1 id="swelling_of_stomach_yes">
+                      <label class="form-check-label" for="swelling_of_stomach_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="swelling_of_stomach" value=0 id="swelling_of_stomach_no"checked>
+                      <label class="form-check-label" for="swelling_of_stomach_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have pain during bowel movements?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_during_bowel_movements" value=1 id="pain_during_bowel_movements_yes">
+                      <label class="form-check-label" for="pain_during_bowel_movements_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_during_bowel_movements" value=0 id="pain_during_bowel_movements_no"checked>
+                      <label class="form-check-label" for="pain_during_bowel_movements_no" style="margin-bottom: 40px;">No</label>
+                    </div>                                       
+
+                  </div>
+
+                  
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Do you have belly pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="belly_pain" value=1 id="belly_pain_yes">
+                      <label class="form-check-label" for="belly_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="belly_pain" value=0 id="belly_pain_no"checked>
+                      <label class="form-check-label" for="belly_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have stomach bleeding?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="stomach_bleeding" value=1 id="stomach_bleeding_yes">
+                      <label class="form-check-label" for="stomach_bleeding_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="stomach_bleeding" value=0 id="stomach_bleeding_no"checked>
+                      <label class="form-check-label" for="stomach_bleeding_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have pain/irritation in anal region?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_irritation_in_anal_region" value=1 id="pain_irritation_in_anal_region_yes">
+                      <label class="form-check-label" for="pain_irritation_in_anal_region_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_irritation_in_anal_region" value=0 id="pain_irritation_in_anal_region_no"checked>
+                      <label class="form-check-label" for="pain_irritation_in_anal_region_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+                    
+                    <h4 class="text-100 text-center">Do you have bloody stool?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bloody_stool" value=1 id="bloody_stool_yes">
+                      <label class="form-check-label" for="bloody_stool_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bloody_stool" value=0 id="bloody_stool_no"checked>
+                      <label class="form-check-label" for="bloody_stool_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+                                       
+                  </div>                                             
+                </div>
+              </div>          
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(8)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(6)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health8" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="col-md-6">
+                  
+                  <div>
+                    
+                    <h4 class="text-100 text-center">Do you have continuous sneezing?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="continuous_sneezing" value=1 id="continuous_sneezing_yes">
+                      <label class="form-check-label" for="continuous_sneezing_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="continuous_sneezing" value=0 id="continuous_sneezing_no"checked>
+                      <label class="form-check-label" for="continuous_sneezing_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+
+                    <h4 class="text-100 text-center">Do you have cough?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="cough" value=1 id="cough_yes">
+                      <label class="form-check-label" for="cough_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="cough" value=0 id="cough_no"checked>
+                      <label class="form-check-label" for="cough_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have breathlessness?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="breathlessness" value=1 id="breathlessness_yes">
+                      <label class="form-check-label" for="breathlessness_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="breathlessness" value=0 id="breathlessness_no"checked>
+                      <label class="form-check-label" for="breathlessness_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have phlegm?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="phlegm" value=1 id="phlegm_yes">
+                      <label class="form-check-label" for="phlegm_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="phlegm" value=0 id="phlegm_no"checked>
+                      <label class="form-check-label" for="phlegm_no" style="margin-bottom: 40px;">No</label>
+                    </div>   
+                    
+                    <h4 class="text-100 text-center">Do you have bloody sputum?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bloody_sputum" value=1 id="bloody_sputum_yes">
+                      <label class="form-check-label" for="bloody_sputum_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="bloody_sputum" value=0 id="bloody_sputum_no"checked>
+                      <label class="form-check-label" for="bloody_sputum_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                  </div>
+
+                  
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Do you have throat irritation?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="throat_irritation" value=1 id="throat_irritation_yes">
+                      <label class="form-check-label" for="throat_irritation_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="throat_irritation" value=0 id="throat_irritation_no"checked>
+                      <label class="form-check-label" for="throat_irritation_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have congestion?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="congestion" value=1 id="congestion_yes">
+                      <label class="form-check-label" for="congestion_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="congestion" value=0 id="congestion_no"checked>
+                      <label class="form-check-label" for="congestion_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have puffy face and eyes?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="puffy_face_and_eyes" value=1 id="puffy_face_and_eyes_yes">
+                      <label class="form-check-label" for="puffy_face_and_eyes_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="puffy_face_and_eyes" value=0 id="puffy_face_and_eyes_no"checked>
+                      <label class="form-check-label" for="puffy_face_and_eyes_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+                    
+                    <h4 class="text-100 text-center">Do you have mucoid sputum?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="mucoid_sputum" value=1 id="mucoid_sputum_yes">
+                      <label class="form-check-label" for="mucoid_sputum_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="mucoid_sputum" value=0 id="mucoid_sputum_no"checked>
+                      <label class="form-check-label" for="mucoid_sputum_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+                    
+                    <h4 class="text-100 text-center">Do you have rusty sputum?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="rusty_sputum" value=1 id="rusty_sputum_yes">
+                      <label class="form-check-label" for="rusty_sputum_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="rusty_sputum" value=0 id="rusty_sputum_no"checked>
+                      <label class="form-check-label" for="rusty_sputum_no" style="margin-bottom: 40px;">No</label>
+                    </div>                    
+                                       
+                  </div>                                             
+                </div>
+              </div>  
+              <div class="col-12 d-grid">
+                <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(9)">Next Questions</button>
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(7)">Previous Questions</button>
+              </div>
+            </form>
+
+            <form id="health9" class="card card-bg shadow p-4" style="display: none;">
+              
+              <div class="row">
+                <h2 class="text-100 text-center" style="margin-bottom: 40px;">Symptom Checker</h2>        
+                <div class="col-md-6">
+                  
+                  <div>
+                    
+                    <h4 class="text-100 text-center">Do you have joint pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="joint_pain" value=1 id="joint_pain_yes">
+                      <label class="form-check-label" for="joint_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="joint_pain" value=0 id="joint_pain_no"checked>
+                      <label class="form-check-label" for="joint_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+
+                    <h4 class="text-100 text-center">Do you have back_pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="back_pain" value=1 id="back_pain_yes">
+                      <label class="form-check-label" for="back_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="back_pain" value=0 id="back_pain_no"checked>
+                      <label class="form-check-label" for="back_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have weakness in limbs?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="weakness_in_limbs" value=1 id="weakness_in_limbs_yes">
+                      <label class="form-check-label" for="weakness_in_limbs_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="weakness_in_limbs" value=0 id="weakness_in_limbs_no"checked>
+                      <label class="form-check-label" for="weakness_in_limbs_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have pain in neck?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_in_neck" value=1 id="pain_in_neck_yes">
+                      <label class="form-check-label" for="pain_in_neck_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="pain_in_neck" value=0 id="pain_in_neck_no"checked>
+                      <label class="form-check-label" for="pain_in_neck_no" style="margin-bottom: 40px;">No</label>
+                    </div>   
+                    
+                    <h4 class="text-100 text-center">Do you have cramps?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="cramps" value=1 id="cramps_yes">
+                      <label class="form-check-label" for="cramps_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="cramps" value=0 id="cramps_no"checked>
+                      <label class="form-check-label" for="cramps_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have pain while walking?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="painful_walking" value=1 id="painful_walking_yes">
+                      <label class="form-check-label" for="painful_walking_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="painful_walking" value=0 id="painful_walking_no"checked>
+                      <label class="form-check-label" for="painful_walking_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have swollen and painful and joints?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="swollen_painful_joints" value=1 id="swollen_painful_joints_yes"checked>
+                      <label class="form-check-label" for="swollen_painful_joints_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="swollen_painful_joints" value=0 id="swollen_painful_joints_no">
+                      <label class="form-check-label" for="swollen_painful_joints_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                  </div>
+
+                  
+                </div>
+      
+      
+                <div class="col-md-6">
+                  
+                  <div>
+                   
+                    <h4 class="text-100 text-center">Do you have knee pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="knee_pain" value=1 id="knee_pain_yes">
+                      <label class="form-check-label" for="knee_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="knee_pain" value=0 id="knee_pain_no"checked>
+                      <label class="form-check-label" for="knee_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have hip joint pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="hip_joint_pain" value=1 id="hip_joint_pain_yes">
+                      <label class="form-check-label" for="hip_joint_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="hip_joint_pain" value=0 id="hip_joint_pain_no"checked>
+                      <label class="form-check-label" for="hip_joint_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+
+                    <h4 class="text-100 text-center">Do you have muscle weakness</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="muscle_weakness" value=1 id="muscle_weakness_yes">
+                      <label class="form-check-label" for="muscle_weakness_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="muscle_weakness" value=0 id="muscle_weakness_no"checked>
+                      <label class="form-check-label" for="muscle_weakness_no" style="margin-bottom: 40px;">No</label>
+                    </div> 
+                    
+                    <h4 class="text-100 text-center">Do you have stiff neck?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="stiff_neck" value=1 id="stiff_neck_yes">
+                      <label class="form-check-label" for="stiff_neck_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="stiff_neck" value=0 id="stiff_neck_no"checked>
+                      <label class="form-check-label" for="stiff_neck_no" style="margin-bottom: 40px;">No</label>
+                    </div>
+                    
+                    <h4 class="text-100 text-center">Do you have movement stiffness?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="movement_stiffness" value=1 id="movement_stiffness_yes">
+                      <label class="form-check-label" for="movement_stiffness_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="movement_stiffness" value=0 id="movement_stiffness_no"checked>
+                      <label class="form-check-label" for="movement_stiffness_no" style="margin-bottom: 40px;">No</label>
+                    </div>      
+                    
+                    <h4 class="text-100 text-center">Do you have muscle pain?</h4>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="muscle_pain" value=1 id="muscle_pain_yes">
+                      <label class="form-check-label" for="muscle_pain_yes">Yes</label>
+                    </div>
+                    <div class="symptom-form-check">
+                      <input class="form-check-input" type="radio" name="muscle_pain" value=0 id="muscle_pain_no"checked>
+                      <label class="form-check-label" for="muscle_pain_no" style="margin-bottom: 40px;">No</label>
+                    </div>      
+                                       
+                  </div>                                             
+                </div>
+              </div>            
+              <div class="col-12 d-grid">
+                <button type="button" class="btn btn-primary rounded-pill" id="symptomSubmitBtn">
+                  <a href="#products" style="color: #384345">
+                  Submit
+                </a>
+                </button>
+                <!-- <button class="btn btn-primary rounded-pill" type="button" id="nextbtns"
+                  onclick="newSteps(3)">Next Questions</button> -->
+                <br>
+                <button class="btn btn-primary rounded-pill" type="button" id="prevbtns
+                "
+                  onclick="oldSteps(8)">Previous Questions</button>
+              </div>
+            </form>
+            
+          </div>
+        </div>  
+      </div>
+      
+      
+    </section>
+  
+
+    <section id="products">
+      <div class="bg-holder d-none d-md-block" id="car">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="bg-holder d-none d-md-block" id="bg_left">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="bg-holder d-none d-xl-block " id="circle-_1">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container-lg">
+        <div class="row flex-center py-sm-2">
+          <div class="col-12">
+            <div class="d-flex align-items-start">
+
+              <!--
+                <div class="nav flex-column nav-tab" id="nav-tab" role="tablist" aria-orientation="vertical"><a class="circle-hover-wrapper nav-link mb-lg-4 active" id="nav-car-tab" href="#!" data-bs-toggle="tab" data-bs-target="#nav-car" role="tab" aria-controls="nav-car" aria-selected="true">
+                    <div class="icon-box"><img class="car-insurance-icon" src="assets/img/icons/patient.png" alt="..." /><img class="car-insurance-icon car-insurance-icon-hover" src="assets/img/icons/patient.png" alt="..." /></div>
+                  </a><a class="circle-hover-wrapper nav-link mb-lg-4" id="nav-home-tab" href="#!" data-bs-toggle="tab" data-bs-target="#nav-home" role="tab" aria-controls="nav-home" aria-selected="false">
+                    <div class="icon-box"><img class="car-insurance-icon" src="assets/img/icons/infectious-disease.png" alt="..." /><img class="car-insurance-icon car-insurance-icon-hover" src="assets/img/icons/infectious-disease.png" alt="..." /></div>
+                  </a><a class="circle-hover-wrapper nav-link mb-lg-4" id="nav-paw-tab" href="#!" data-bs-toggle="tab" data-bs-target="#nav-paw" role="tab" aria-controls="nav-paw" aria-selected="false">
+                    <div class="icon-box"><img class="car-insurance-icon" src="assets/img/icons/information.png" alt="..." /><img class="car-insurance-icon car-insurance-icon-hover" src="assets/img/icons/information.png" alt="..." /></div>
+                  </a>
+                </div> 
+
+              -->
+              <div class="tab-content w-100" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-car" role="tabpanel" aria-labelledby="nav-car-tab">
+                  <div class="row align-items-right offset-sm-1 g-3">
+                    <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                      <h2 class="text-light mb-md-5">My Insurance Plan Analyst</h2>
+                      <p class="text-400">Let's dive into your behvioral patterns. Please spare no detail about your
+                        routines.
+                      </p>
+                      <p class="text-400 mt-3">Please answer the questions on the right side.</p>
+                      <a class="btn btn-primary btn-ensurance mt-5" href="#contact">
+                        <span class="fas fa-chevron-right fa-xs btn-icon"></span>
+                        <span class="btn-text">About Us</span>
+                      </a>
+                    </div>
+                    <div class="col-6 mx-7 mt-0">
+                      <div class="card card-bg shadow ">
+                        <div class="card-body p-4 p-xl-6">
+                          <br>
+                          <!--start of FORM 1-->
+                          <!--start of FORM 1-->
+                          <form id="step1" class="mb-3">
+                            <h4 class="text-100 text-center">How often do you exercise?</h4>
+                            <div class="form-check" id="first">
+                              <input class="form-check-input" type="radio" name="exerciseFrequency" value=1 id="alwaysRadio">
+                              <label class="form-check-label" for="alwaysRadio">
+                                Everyday
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exerciseFrequency" value=2 id="frequentlyRadio" checked>
+                              <label class="form-check-label" for="frequentlyRadio">
+                                4 - 6 times a week
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exerciseFrequency" value=4 id="sometimesRadio" checked>
+                              <label class="form-check-label" for="sometimesRadio">
+                                1 - 3 times a week
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="exerciseFrequency" value=3 id="rarelyRadio" checked>
+                              <label class="form-check-label" for="rarelyRadio">
+                                Less than once a week
+                              </label>
+                            </div>
+                            <br>
+                            <div class="col-12 d-grid">
+                              <button class="btn btn-primary rounded-pill" type="button" id="nextbtn"
+                                onclick="nextStep(2)">Next Questions</button>
+                              <br>
+                            </div>
+                          </form>
+                          <!--end of FORM 1-->
+
+                          <!--start of FORM 2-->
+                          <form id="step2" class="mb-3" style="display: none;">
+                            <h4 class="text-100 text-center">How often do you eat junk foods?</h4>
+                            <div class="form-check" id="first">
+                              <input class="form-check-input" type="radio" name="junkFoodFrequency" value=1 id="alwaysRadio">
+                              <label class="form-check-label" for="alwaysRadio">
+                                Everyday
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="junkFoodFrequency" value=2 id="frequentlyRadio" checked>
+                              <label class="form-check-label" for="frequentlyRadio">
+                                4 - 6 times a week
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="junkFoodFrequency" value=3 id="sometimesRadio" checked>
+                              <label class="form-check-label" for="sometimesRadio">
+                                1 - 3 time a week
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="junkFoodFrequency" value=4 id="rarelyRadio" checked>
+                              <label class="form-check-label" for="rarelyRadio">
+                                Less than once a week
+                              </label>
+                            </div>
+                            <br>
+                            <div class="col-12 d-grid">
+                              <button class="btn btn-primary rounded-pill" type="button" id="nextbtn"
+                                onclick="nextStep(3)">Next Questions</button>
+                              <br>
+                              <button class="btn btn-primary rounded-pill" type="button" id="prevbtn"
+                                onclick="prevStep(1)">Previous Questions</button>
+                            </div>
+                          </form>
+                          <!--end of FORM 2-->
+
+                          <!--start of FORM 3-->
+                          <form id="step3" class="mb-3" style="display: none;">
+                            <h4 class="text-100 text-center">Do you smoke?</h4>
+                            <div class="form-check" id="first">
+                              <input class="form-check-input" type="radio" name="smokingFrequency" value=1 id="alwaysRadio">
+                              <label class="form-check-label" for="alwaysRadio">
+                                Yes
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="smokingFrequency" value=0 id="frequentlyRadio" checked>
+                              <label class="form-check-label" for="frequentlyRadio">
+                                No
+                              </label>
+                            </div>
+                            <br>
+                            <div class="col-12 d-grid">
+                              <button class="btn btn-primary rounded-pill" type="button" id="nextbtn"
+                                onclick="nextStep(4)">Next Questions</button>
+                              <br>
+                              <button class="btn btn-primary rounded-pill" type="button" id="prevbtn"
+                                onclick="prevStep(2)">Previous Questions</button>
+                            </div>
+                          </form>
+                          <!--end of FORM 3-->
+
+                          <!--start of FORM 4-->
+                          <form id="step4" class="mb-3" style="display: none;">
+                            <h4 class="text-100 text-center">How often do you consume alcohol?</h4>
+                            <div class="form-check" id="first">
+                              <input class="form-check-input" type="radio" name="alcoholFrequency" value=1 id="alwaysRadio">
+                              <label class="form-check-label" for="alwaysRadio">
+                               Everyday
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="alcoholFrequency" value=2 id="frequentlyRadio" checked>
+                              <label class="form-check-label" for="frequentlyRadio">
+                                4 - 6 time a week
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="alcoholFrequency" value=4 id="sometimesRadio" checked>
+                              <label class="form-check-label" for="sometimesRadio">
+                                1 - 3 times a week
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="alcoholFrequency" value=3 id="rarelyRadio" checked>
+                              <label class="form-check-label" for="rarelyRadio">
+                                Less than once a week
+                              </label>
+                            </div>
+                            <br>
+                            <div class="col-12 d-grid">
+                              <button class="btn btn-primary rounded-pill" type="button" id="nextbtn"
+                                onclick="nextStep(5)">Next Questions</button>
+                                
+                              <br>
+                              <button class="btn btn-primary rounded-pill" type="button" id="prevbtn"
+                                onclick="prevStep(3)">Previous Questions</button>
+                            </div>
+                          </form>
+                          <!--end of FORM 4-->
+
+                          <!--start of FORM 5-->
+                          <form id="step5" class="mb-3" style="display: none;">
+                            <h4 class="text-100 text-center">Please specify the amount of time you sit per day.</h4>
+                            
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sedentaryFrequency" id="12Radio" value=0>
+                              <label class="form-check-label" for="alwaysRadio">
+                                1 - 2 hours
+                              </label>
+                            </div>
+                          
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sedentaryFrequency" id="24Radio" value=1 checked>
+                              <label class="form-check-label" for="24Radio">
+                                2 - 4 hours
+                              </label>
+                            </div>
+                          
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sedentaryFrequency" id="46Radio" value=2>
+                              <label class="form-check-label" for="46Radio">
+                                4 - 6 hours
+                              </label>
+                            </div>
+                          
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sedentaryFrequency" id="68Radio" value=3>
+                              <label class="form-check-label" for="68Radio">
+                                6 - 8 hours
+                              </label>
+                            </div>
+                          
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="sedentaryFrequency" id="10Radio" value=4>
+                              <label class="form-check-label" for="10Radio">
+                                More than 8 hours
+                              </label>
+                            </div>                          
+                            <br>
+                            <div class="col-12 d-grid">
+                              <button class="btn btn-primary rounded-pill" type="button" id="nextbtn"
+                                onclick="nextStep(6)">Next Questions</button>
+                              <!-- <button class="btn btn-primary rounded-pill" type="button" id="submitBtn"
+                                onclick="submit">Next Questions</button> -->
+                              <!-- <button type="button" class="btn btn-primary" id="submitBtn">
+                                Submit
+                              </button>  -->
+                              <br>
+                              <button class="btn btn-primary rounded-pill" type="button" id="prevbtn"
+                                onclick="prevStep(4)">Previous Questions</button>                               
+
+                            </div>
+                          </form>
+                          <!--end of FORM 5-->
+
+                          <!--start of FORM 6-->
+                          <form id="step6" class="mb-3" style="display: none;">
+                            <h4 class="text-100 text-center">How is your stress level?</h4>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stressLevel" id="alwaysRadio" value=1 checked>
+                              <label class="form-check-label" for="alwaysRadio">
+                                High
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stressLevel" id="frequentlyRadio" value=3>
+                              <label class="form-check-label" for="frequentlyRadio">
+                                Medium
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="stressLevel" id="sometimesRadio" value=2>
+                              <label class="form-check-label" for="sometimesRadio">
+                                Low
+                              </label>
+                            </div>                    
+                            <br>
+                            <div class="col-12 d-grid">
+                              <button class="btn btn-primary rounded-pill" type="button" id="nextbtn"
+                                onclick="nextStep(7)">Next Questions</button>
+                              <br>
+                              <button class="btn btn-primary rounded-pill" type="button" id="prevbtn"
+                                onclick="prevStep(5)">Previous Questions</button>
+                            </div>
+                          </form>
+                          <!--end of FORM 6-->
+                          
+                          <!--start of FORM 7-->
+                          <form id="step7" class="mb-3" style="display: none;">
+                            <h4 class="text-100 text-center">Do you use drugs?</h4>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="drugChoice" id="alwaysRadio" value=2>
+                              <label class="form-check-label" for="alwaysRadio">
+                                Yes
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="drugChoice" id="frequentlyRadio" value=1 checked>
+                              <label class="form-check-label" for="frequentlyRadio">
+                                No
+                              </label>
+                            </div>                                                   
+                            <br>
+                            <div class="col-12 d-grid">                                                    
+                              <button type="button" class="btn btn-primary rounded-pill" id="submitBtn">
+                                Submit
+                              </button>
+                              <br>
+                              <button class="btn btn-primary rounded-pill" type="button" id="prevbtn"
+                                onclick="prevStep(6)">Prev Questions</button>    
+                            </div>
+                          </form>
+                          <!--end of FORM 7-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="row align-items-center offset-sm-1 g-3">
+                    <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                      <h2 class="text-light mb-md-5">Home Insurance</h2>
+                      <p class="text-400">Make a plan for the emergence of life. We protect your most precious assets,
+                        allowing you to devote your time and energy to more essential things in life.</p>
+                      <p class="text-400 mt-3">Discover the most appropriate fit for you and your Family.</p><a
+                        class="btn btn-primary btn-ensurance mt-5" href="#!"><span
+                          class="fas fa-chevron-right fa-xs btn-icon"></span><span class="btn-text">Learn
+                          more</span></a>
+                    </div>
+                    <div class="col-md-6 col-xl-8 text-end">
+                      <div class="img-shape"><img class="feature-img" src="{{url_for('static', filename='assets/img/gallery/home.png')}}" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-paw" role="tabpanel" aria-labelledby="nav-paw-tab">
+                  <div class="row align-items-center offset-sm-1 g-3">
+                    <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                      <h2 class="text-light mb-md-5">Pet Insurance</h2>
+                      <p class="text-400">Make a plan for the emergence of life. We protect your most precious assets,
+                        allowing you to devote your time and energy to more essential things in life.</p>
+                      <p class="text-400 mt-3">Discover the most appropriate fit for you and your Family.</p><a
+                        class="btn btn-primary btn-ensurance mt-5" href="#!"><span
+                          class="fas fa-chevron-right fa-xs btn-icon"></span><span class="btn-text">Learn
+                          more</span></a>
+                    </div>
+                    <div class="col-md-6 col-xl-8 text-end">
+                      <!-- <div class="img-shape"><img class="feature-img" src="assets/img/gallery/pets.png" alt="..." /> -->
+                        <div class="img-shape"><img class="feature-img" src="{{url_for('static', filename='assets/img/gallery/pets.png')}}" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-plane" role="tabpanel" aria-labelledby="nav-plane-tab">
+                  <div class="row align-items-center offset-sm-1 g-3">
+                    <div class="col-md-6 col-xl-4 order-1 order-md-0">
+                      <h2 class="text-light mb-md-5">Travel Insurance</h2>
+                      <p class="text-400">Make a plan for the emergence of life. We protect your most precious assets,
+                        allowing you to devote your time and energy to more essential things in life.</p>
+                      <p class="text-400 mt-3">Discover the most appropriate fit for you and your Family.</p><a
+                        class="btn btn-primary btn-ensurance mt-5" href="#!"><span
+                          class="fas fa-chevron-right fa-xs btn-icon"></span><span class="btn-text">Learn
+                          more</span></a>
+                    </div>
+                    <div class="col-md-6 col-xl-8 text-end">
+                      <div class="img-shape"><img class="feature-img" src="{{url_for('static', filename='assets/img/gallery/travel.png')}}" alt="..." />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+          <div class="row offset-xl-2">
+            <div class="col-12">
+              <div class="mb-3 mb-md-5">
+                <h2 class="text-light mb-7 text-center text-sm-start">Best Services</h2>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start"><img class="shadow-icon" src="assets/img/icons/support.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">24x7 Support</h4>
+                  <p class="text-400 mb-md-0">Client is our most <br> important priority</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start"><img class="shadow-icon" src="assets/img/icons/edit.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Easy Claim System</h4>
+                  <p class="text-400 mb-md-0">Express your desires <br>and needs to us</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start"><img class="shadow-icon" src="assets/img/icons/money.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Easy installments</h4>
+                  <p class="text-400 mb-md-0">It's quick, safe, and simple. Select several methods of payment</p>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-6 text-center text-sm-start"><img class="shadow-icon" src="assets/img/icons/security.png" height="60" alt="..." />
+                  <h4 class="mt-4 fw-normal text-200">Strongly Secured</h4>
+                  <p class="text-400 mb-md-0">Food is made and delivered directly to your home.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <!--
+      <section class="py-8">
+
+        <div class="container-fluid px-0">
+          <div class="row g-0">
+            <div class="col-12 col-xxl-11 offset-xxl-1">
+              <h2 class="text-light text-center">Our Awesome Clients</h2>
+              <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="carouse">
+                <div class="carousel-inner ps-md-5 ps-lg-11 py-4 py-md-5 py-lg-4 pb-lg-9">
+                  <div class="carousel-item active">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <div class="card testimonial-bg card-span text-white mt-10 mt-md-7 mt-lg-8 mx-4 mx-md-0">
+                          <div class="card-body pt-0 p-md-0">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                              <div class="card-span-img">
+                                <div class="circle-wrapper"><img class="rounded-circle w-100" src="assets/img/team/1.jpg" alt="" /></div>
+                              </div>
+                              <div class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10">
+                                <h4 class="mb-0 fw-medium text-white">Charlize Theron</h4>
+                                <p class="fw-normal mb-0 text-primary">Founder Circle</p>
+                                <p class="card-text text-200 mt-3">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <div class="card testimonial-bg card-span text-white mt-10 mt-md-7 mt-lg-8 mx-4 mx-md-0">
+                          <div class="card-body pt-0 p-md-0">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                              <div class="card-span-img">
+                                <div class="circle-wrapper"><img class="rounded-circle w-100" src="assets/img/team/2.jpg" alt="" /></div>
+                              </div>
+                              <div class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10">
+                                <h4 class="mb-0 fw-medium text-white">Edward Newgate</h4>
+                                <p class="fw-normal mb-0 text-primary">Founder Circle</p>
+                                <p class="card-text text-200 mt-3">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row h-100">
+                      <div class="col-12">
+                        <div class="card testimonial-bg card-span text-white mt-10 mt-md-7 mt-lg-8 mx-4 mx-md-0">
+                          <div class="card-body pt-0 p-md-0">
+                            <div class="d-flex flex-column flex-md-row align-items-center">
+                              <div class="card-span-img">
+                                <div class="circle-wrapper"><img class="rounded-circle w-100" src="assets/img/team/3.jpg" alt="" /></div>
+                              </div>
+                              <div class="mt-n6 mt-md-0 text-center text-md-start px-md-6 px-xl-8 px-xxl-10">
+                                <h4 class="mb-0 fw-medium text-white">Charlize Theron</h4>
+                                <p class="fw-normal mb-0 text-primary">Founder Circle</p>
+                                <p class="card-text text-200 mt-3">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center justify-content-xl-end me-auto mt-xl-n7 pe-xl-8">
+                  <div class="col-2 text-end position-relative z-index-2">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                    <div class="carousel-indicators">
+                      <button class="active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"> </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      -->
+    <!-- end of .container-->
+
+    <!-- </section> -->
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+<!-- kkkkk -->
+
+
+    <!-- ============================================-->
+
+    <section id="news">
+
+      <div class="container">
+        <div class="row">
+          <h2 class="text-light text-center my-5">Your Insurance Plans</h2>
+        </div>
+        <div class="row flex-center h-100 circle-blend circle-blend-left circle-primary">
+          <div class="col-12">
+            <div class="row align-items-center circle-blend circle-blend-right circle-warning">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3 h-100 card-soft-primary">
+                  <div class="card-body">
+                    <div class="d-flex flex-between-center">
+                      <p class="fw-normal mb-0 text-400">24 July, 2021</p>
+                      <h6><span class="badge rounded-pill text-primary" style="background:#224E8F;">Thoughts</span></h6>
+                    </div>
+                    <h5 class="fw-bold fs-2 text-200 my-3">A pandemic may cause life insurance coverage</h5>
+                    <p class="text-400">In the aftermath of the Covid epidemic, life insurance firms have been more
+                      cautious and have tightened underwriting standards for policies with large cash values.......</p>
+                    <a class="link-primary" href="#!">
+                      <svg class="bi bi-arrow-right text-primary" xmlns="http://www.w3.org/2000/svg" width="21"
+                        height="21" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                        </path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3 h-100 card-soft-primary">
+                  <div class="card-body">
+                    <div class="d-flex flex-between-center">
+                      <p class="fw-normal mb-0 text-400">29 July, 2021</p>
+                      <h6><span class="badge rounded-pill text-primary" style="background:#224E8F;">Health</span></h6>
+                    </div>
+                    <h5 class="fw-bold fs-2 text-200 my-3">Top 10 health insurance companies in the Germany</h5>
+                    <p class="text-400">There are numerous private healthcare insurance experts in Germany. Insurance
+                      protects against financial loss and reduces uncertainty. It ensures safety and security.......</p>
+                    <a class="link-primary" href="#!">
+                      <svg class="bi bi-arrow-right text-primary" xmlns="http://www.w3.org/2000/svg" width="21"
+                        height="21" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                        </path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card p-3 h-100 card-soft-primary">
+                  <div class="card-body">
+                    <div class="d-flex flex-between-center">
+                      <p class="fw-normal mb-0 text-400">15 August, 2021</p>
+                      <h6><span class="badge rounded-pill text-primary" style="background:#224E8F;">Life</span></h6>
+                    </div>
+                    <h5 class="fw-bold fs-2 text-200 my-3">Why do you need several life insurance policies?</h5>
+                    <p class="text-400">In the event of the insured's death, life insurance protects the nominees
+                      financially. It is possible to have several life insurance policies with various insurance
+                      providers.......</p><a class="link-primary" href="#!">
+                      <svg class="bi bi-arrow-right text-primary" xmlns="http://www.w3.org/2000/svg" width="21"
+                        height="21" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                        </path>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-5 text-center text-sm-end"><a class="link-primary" href="#!">View all
+                <svg class="bi bi-arrow-right" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                  fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                  </path>
+                </svg></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+
+
+    <!--  <section class="py-0">
+
+        <div class="container">
+          <div class="row align-items-center justify-content-xl-between">
+            <h2 class="text-light text-center my-5">Partners</h2>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-1.png" height="40" alt="Partner" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-2.png" height="40" alt="Partner" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-3.png" height="40" alt="Partner" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-4.png" height="40" alt="Partner" /></div>
+            <div class="col-auto col-md-4 col-lg-auto my-3 text-xl-start"><img src="assets/img/gallery/partner-5.png" height="40" alt="Partner" /></div>
+          </div>
+        </div>
+        <!-- end of .container-->
+    <!-- </section> -->
+
+
+
+
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section id="contact">
+      <div class="container align-center">
+        <h2 class="text-light text-center mb-7">Contact Us</h2>
+        <div class="col-lg-6 col-xl-7 mb-4 order-0 order-sm-0"><a class="logo-footer fs-7" href="index.html"><span
+              class="fw-bolder">PREMIUM</span><span class="fw-thin text-center text-100">PRECISION</span></a>
+          <p class="text-light my-4"> <i class="fas fa-map-marker-alt me-3"></i><span class="text-light">#4E Reousei
+              Keo, Reousei Keo, &nbsp;</span><a class="text-light" href="tel:+604-680-9785">(+855) 17 60 60
+              97</a><br />Phnom Penh, Cambodia.</p>
+          <p class="text-light"> <i class="fas fa-envelope me-3 text-primary"> </i><a
+              href="mailto:vctung@outlook.com">premiumwise@gmail.com </a></p>
+          <p class="text-light"> <i class="fas fa-phone-alt me-3 text-primary"> </i><a
+              href="tel:1-800-800-2299">017-60-60-97 (For Fun lol)</a></p>
+        </div>
+      </div>
+
+
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-0">
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-md-flex justify-content-between pb-1 pt-4">
+              <div class="pb-4">
+                <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
+                  <li><a class="widget-list-link fs-ms" href="#">Home</a></li>
+                  <li class="ms-4"><a class="widget-list-link fs-ms" href="#">About Us</a></li>
+                  <li class="ms-4"><a class="widget-list-link fs-ms" href="#">Blog</a></li>
+                  <li class="ms-4"><a class="widget-list-link fs-ms" href="#">Services</a></li>
+                  <li class="ms-4"><a class="widget-list-link fs-ms" href="#">Terms &amp; Conditions</a></li>
+                </ul>
+              </div>
+              <div class="pb-4">
+                <ul class="list-unstyled list-inline my-2">
+                  <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
+                        class="fab fa-facebook-square fa-2x social-icons"></i></a></li>
+                  <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
+                        class="fab fa-instagram fa-2x social-icons"></i></a></li>
+                  <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
+                        class="fab fa-twitter-square fa-2x social-icons"> </i></a></li>
+                  <li class="list-inline-item"><a class="text-decoration-none" href="#!"><i
+                        class="fab fa-linkedin fa-2x social-icons"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  <script src="{{url_for('static', filename='./vendors/popper/popper.min.js')}}"></script>
+  <!-- <script src="./vendors/popper/popper.min.js"></script>
+  <script src="/vendors/popper/popper.min.js"></script> -->
+  <script src="{{url_for('static', filename='./vendors/anchorjs/anchor.min.js')}}"></script>
+  <!-- <script src="./vendors/anchorjs/anchor.min.js"></script> -->
+  <script src="{{url_for('static', filename='./vendors/is/is.min.js')}}"></script>
+  <!-- <script src="./vendors/is/is.min.js"></script> -->
+  <script src="{{url_for('static', filename='./vendors/fontawesome/all.min.js')}}"></script>
+  <!-- <script src="./vendors/fontawesome/all.min.js"></script> -->
+  <script src="{{url_for('static', filename='./vendors/lodash/lodash.min.js')}}"></script>
+  <!-- <script src="./vendors/lodash/lodash.min.js"></script> -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+  <script src="{{url_for('static', filename='./vendors/prism/prism.js')}}"></script>
+  <!-- <script src="./vendors/prism/prism.js"></script> -->
+  <script src="{{url_for('static', filename='./assets/js/theme.js')}}"></script>
+  <!-- <script src="./assets/js/theme.js"></script> -->
+<script>
+    $(document).ready(function () {
+  $('#submitBtn').click(function () {
+    event.preventDefault();
+
+    // Get the value of the selected radio button for smoking frequency
+    var exercise = $("input[name='exerciseFrequency']:checked").val();
+    var junkFood = $("input[name='junkFoodFrequency']:checked").val();
+    var smoking = $("input[name='smokingFrequency']:checked").val();
+    var alcohol = $("input[name='alcoholFrequency']:checked").val();
+    var sedentary = $("input[name='sedentaryFrequency']:checked").val();
+    var stress = $("input[name='stressLevel']:checked").val();
+    var drug = $("input[name='drugChoice']:checked").val();
+    // var age = $("input[name='editAge']").val();
+    // var sex = $("input[name='gender']").val();
+    // var weight = $("input[name='editWeight']").val();
+    // var height = $("input[name='editHeight']").val();
+    // var children = $("input[name='editChildren']").val();
+    // var region = $("input[name='editRegion']").val();
+
+    var age = document.getElementById('editAge').value.trim();
+    var height = document.getElementById('editHeight').value.trim();
+    var weight = document.getElementById('editWeight').value.trim();
+    var sex = document.getElementById('gender').value;
+    var children = document.getElementById('childDropdown').value;
+    var region = document.getElementById('regionDropdown').value;
+    
+    // Include the smoking frequency in the insuranceData object
+    var insuranceData = {
+      exercise: exercise,
+      junkFood: junkFood,
+      smoking: smoking,
+      alcohol: alcohol,
+      sedentary: sedentary,
+      stress: stress,
+      drug: drug,
+      sex: sex,
+      weight: weight,
+      height: height,
+      children: children,
+      region: region,
+      age: age
+    };
+
+    alert(insuranceData.stress);
+
+    $.ajax({
+      type: 'POST',
+      url: '/predict',
+      data: JSON.stringify(insuranceData),
+      contentType: 'application/json; charset=utf-8',
+      dataType: 'json',
+      success: function (response) {
+        let message = response.message;
+        $('#result').text(message);
+      },
+    });
+  });
+});
+  function nextStep(nextStep) {
+      document.getElementById(`step${nextStep - 1}`).style.display = 'none';
+      document.getElementById(`step${nextStep}`).style.display = 'block';
+    }
+    function prevStep(prevStep) {
+      document.getElementById(`step${prevStep + 1}`).style.display = 'none';
+      document.getElementById(`step${prevStep}`).style.display = 'block';
+    }
+
+    function newSteps(health) {
+      console.log('Entering newSteps function with health:', health);
+
+    // Hide the current health form
+    var currentElement = document.getElementById(`health${health - 1}`);
+    if (currentElement) {
+      console.log('Hiding Current Element:', currentElement);
+      currentElement.style.display = 'none';
+    } else {
+      console.error('Current Element not found:', `health${health - 1}`);
+    }
+
+    // Show the next health form
+    var nextElement = document.getElementById(`health${health}`);
+    if (nextElement) {
+      console.log('Showing Next Element:', nextElement);
+      nextElement.style.display = 'block';
+    } else {
+      console.error('Next Element not found:', `health${health}`);
+    }
+}
+
+  function oldSteps(health) {
+    document.getElementById(`health${health + 1}`).style.display = 'none';
+    document.getElementById(`health${health}`).style.display = 'block';
+  }
+
+    
+</script>
+
+<script>
+  $(document).ready(function () {
+    $('#symptomSubmitBtn').click(function () {
+    event.preventDefault();
+
+  // Get the value of the selected radio button for smoking frequency
+  const data = {};
+
+    data.concentrate = parseFloat(document.querySelector('input[name="concentrate"]:checked').value);
+    data.skin_rash = parseFloat(document.querySelector('input[name="skin_rash"]:checked').value);
+    data.liver_failure = parseFloat(document.querySelector('input[name="liver_failure"]:checked').value);
+    data.lymph_nodes = parseFloat(document.querySelector('input[name="lymph_nodes"]:checked').value);
+    data.veins_in_calves = parseFloat(document.querySelector('input[name="veins_in_calves"]:checked').value);
+    
+    data.thyroid = parseFloat(document.querySelector('input[name="thyroid"]:checked').value);
+    data.mouth_ulcer = parseFloat(document.querySelector('input[name="mouth_ulcer"]:checked').value);
+    data.family_history = parseFloat(document.querySelector('input[name="family_history"]:checked').value);
+    data.abnormal_menstruation = parseFloat(document.querySelector('input[name="abnormal_menstruation"]:checked').value);
+    data.irritability = parseFloat(document.querySelector('input[name="irritability"]:checked').value);
+
+    data.loss_of_appetite = parseFloat(document.querySelector('input[name="loss_of_appetite"]:checked').value);
+    data.excessive_hunger = parseFloat(document.querySelector('input[name="excessive_hunger"]:checked').value);
+    data.passage_of_gases = parseFloat(document.querySelector('input[name="passage_of_gases"]:checked').value);
+    data.increased_appetite = parseFloat(document.querySelector('input[name="increased_appetite"]:checked').value);
+    data.increased_appetite = parseFloat(document.querySelector('input[name="increased_appetite"]:checked').value);
+    
+    data.weight_loss = parseFloat(document.querySelector('input[name="weight_loss"]:checked').value);
+    data.sugar_level_irregular = parseFloat(document.querySelector('input[name="sugar_level_irregular"]:checked').value);
+    data.swollen_legs = parseFloat(document.querySelector('input[name="swollen_legs"]:checked').value);
+    data.depression = parseFloat(document.querySelector('input[name="depression"]:checked').value);
+    data.internal_itching = parseFloat(document.querySelector('input[name="internal_itching"]:checked').value);
+    
+    data.coma = parseFloat(document.querySelector('input[name="coma"]:checked').value);
+    data.headache = parseFloat(document.querySelector('input[name="headache"]:checked').value);
+    data.spinning_movements = parseFloat(document.querySelector('input[name="spinning_movements"]:checked').value);
+    data.weakness_in_one_side = parseFloat(document.querySelector('input[name="weakness_in_one_side"]:checked').value);
+    data.altered_sensorium = parseFloat(document.querySelector('input[name="altered_sensorium"]:checked').value);
+    data.painful_walking = parseFloat(document.querySelector('input[name="painful_walking"]:checked').value);
+    
+    data.palpitations = parseFloat(document.querySelector('input[name="palpitations"]:checked').value);
+    data.chest_pain = parseFloat(document.querySelector('input[name="chest_pain"]:checked').value);
+    data.swollen_blood_vessels = parseFloat(document.querySelector('input[name="swollen_blood_vessels"]:checked').value);
+    data.swollen_extremeties = parseFloat(document.querySelector('input[name="swollen_extremeties"]:checked').value);
+    data.slurred_speech = parseFloat(document.querySelector('input[name="slurred_speech"]:checked').value);
+    data.dizziness = parseFloat(document.querySelector('input[name="dizziness"]:checked').value);
+    
+    data.bruising = parseFloat(document.querySelector('input[name="bruising"]:checked').value);
+    data.brittle_nails = parseFloat(document.querySelector('input[name="brittle_nails"]:checked').value);
+    data.dry_tingling_lips = parseFloat(document.querySelector('input[name="dry_tingling_lips"]:checked').value);
+    data.itching = parseFloat(document.querySelector('input[name="itching"]:checked').value);
+    data.yellowish_skin = parseFloat(document.querySelector('input[name="yellowish_skin"]:checked').value);
+    data.shivering = parseFloat(document.querySelector('input[name="shivering"]:checked').value);
+    
+    data.high_fever = parseFloat(document.querySelector('input[name="high_fever"]:checked').value);
+    data.sweating = parseFloat(document.querySelector('input[name="sweating"]:checked').value);
+    data.watering_from_eyes = parseFloat(document.querySelector('input[name="watering_from_eyes"]:checked').value);
+    data.mild_fever = parseFloat(document.querySelector('input[name="mild_fever"]:checked').value);
+    data.toxic_look = parseFloat(document.querySelector('input[name="toxic_look"]:checked').value);
+    data.blood_transfusion = parseFloat(document.querySelector('input[name="blood_transfusion"]:checked').value);
+    
+    data.sunken_eyes = parseFloat(document.querySelector('input[name="sunken_eyes"]:checked').value);
+    data.pain_behind_the_eyes = parseFloat(document.querySelector('input[name="pain_behind_the_eyes"]:checked').value);
+    data.yellow_eyes = parseFloat(document.querySelector('input[name="yellow_eyes"]:checked').value);
+    data.blurred_and_distorted_vision = parseFloat(document.querySelector('input[name="blurred_and_distorted_vision"]:checked').value);
+    
+    data.redness_of_eyes = parseFloat(document.querySelector('input[name="redness_of_eyes"]:checked').value);
+    data.loss_of_smell = parseFloat(document.querySelector('input[name="loss_of_smell"]:checked').value);
+    data.watering_from_eyes = parseFloat(document.querySelector('input[name="watering_from_eyes"]:checked').value);
+    data.visual_disturbances = parseFloat(document.querySelector('input[name="visual_disturbances"]:checked').value);
+    
+    data.burning_micturition = parseFloat(document.querySelector('input[name="burning_micturition"]:checked').value);
+    data.spotting_urination = parseFloat(document.querySelector('input[name="spotting_urination"]:checked').value);
+    data.dark_urine = parseFloat(document.querySelector('input[name="dark_urine"]:checked').value);
+    data.continuous_feel_of_urine = parseFloat(document.querySelector('input[name="continuous_feel_of_urine"]:checked').value);
+    data.vomiting = parseFloat(document.querySelector('input[name="vomiting"]:checked').value);
+    
+    data.yellow_urine = parseFloat(document.querySelector('input[name="yellow_urine"]:checked').value);
+    data.bladder_discomfort = parseFloat(document.querySelector('input[name="bladder_discomfort"]:checked').value);
+    data.foul_smell_of_urine = parseFloat(document.querySelector('input[name="foul_smell_of_urine"]:checked').value);
+    data.acidity = parseFloat(document.querySelector('input[name="acidity"]:checked').value);
+    
+    data.stomach_pain = parseFloat(document.querySelector('input[name="stomach_pain"]:checked').value);
+    data.diarrhea = parseFloat(document.querySelector('input[name="diarrhea"]:checked').value);
+    data.swelling_of_stomach = parseFloat(document.querySelector('input[name="swelling_of_stomach"]:checked').value);
+    data.pain_during_bowel_movements = parseFloat(document.querySelector('input[name="pain_during_bowel_movements"]:checked').value);
+    
+    data.belly_pain = parseFloat(document.querySelector('input[name="belly_pain"]:checked').value);
+    data.stomach_bleeding = parseFloat(document.querySelector('input[name="stomach_bleeding"]:checked').value);
+    data.pain_irritation_in_anal_region = parseFloat(document.querySelector('input[name="pain_irritation_in_anal_region"]:checked').value);
+    data.bloody_stool = parseFloat(document.querySelector('input[name="bloody_stool"]:checked').value);
+    
+    data.continuous_sneezing = parseFloat(document.querySelector('input[name="continuous_sneezing"]:checked').value);
+    data.cough = parseFloat(document.querySelector('input[name="cough"]:checked').value);
+    data.breathlessness = parseFloat(document.querySelector('input[name="breathlessness"]:checked').value);
+    data.phlegm = parseFloat(document.querySelector('input[name="phlegm"]:checked').value);
+    data.bloody_sputum = parseFloat(document.querySelector('input[name="bloody_sputum"]:checked').value);
+    
+    data.throat_irritation = parseFloat(document.querySelector('input[name="throat_irritation"]:checked').value);
+    data.congestion = parseFloat(document.querySelector('input[name="congestion"]:checked').value);
+    data.puffy_face_and_eyes = parseFloat(document.querySelector('input[name="puffy_face_and_eyes"]:checked').value);
+    data.mucoid_sputum = parseFloat(document.querySelector('input[name="mucoid_sputum"]:checked').value);
+    data.rusty_sputum = parseFloat(document.querySelector('input[name="rusty_sputum"]:checked').value);
+    
+    data.joint_pain = parseFloat(document.querySelector('input[name="joint_pain"]:checked').value);
+    data.back_pain = parseFloat(document.querySelector('input[name="back_pain"]:checked').value);
+    data.weakness_in_limbs = parseFloat(document.querySelector('input[name="weakness_in_limbs"]:checked').value);
+    data.pain_in_neck = parseFloat(document.querySelector('input[name="pain_in_neck"]:checked').value);
+    data.cramps = parseFloat(document.querySelector('input[name="cramps"]:checked').value);
+    data.painful_walking = parseFloat(document.querySelector('input[name="painful_walking"]:checked').value);
+    data.swollen_painful_joints = parseFloat(document.querySelector('input[name="swollen_painful_joints"]:checked').value);
+    
+    data.knee_pain = parseFloat(document.querySelector('input[name="knee_pain"]:checked').value);
+    data.hip_joint_pain = parseFloat(document.querySelector('input[name="hip_joint_pain"]:checked').value);
+    data.muscle_weakness = parseFloat(document.querySelector('input[name="muscle_weakness"]:checked').value);
+    data.stiff_neck = parseFloat(document.querySelector('input[name="stiff_neck"]:checked').value);
+    data.movement_stiffness = parseFloat(document.querySelector('input[name="movement_stiffness"]:checked').value);
+    data.muscle_pain = parseFloat(document.querySelector('input[name="muscle_pain"]:checked').value);
+    
+  // Include the smoking frequency in the insuranceData object
+  var symptomData = data; // data = {concentrate: '0', skin_rash: '0', liver_failure: '0'}
+  console.log(symptomData);
+
+  alert(symptomData);
+
+  $.ajax({
+    type: 'POST',
+    url: '/disease',
+    data: JSON.stringify(symptomData),
+    contentType: 'application/json; charset=utf-8',
+    dataType: 'json',
+    success: function (response) {
+      let message = response.message;
+      $('#result').text(message);
+    },
+    error: function (error) {
+            // Handle error, if any, from the '/disease' endpoint
+            console.log('Error:', error);
+    }
+  });
+});
+});
+</script>
+
+
+<script>
+  var editableName = document.getElementById("editName");
+  // Add a click event listener to erase the text on click
+  editableName.addEventListener("click", function () {
+      editableName.innerText = "";
+  });
+  // Add a blur event listener to show a default message if the text is null
+  editableName.addEventListener("blur", function () {
+      if (editableName.innerText.trim() === "") {
+          editableName.innerText = "Hello! Please input your name";
+      }
+  });
+
+</script>
+
+<script>
+  editAge.addEventListener("blur", function () {
+      // If the content is empty, display a placeholder message
+      if (editAge.innerText.trim() === "") {
+          editAge.innerText = "Please enter your Age";
+      } else {
+          // Restore the original input from the data attribute
+          editAge.innerText = editAge.getAttribute("data-original");
+      }
+  });
+
+  editAge.addEventListener("click", function () {
+      editAge.innerText = "";
+  });
+  function validAge(){
+  var editAge = document.getElementById("editAge");
+
+  editAge.addEventListener("input", function () {
+      // Remove non-numeric characters using a regular expression
+      var sanitizedInput = editAge.innerText.replace(/[^\d]/g, '');
+
+      // Ensure the input is a positive integer and less than 100
+      var AgeValue = parseInt(sanitizedInput, 10);
+      if (!isNaN(AgeValue) && AgeValue >= 0 && AgeValue < 100) {
+          // Store the original input as a data attribute
+          editAge.setAttribute("data-original", sanitizedInput);
+      } else {
+          // If the input is invalid, reset the content
+          editAge.innerText = "Please enter a valid Age";
+      }
+  });
+  }
+</script>
+
+<script>
+    editEmail.addEventListener("blur", function () {
+      // If the content is empty, display a placeholder messEmail
+      if (editEmail.innerText.trim() === "") {
+          editEmail.innerText = "Please enter your Email";
+      } else {
+          // Restore the original input from the data attribute
+          editEmail.innerText = editEmail.getAttribute("data-original");
+      }
+  });
+
+  editEmail.addEventListener("click", function () {
+      editEmail.innerText = "";
+  });
+
+
+  function validEmail() {
+  var editEmail = document.getElementById("editEmail");
+  }
+
+
+  function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+
+
+</script>
+
+<script>
+  editPhone.addEventListener("blur", function () {
+      // If the content is empty, display a placeholder message
+      if (editPhone.innerText.trim() === "") {
+          editPhone.innerText = "Please enter your Phone";
+      } else {
+          // Restore the original input from the data attribute
+          editPhone.innerText = editPhone.getAttribute("data-original");
+      }
+  });
+
+  editPhone.addEventListener("click", function () {
+      editPhone.innerText = "";
+  });
+  function validPhone(){
+  var editPhone = document.getElementById("editPhone");
+
+  editPhone.addEventListener("input", function () {
+      // Remove non-numeric characters using a regular expression
+      var sanitizedInput = editPhone.innerText.replace(/[^\d]/g, '');
+
+      // Ensure the input is a positive integer and less than 500
+      var PhoneValue = parseInt(sanitizedInput, 10);
+      if (!isNaN(PhoneValue) && PhoneValue >= 0 && PhoneValue < 1000000000) {
+          // Store the original input as a data attribute
+          editPhone.setAttribute("data-original", sanitizedInput);
+      } else {
+          // If the input is invalid, reset the content
+          editPhone.innerText = "Please enter a valid Phone";
+      }
+  });
+}
+</script>
+
+
+<script>
+    editWeight.addEventListener("blur", function () {
+      // If the content is empty, display a placeholder message
+      if (editWeight.innerText.trim() === "") {
+          editWeight.innerText = "Please enter your weight";
+      } else {
+          // Restore the original input from the data attribute
+          editWeight.innerText = editWeight.getAttribute("data-original");
+      }
+  });
+
+  editWeight.addEventListener("click", function () {
+      editWeight.innerText = "";
+  });
+
+  function validWeight(){
+  var editWeight = document.getElementById("editWeight");
+
+  editWeight.addEventListener("input", function () {
+      // Remove non-numeric characters using a regular expression
+      var sanitizedInput = editWeight.innerText.replace(/[^\d]/g, '');
+
+      // Ensure the input is a positive integer and less than 500
+      var weightValue = parseInt(sanitizedInput, 10);
+      if (!isNaN(weightValue) && weightValue >= 0 && weightValue < 500) {
+          // Store the original input as a data attribute
+          editWeight.setAttribute("data-original", sanitizedInput);
+      } else {
+          // If the input is invalid, reset the content
+          editWeight.innerText = "Please enter a valid weight";
+      }
+  });
+
+
+}
+</script>
+
+<script>
+  editHeight.addEventListener("blur", function () {
+      // If the content is empty, display a placeholder message
+      if (editHeight.innerText.trim() === "") {
+          editHeight.innerText = "Please enter your height";
+      } else {
+          // Restore the original input from the data attribute
+          editHeight.innerText = editHeight.getAttribute("data-original");
+      }
+  });
+
+  editHeight.addEventListener("click", function () {
+      editHeight.innerText = "";
+  });
+  function isValidHeight() {
+  var editHeight = document.getElementById("editHeight");
+
+  editHeight.addEventListener("input", function () {
+      // Remove non-numeric characters using a regular expression
+      var sanitizedInput = editHeight.innerText.replace(/[^\d]/g, '');
+
+      // Ensure the input is a positive integer and less than 500
+      var weightValue = parseInt(sanitizedInput, 10);
+      if (!isNaN(weightValue) && weightValue >= 0 && weightValue < 500) {
+          // Store the original input as a data attribute
+          editHeight.setAttribute("data-original", sanitizedInput);
+      } else {
+          // If the input is invalid, reset the content
+          editHeight.innerText = "Please enter a valid height";
+          alert("Please enter a valid height")
+      }
+  });
+
+  
+}
+</script>
+
+<!-- <script>
+    function findMyPlan() {
+    // Get values from input fields
+    var name = document.getElementById('editName').innerText.trim();
+    var age = document.getElementById('editAge').innerText.trim();
+    var height = document.getElementById('editHeight').innerText.trim();
+    var weight = document.getElementById('editWeight').innerText.trim();
+    var email = document.getElementById('editEmail').innerText.trim();
+    var phone = document.getElementById('editPhone').innerText.trim();
+
+    // // Perform validation
+    // if (name === "" || !validAge() || !isValidHeight() || !validWeight() || !isValidEmail() || !validPhone()) {
+    //   alert("Please fill in all required fields with valid data before submitting.");
+    //   return;
+    // }
+
+    // Log the values or perform further actions (replace this with your logic)
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("Height:", height);
+    console.log("Weight:", weight);
+    console.log("Email:", email);
+    console.log("Phone:", phone);
+
+    // Add any further actions, such as sending data to the server
+
+    // Now, set the href attribute based on the validation
+    var link = document.getElementById("findMyPlanLink");
+    link.href = "#symptom";  // Replace with your actual link destination
+  }
+</script> -->
+
+</body>
+
+</html>
