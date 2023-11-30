@@ -14,7 +14,7 @@ app = Flask(__name__, template_folder = './template/public',static_folder='./tem
 model_disease = joblib.load('./model/model.pkl')
 model_insurance = joblib.load('./model/insurance_model.pkl')
 
-def convert_currency(amount, to_currency='USD', from_currency='USD', api_key='64dd72977amsh213af99dbf31037p1734eejsndf1ee1db9184'):
+def convert_currency(amount, to_currency, from_currency='USD', api_key='64dd72977amsh213af99dbf31037p1734eejsndf1ee1db9184'):
     endpoint = "https://currency-exchange.p.rapidapi.com/exchange"
     headers = {
         "X-RapidAPI-Host": "currency-exchange.p.rapidapi.com",
@@ -25,15 +25,20 @@ def convert_currency(amount, to_currency='USD', from_currency='USD', api_key='64
         "to": to_currency,
         "q": amount,
     }
-    try:
-        response = requests.get(endpoint, headers=headers, params=params)
-        if response.status_code == 200:
-            converted_amount = float(response.text) * amount
-            print(f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}")
-        else:
-            print(f"Error: {response.status_code}, {response.text}")
-    except Exception as e:
-        print(f"Error: {e}")
+    print(params)
+    if from_currency == to_currency:
+        converted_amount = amount
+    else:
+        try:
+            response = requests.get(endpoint, headers=headers, params=params)
+            print(response)
+            if response.status_code == 200:
+                converted_amount = float(response.text) * amount
+                # print(f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}")
+            else:
+                print(f"Error: {response.status_code}, {response.text}")
+        except Exception as e:
+            print(f"Error: {e}")
 
     return converted_amount
 
@@ -77,15 +82,13 @@ def read_child_from_csv(file_path):
 
 #     return common_symptoms
 
-def convert_insurance_price(insurance_class, to_currency=None):
+def convert_insurance_price(insurance_class, to_currency):
     bins = [1000, 22500, 43500, 65000]
     price_range = [bins[insurance_class], bins[insurance_class+1]]
-    if not to_currency:
-        lower_end = convert_currency(price_range[0], to_currency)
-        higher_end = convert_currency(price_range[1], to_currency)
-    else:
-        lower_end = convert_currency(price_range[0], 'USD')
-        higher_end = convert_currency(price_range[1], 'USD')
+
+    lower_end = convert_currency(price_range[0], to_currency)
+    higher_end = convert_currency(price_range[1], to_currency)
+    
     yearly = (lower_end//1, higher_end//1)
     quarterly = (lower_end//4, higher_end//4)
     monthly = (lower_end//12, higher_end//12)
@@ -130,16 +133,15 @@ def predict_disease():
     userLocation = data.get('userLocation')
     district = userLocation.get('district')
     country = userLocation.get('country')
-    print('=-'*50)
-    # Now you can use the district variable in your existing Python script
-    # Example: Append the district to the CSV file
+
+    # Append the district to the CSV file
     prediction_result = "Positive"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     data_to_be_saved = {
         "PredictionResult": [prediction_result],
         "Timestamp": [timestamp],
-        "District": [district],  # Use the received district information
+        "District": [district],  
         "Country": [country],
     }
 
@@ -153,33 +155,6 @@ def predict_disease():
                 'disease': prediction[0],
                 'disease_label': int(label)}
     return jsonify(result)
-
-def update_district():
-    # data = request.get_json()
-    # userDistrict = userDistrict.get('userDistrict')
-    # district = userDistrict.get('district')
-    # country = data.get('country')
-    # print('=-'*50)
-    # # Now you can use the district variable in your existing Python script
-    # # Example: Append the district to the CSV file
-    # prediction_result = "Positive"
-    # timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    # data_to_be_saved = {
-    #     "PredictionResult": [prediction_result],
-    #     "Timestamp": [timestamp],
-    #     "District": [district],  # Use the received district information
-    #     "Country": [country],
-    # }
-
-    # disease_log = pd.DataFrame(data_to_be_saved)
-
-    # csv_file_path = "predictions_log.csv"
-    # disease_log.to_csv(csv_file_path, mode="a", header=not pd.io.common.file_exists(csv_file_path), index=False)
-
-    # return "District information received and processed successfully!"
-    pass
-
 
 @app.route("/predict", methods=['POST'])
 def predict_insurance():
@@ -250,6 +225,7 @@ def predict_insurance():
         prediction = insurance_model.predict(input_df)       
 
         to_currency = data.get('to_currency')
+        print(to_currency)
         yearly, quarterly, monthly = convert_insurance_price(prediction[0], to_currency)
         insurance_plan = ['Basic', 'Priority', 'Premium'][prediction[0]]
 
@@ -266,32 +242,6 @@ def predict_insurance():
     else:
         return jsonify({'error': 'Invalid request method'})
     
-def update_box():
-    # data = request.get_json()
-    # predicted_disease = data.get('prognosis')
-    # # symptoms = set(data.get('symptoms'))
-
-    # common_symptoms = get_common_symptoms('./data/training.csv')
-    # common_symptoms_of_disease = common_symptoms[predicted_disease]
-    # text11 = list(common_symptoms_of_disease)
-    # for i, s in enumerate(text11):
-    #     if '_' in s:
-    #         symptom = s.split('_')
-    #         symptom = ' '.join(symptom)
-    #     else:
-    #         symptom = s
-    #     text11[i] = symptom
-    # text11 = ', '.join(text11)
-
-    # text1 = {
-    #     'text11_header': f'You have {predicted_disease}',
-    #     'text11': f'Common symptoms of this disease are {text11}'
-    # }
-
-    # return jsonify(text11)
-    pass
-
-
         
 if __name__ == "__main__":
     app.run(host='127.0.0.1',port='8000',debug=True)

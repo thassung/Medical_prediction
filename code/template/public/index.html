@@ -1511,7 +1511,7 @@ $(document).ready(function () {
       to_currency: selectedCurrency
     };
 
-    alert(insuranceData.stress);
+    alert(insuranceData.to_currency);
 
     $.ajax({
       type: 'POST',
@@ -1527,7 +1527,7 @@ $(document).ready(function () {
         let text12 = response.text12
         let text13_header = response.text13_header;
         let text13 = response.text13
-        console.log(message);
+        console.log(response);
         $('#result').text(message);
         $("#text11-header").text(text11_header)
         $("#text11").text(text11)
@@ -1582,8 +1582,8 @@ $(document).ready(function () {
   $('#currencyDropdown').on('change', function () {
     event.preventDefault();
 
-        // Get the value of the selected radio button for smoking frequency
-        var exercise = $("input[name='exerciseFrequency']:checked").val();
+    // Get the value of the selected radio button for smoking frequency
+    var exercise = $("input[name='exerciseFrequency']:checked").val();
     var junkFood = $("input[name='junkFoodFrequency']:checked").val();
     var smoking = $("input[name='smokingFrequency']:checked").val();
     var alcohol = $("input[name='alcoholFrequency']:checked").val();
@@ -1626,7 +1626,7 @@ $(document).ready(function () {
       to_currency: selectedCurrency
     };
 
-    alert(insuranceData.stress);
+    alert(insuranceData.to_currency);
 
     $.ajax({
       type: 'POST',
@@ -1642,7 +1642,7 @@ $(document).ready(function () {
         let text12 = response.text12
         let text13_header = response.text13_header;
         let text13 = response.text13
-        console.log(message);
+        console.log(response);
         $('#result').text(message);
         $("#text11-header").text(text11_header)
         $("#text11").text(text11)
