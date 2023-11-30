@@ -5,7 +5,7 @@ import joblib
 import pickle
 import pathlib
 import csv
-import datetime
+from datetime import datetime
 
 app = Flask(__name__, template_folder = './template/public',static_folder='./template/public')
 
@@ -62,13 +62,12 @@ def home():
 @app.route("/disease", methods=['POST'])
 def predict_disease():
     data = request.get_json()
-    print(data)
-    data = data.get('symptomData')
+    symptomData = data.get('symptomData')
     disease_model = joblib.load('./model/disease_model.pkl')
     column_names = ['itching', 'skin_rash', 'continuous_sneezing', 'stomach_pain', 
                     'acidity', 'ulcers_on_tongue', 'muscle_wasting', 'vomiting', 'burning_micturition', 'spotting_ urination', 'fatigue', 'weight_gain', 'anxiety', 'cold_hands_and_feets', 'mood_swings', 'weight_loss', 'restlessness', 'irregular_sugar_level', 'cough', 'high_fever', 'sunken_eyes', 'breathlessness', 'sweating', 'dehydration', 'indigestion', 'headache', 'yellowish_skin', 'dark_urine', 'loss_of_appetite', 'pain_behind_the_eyes', 'back_pain', 'constipation', 'abdominal_pain', 'diarrhoea', 'mild_fever', 'yellow_urine', 'yellowing_of_eyes', 'acute_liver_failure', 'swelling_of_stomach', 'swelled_lymph_nodes', 'malaise', 'blurred_and_distorted_vision', 'phlegm', 'throat_irritation', 'redness_of_eyes', 'runny_nose', 'congestion', 'chest_pain', 'weakness_in_limbs', 'fast_heart_rate', 'pain_during_bowel_movements', 'bloody_stool', 'neck_pain', 'cramps', 'bruising', 'obesity', 'swollen_blood_vessels', 'puffy_face_and_eyes', 'enlarged_thyroid', 'brittle_nails', 'swollen_extremeties', 'excessive_hunger', 'drying_and_tingling_lips', 'slurred_speech', 'knee_pain', 'hip_joint_pain', 'muscle_weakness', 'stiff_neck', 'movement_stiffness', 'unsteadiness', 'weakness_of_one_body_side', 'loss_of_smell', 'bladder_discomfort', 'foul_smell_of urine', 'continuous_feel_of_urine', 'passage_of_gases', 'internal_itching', 'toxic_look_(typhos)', 'depression', 'irritability', 'muscle_pain', 'altered_sensorium', 'red_spots_over_body', 'belly_pain', 'abnormal_menstruation', 'dischromic_patches', 'watering_from_eyes', 'increased_appetite', 'polyuria', 'family_history', 'mucoid_sputum', 'rusty_sputum', 'lack_of_concentration', 'visual_disturbances', 'coma', 'stomach_bleeding', 'distention_of_abdomen', 'blood_in_sputum', 'prominent_veins_on_calf', 'palpitations', 'painful_walking', 'shivering_or_chills', 'unprotected_blood/sex_transfusion', 'pain/irritation_in_anal_region', 'swollen_painful_joints']
-    data = pd.DataFrame([data], columns=column_names)
-    prediction = disease_model.predict(data)
+    symptomData = pd.DataFrame([symptomData], columns=column_names)
+    prediction = disease_model.predict(symptomData)
 
     # Get label
     predicted_not_in_insurance = ['(vertigo) Paroymsal  Positional Vertigo', 'Chicken pox', 
@@ -88,35 +87,59 @@ def predict_disease():
     label = encoder.transform(pd.Series(label))
     label = label[0]
 
-    result = {'message': f'Disease is {prediction[0]}',
-                'disease': prediction[0],
-                'disease_label': int(label)}
-    return jsonify(result)
-
-def update_district():
-    data = request.get_json()
-    data = data.get('userDistrict')
-    district = data.get('district')
-    country = data.get('country')
+    # Saving the district and country of user and his prognosis
+    userLocation = data.get('userLocation')
+    district = userLocation.get('district')
+    country = userLocation.get('country')
     print('=-'*50)
     # Now you can use the district variable in your existing Python script
     # Example: Append the district to the CSV file
     prediction_result = "Positive"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    data = {
+    data_to_be_saved = {
         "PredictionResult": [prediction_result],
         "Timestamp": [timestamp],
         "District": [district],  # Use the received district information
         "Country": [country],
     }
 
-    df = pd.DataFrame(data)
+    disease_log = pd.DataFrame(data_to_be_saved)
 
     csv_file_path = "predictions_log.csv"
-    df.to_csv(csv_file_path, mode="a", header=not pd.io.common.file_exists(csv_file_path), index=False)
+    disease_log.to_csv(csv_file_path, mode="a", header=not pd.io.common.file_exists(csv_file_path), index=False)
+    ###########################
 
-    return "District information received and processed successfully!"
+    result = {'message': f'Disease is {prediction[0]}',
+                'disease': prediction[0],
+                'disease_label': int(label)}
+    return jsonify(result)
+
+def update_district():
+    # data = request.get_json()
+    # userDistrict = userDistrict.get('userDistrict')
+    # district = userDistrict.get('district')
+    # country = data.get('country')
+    # print('=-'*50)
+    # # Now you can use the district variable in your existing Python script
+    # # Example: Append the district to the CSV file
+    # prediction_result = "Positive"
+    # timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # data_to_be_saved = {
+    #     "PredictionResult": [prediction_result],
+    #     "Timestamp": [timestamp],
+    #     "District": [district],  # Use the received district information
+    #     "Country": [country],
+    # }
+
+    # disease_log = pd.DataFrame(data_to_be_saved)
+
+    # csv_file_path = "predictions_log.csv"
+    # disease_log.to_csv(csv_file_path, mode="a", header=not pd.io.common.file_exists(csv_file_path), index=False)
+
+    # return "District information received and processed successfully!"
+    pass
 
 
 @app.route("/predict", methods=['POST'])
