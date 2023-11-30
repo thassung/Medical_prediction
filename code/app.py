@@ -6,11 +6,36 @@ import pickle
 import pathlib
 import csv
 from datetime import datetime
+from forex_python.converter import CurrencyRates
+import requests
 
 app = Flask(__name__, template_folder = './template/public',static_folder='./template/public')
 
 model_disease = joblib.load('./model/model.pkl')
 model_insurance = joblib.load('./model/insurance_model.pkl')
+
+def convert_currency(amount, to_currency='USD', from_currency='USD', api_key='64dd72977amsh213af99dbf31037p1734eejsndf1ee1db9184'):
+    endpoint = "https://currency-exchange.p.rapidapi.com/exchange"
+    headers = {
+        "X-RapidAPI-Host": "currency-exchange.p.rapidapi.com",
+        "X-RapidAPI-Key": api_key,
+    }
+    params = {
+        "from": from_currency,
+        "to": to_currency,
+        "q": amount,
+    }
+    try:
+        response = requests.get(endpoint, headers=headers, params=params)
+        if response.status_code == 200:
+            converted_amount = float(response.text) * amount
+            print(f"{amount} {from_currency} is equal to {converted_amount:.2f} {to_currency}")
+        else:
+            print(f"Error: {response.status_code}, {response.text}")
+    except Exception as e:
+        print(f"Error: {e}")
+
+    return converted_amount
 
 def read_region_from_csv(file_path):
     unique_regions = set()
@@ -51,6 +76,20 @@ def read_child_from_csv(file_path):
 #         common_symptoms[disease] = set(symptom_counts[symptom_counts > len(disease_df) * 0.5].index)
 
 #     return common_symptoms
+
+def convert_insurance_price(insurance_class, to_currency=None):
+    bins = [1000, 22500, 43500, 65000]
+    price_range = [bins[insurance_class], bins[insurance_class+1]]
+    if not to_currency:
+        lower_end = convert_currency(price_range[0], to_currency)
+        higher_end = convert_currency(price_range[1], to_currency)
+    else:
+        lower_end = convert_currency(price_range[0], 'USD')
+        higher_end = convert_currency(price_range[1], 'USD')
+    yearly = (lower_end//1, higher_end//1)
+    quarterly = (lower_end//4, higher_end//4)
+    monthly = (lower_end//12, higher_end//12)
+    return yearly, quarterly, monthly
 
 @app.route("/", methods = ['GET'])
 def home():
@@ -106,7 +145,7 @@ def predict_disease():
 
     disease_log = pd.DataFrame(data_to_be_saved)
 
-    csv_file_path = "predictions_log.csv"
+    csv_file_path = "./data/predictions_log.csv"
     disease_log.to_csv(csv_file_path, mode="a", header=not pd.io.common.file_exists(csv_file_path), index=False)
     ###########################
 
@@ -210,10 +249,18 @@ def predict_insurance():
         input_df = scaler.transform(input_df)
         prediction = insurance_model.predict(input_df)       
 
+        to_currency = data.get('to_currency')
+        yearly, quarterly, monthly = convert_insurance_price(prediction[0], to_currency)
+        insurance_plan = ['Basic', 'Priority', 'Premium'][prediction[0]]
+
         result = {'message': f'Insurance type is {int(prediction[0])}',
                   'type': int(prediction[0]),
-                  'text11_header': f'You have this Disease',
-                  'text11': f'Common symptoms of this disease are these'
+                  'text11_header': f'Monthly {insurance_plan} Plan',
+                  'text11': f'The pricing ranges from {monthly[0]} to {monthly[1]} {to_currency}',
+                  'text12_header': f'Quarter {insurance_plan} Plan',
+                  'text12': f'The pricing ranges from {quarterly[0]} to {quarterly[1]} {to_currency}',
+                  'text13_header': f'Yearly {insurance_plan} Plan',
+                  'text13': f'The pricing ranges from {yearly[0]} to {yearly[1]} {to_currency}',
                   }
         return jsonify(result)
     else:
